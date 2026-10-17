@@ -1,3 +1,5 @@
+![Dean sweeps a glowing green detector over rocket-sticker baloney while an unimpressed deli clerk watches.](assets/bdk-metal-detector.webp)
+
 # AI Baloney Detection Kit
 
 > Help an AI claim, idea, or product earn confidence before it lands on a roadmap or in front of customers.
