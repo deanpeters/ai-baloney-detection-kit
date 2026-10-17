@@ -57,4 +57,4 @@ The keynote lives in `~/Code/chaos-confusion-and-crapola`. **Its decks quote thi
 - **License:** CC BY-NC-SA 4.0, the same as Product Manager Skills and Product Manager Antagonist Skills. One license for everything.
 - **Funny ≠ mean:** punch up at hype, vendors and weak logic, never at users, customers, affected workers or people learning.
 - **Don't explain the joke.**
-- **Not a git repo yet (still true 2026-10-15).** Dean will field it; don't `git init` or publish without asking.
+- **Public since 2026-10-17** at https://github.com/deanpeters/ai-baloney-detection-kit (branch `main`). Raw `transcript.jsonl` session dumps are gitignored; keep links repo-relative, never `/Users/...`. Ask before pushing.
