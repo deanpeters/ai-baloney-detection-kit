@@ -1,4 +1,4 @@
-![Dean sweeps a glowing green detector over rocket-sticker baloney while an unimpressed deli clerk watches.](assets/bdk-metal-detector.webp)
+![AI Baloney Detection Kit: Agent Skills to Help You Get Past AI Chaos, Confusion, and Crapola. Dean sweeps a glowing green detector over rocket-sticker baloney while an unimpressed deli clerk watches.](assets/ai-bdk-github-banner.webp)
 
 # AI Baloney Detection Kit
 
