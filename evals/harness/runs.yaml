@@ -1,0 +1,42 @@
+# Behavior-test plan for the Baloney Funnel skills. See evals/harness/README.md.
+# Each run gets an isolated workspace with only ./skill/ (no examples) and ./input.md.
+
+prompts:
+  funnel: >-
+    Read ./skill/SKILL.md and the files it links inside ./skill/ (start with
+    ./skill/references/assessment-contract.md). Then run that skill on ./input.md.
+    Mode: Context Dump. Voice: {voice}. Work unattended: do not ask questions; use
+    your best judgment, label planning assumptions, and leave missing evidence
+    missing. This is a closed synthetic fixture: use only the supplied evidence and
+    do not browse. Today's date is 2026-10-11. Give the full report. Your final message must be the
+    skill's complete output.
+  quick: >-
+    Read ./skill/SKILL.md, then run that skill on ./input.md exactly as it
+    instructs, for a projector audience. The input is fictional. Do not ask
+    questions. Your final message must be the skill's complete output.
+
+runs:
+  # Whole funnel (bdk-detector) on every funnel case
+  - {id: F01, skill: bdk-detector, input: loop-01-vendor-productivity-claim, prompt: funnel, voice: Product Coach}
+  - {id: F02, skill: bdk-detector, input: loop-02-saturday-prototype, prompt: funnel, voice: Product Coach}
+  - {id: F03, skill: bdk-detector, input: loop-03-nobody-would-buy-it, prompt: funnel, voice: Product Coach}
+  - {id: F04, skill: bdk-detector, input: loop-04-accurate-but-untrusted, prompt: funnel, voice: Product Coach}
+  - {id: F04C, skill: bdk-detector, input: loop-04-accurate-but-untrusted, prompt: funnel, voice: Comedian}
+  - {id: F05, skill: bdk-detector, input: loop-05-roi-for-one-side, prompt: funnel, voice: Boss}
+  - {id: F06, skill: bdk-detector, input: loop-06-safe-to-serve-expires, prompt: funnel, voice: Product Coach}
+  - {id: F07, skill: bdk-detector, input: loop-07-earned-pursue, prompt: funnel, voice: Product Coach}
+  - {id: F08, skill: bdk-detector, input: loop-08-work-not-a-claim, prompt: funnel, voice: Product Coach}
+  - {id: F09, skill: bdk-detector, input: loop-09-roadmap-funnel, prompt: funnel, voice: Product Coach}
+  # Each tier skill on the case it is most responsible for
+  - {id: T1, skill: bdk-receipts, input: loop-01-vendor-productivity-claim, prompt: funnel, voice: Pirate}
+  - {id: T2, skill: bdk-sell-by, input: loop-06-safe-to-serve-expires, prompt: funnel, voice: Product Coach}
+  - {id: T3, skill: bdk-labels, input: loop-02-saturday-prototype, prompt: funnel, voice: Product Coach}
+  - {id: T4, skill: bdk-context-pantry, input: loop-05-roi-for-one-side, prompt: funnel, voice: Product Coach}
+  - {id: T5, skill: bdk-taste-test, input: loop-04-accurate-but-untrusted, prompt: funnel, voice: Product Coach}
+  - {id: T6, skill: bdk-four-risks, input: loop-03-nobody-would-buy-it, prompt: funnel, voice: Antagonist}
+  - {id: T7, skill: bdk-four-risks, input: loop-07-earned-pursue, prompt: funnel, voice: Product Coach}
+  # Utility and quick checks
+  - {id: U1, skill: bdk-util-slice-the-pitch, input: examples/press-release-agentic.md, prompt: funnel, voice: Product Coach}
+  - {id: Q1, skill: bdk-skill-sorter, input: examples/jd-senior-pm.md, prompt: quick, voice: n/a}
+  - {id: Q2, skill: bdk-value-or-theater, input: examples/pitch-theater.md, prompt: quick, voice: n/a}
+  - {id: Q3, skill: bdk-value-or-theater, input: examples/initiative-value.md, prompt: quick, voice: n/a}

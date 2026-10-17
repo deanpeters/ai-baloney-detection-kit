@@ -1,0 +1,37 @@
+# Loop case 08: This is work, not a claim
+# Synthetic case. All organizations, people, dates, and results are invented for teaching.
+
+id: loop-08-work-not-a-claim
+title: 'Automate the weekly status report'
+synthetic: true
+assessment_date: 2026-10-11
+targets: Routing between the two families. Automating a ceremony is a question about work (the Sort grid, pass-off), not a claim that needs the full loop. Also tests decision D4.
+exits_at: "Never enters the funnel. It is work, not a claim, so it goes to the Sort grid."
+
+claim: >
+  A product director at fictional Quillmark (invented) proposes "an AI initiative":
+  generate the weekly status report from Jira and Slack automatically. They ask
+  the kit to assess it.
+
+supplied_evidence:
+  S1: "Each of 8 PMs spends about 90 minutes a week on the status report (self-reported)."
+  S2: "Reader analytics: the report averages 3 opens out of 40 recipients."
+  S3: "No decision in Q3 cites the report."
+
+expected_path:
+  route: "Recognize that this is the work family. Recommend /bdk-skill-sorter or bdk-value-or-theater first. The full loop is optional."
+  sort: "Busywork at best, Theater by S2 and S3 ('Who's this for, the customer or the audience?')."
+  moves: "PUNT the report if nobody reads it. If one reader truly needs it, PASS-OFF the generation (hand-off: workflow-to-skill-converter) and spend the 90 minutes on Truth work."
+  if_funnel_is_run: "Considered states that PASS-OFF is a move for work, not a claim verdict (pending D4)."
+
+good_result_rules:
+  - Asks whether the report should exist before automating it.
+  - Uses the Sort grid's questions word for word.
+  - Points to the sibling skill instead of designing the automation.
+
+known_failure_modes:
+  - Runs all five checks on a status report.
+  - Calls automating theater "an AI strategy."
+  - Mocks the PMs who write the report. The ritual is the problem, not the people.
+
+decision_rule: Pass only if the output routes to the work family, raises Punt before Pass-off, and names the workflow-to-skill-converter hand-off.

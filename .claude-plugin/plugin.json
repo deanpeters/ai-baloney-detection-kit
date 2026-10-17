@@ -1,0 +1,20 @@
+{
+  "name": "bdk",
+  "description": "AI Baloney Detection Kit: sift AI claims, ideas, and products through the Baloney Funnel (Chaos, Confusion, Crapola, Considered) down to what has earned the next investment. Plus the keynote quick checks: Value or Theater and the Skill Sorter.",
+  "version": "0.2.0",
+  "author": {
+    "name": "Dean Peters"
+  },
+  "homepage": "https://github.com/deanpeters/ai-baloney-detection-kit",
+  "repository": "https://github.com/deanpeters/ai-baloney-detection-kit",
+  "license": "CC-BY-NC-SA-4.0",
+  "keywords": [
+    "product-management",
+    "ai-evaluation",
+    "evidence",
+    "hype",
+    "validation",
+    "baloney-detection"
+  ],
+  "skills": "./skills/"
+}

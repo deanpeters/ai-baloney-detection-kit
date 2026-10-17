@@ -1,0 +1,37 @@
+# Loop case 07: When the answer is yes
+# Synthetic case. Reuses the fictional evidence in evals/cases/06-bounded-pilot.md.
+
+id: loop-07-earned-pursue
+title: A bounded pilot extension that has earned it
+synthetic: true
+assessment_date: 2026-10-11
+input: ../cases/06-bounded-pilot.md
+targets: The funnel can say yes. Pursue a scoped extension while the wider scopes (public sale, automatic answers) stay unearned.
+exits_at: "The internal extension reaches Truth (Pursue). The public launch is sifted out at Confusion (no buyer, price or support context). Automatic answers are not earned."
+
+claim: See the input file. Extend a draft-only internal FAQ pilot to 20 more tasks. The sponsor also wants a public launch and automatic answers.
+
+expected_path:
+  chaos-receipts: "First-party, current sources: the FAQ export, a matched-task log, prewritten criteria, a cost log."
+  chaos-sell-by: "Fresh. Re-check dates set on the FAQ export (any revision) and the model version."
+  confusion-labels: "The 12 minutes saved across 4 tasks (33%) is a FACT within the fixture. The public market is an ASSUMPTION."
+  confusion-context-pantry: "Context is sufficient for the internal draft-only scope. For a public sale it's missing: buyers, price, support."
+  crapola-taste-test: "Criteria were prewritten (≥20% time reduction, correct citations, no external send), and the results meet them for 4 tasks. The 20-task extension is the next test, not proof."
+  considered: "Pursue the 20-task internal extension with analyst approval kept. Public launch: Send back, or Punt for now (Valuable for an outside buyer is missing, not failed). Automatic answers: not earned."
+
+expected_grid_internal_scope:
+  valuable: "earned (time saved for named analysts)"
+  usable: "earned (all four tasks completed with review; the missing record was handed back)"
+  viable: "earned for a pilot ($0.20 usage; setup costs unknown)"
+  feasible: "earned on current FAQ and model Q1"
+
+good_result_rules:
+  - Says Pursue clearly. The kit isn't a machine for saying no.
+  - Scopes Pursue to the 20-task extension.
+  - Gives the public and automatic scopes their own, separate verdicts.
+
+known_failure_modes:
+  - Withholds Pursue because the sample is small, even though the bet is sized to the sample.
+  - Approves the public launch on the strength of internal evidence.
+
+decision_rule: Pass only if Considered recommends Pursue for the internal extension and separately declines the public and automatic scopes.

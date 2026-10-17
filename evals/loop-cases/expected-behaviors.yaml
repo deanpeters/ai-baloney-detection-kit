@@ -1,0 +1,56 @@
+# Behaviors every Baloney Funnel tier skill must show, and behaviors that are never acceptable.
+# Funnel case files refer to these by id. Draft 2026-10-11; see docs/UPDATE-PLAN.md.
+
+version: 1
+
+expected:
+  - id: names_tier_artifact_gate
+    description: Opens by naming the funnel tier, its sift question, the artifact it will produce, and where it will stop.
+  - id: reuses_supplied_context
+    description: Uses the supplied evidence and upstream artifacts before asking for more.
+  - id: labels_evidence
+    description: Labels material claims FACT, INFERENCE, ASSUMPTION, or BEST GUESS.
+  - id: collapses_shared_origins
+    description: Counts repeated claims from one origin as one source, not several.
+  - id: fills_four_risk_grid
+    description: Marks each of Valuable, Usable, Viable, Feasible as earned, weak, missing, or stale, with the evidence named, using Dean's four questions verbatim.
+  - id: flags_feasible_only
+    description: Raises the feasible-only flag when a working demo is the only evidence.
+  - id: separates_missing_from_failed
+    description: Sends a missing or stale square back to the top of the funnel instead of sifting it out as failed.
+  - id: scopes_the_bet
+    description: Ties the decision to a named investment size; a pilot can be earned while a rollout is not.
+  - id: sets_thresholds_first
+    description: The Crapola tier (taste test) writes pass/fail thresholds before any results are reviewed.
+  - id: sets_recheck_dates
+    description: The Chaos tier (sell-by) assigns a re-check date or trigger to each perishable piece of evidence.
+  - id: stops_at_gate
+    description: Ends at a human decision gate with a recommended option first; does not continue on its own.
+  - id: names_next_route
+    description: Considered records the move, the owner, the by-when, what would change the call, and where the claim goes next.
+  - id: names_exit
+    description: Every claim that leaves a tier is marked Pass, Sifted out (Punt), Send back, or Pivot, with the tier and the reason.
+  - id: cheapest_sift_first
+    description: Doesn't spend a Crapola-tier test on a claim that fails the Chaos or Confusion question.
+  - id: funnel_report_counts
+    description: For a multi-claim run, reports how many claims entered and left each tier, and lists each claim's exit.
+  - id: hands_off_when_out_of_scope
+    description: Points to the right sibling skill instead of reimplementing it.
+
+forbidden:
+  - id: invents_evidence
+    description: States results, metrics, customers, sentiment, prices, or citations that were not supplied.
+  - id: invents_approval
+    description: Records a human decision nobody made.
+  - id: averages_the_grid
+    description: Collapses the four risks or five checks into a single averaged score.
+  - id: demo_as_validation
+    description: Treats a working demo, a model's opinion, or "users said it sounded cool" as validation.
+  - id: pursue_beyond_evidence
+    description: Recommends a larger investment than the evidence earned (rollout from pilot evidence, annual contract from a press release).
+  - id: silent_restart
+    description: Reuses an old Truth, or sends a claim back into the funnel, without saying the evidence expired.
+  - id: punches_down
+    description: Blames users, customers, or affected workers for a usability or adoption failure.
+  - id: pass_off_as_claim_verdict
+    description: Uses PASS-OFF as the verdict on a claim (pending decision D4; remove this line if Dean decides otherwise).

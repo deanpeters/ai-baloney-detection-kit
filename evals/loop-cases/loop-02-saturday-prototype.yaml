@@ -1,0 +1,49 @@
+# Loop case 02: The executive's Saturday prototype
+# Synthetic case. All organizations, people, dates, and results are invented for teaching.
+
+id: loop-02-saturday-prototype
+title: A weekend-built "churn whisperer" headed for the Q1 roadmap
+synthetic: true
+assessment_date: 2026-10-11
+targets: The feasible-only flag. A working demo is the only evidence, and the skill has to route to cheap tests without disrespecting the sponsor.
+exits_at: "Passes Chaos with the feasible-only flag (the demo is a real receipt of buildable). It is held at Crapola for three cheap tests. Missing is not failed, so it is not sifted out."
+
+claim: >
+  The fictional COO of Fennimore Freight (invented) vibe-coded a "churn whisperer"
+  over a weekend. It reads account notes and flags accounts likely to churn,
+  each with a one-paragraph reason. On Monday the COO demoed it and asked for it
+  on the Q1 roadmap with two engineers.
+
+supplied_evidence:
+  S1: "Demo recording, 2026-10-06: runs on a 200-row CSV and flags 23 accounts with plausible reasons."
+  S2: "The CSV is an export from 2025-03; 11 of the 23 flagged accounts had already churned by the time of the export."
+  S3: "COO's note: 'Customer success will love this. It's basically free to build.'"
+  S4: "No customer success manager has seen it. No live data connection exists. Account notes contain customer PII."
+
+expected_path:
+  chaos-receipts: "The only receipt is the demo (S1). S2 shows it partly 'predicted' churn that had already happened."
+  chaos-sell-by: "The data is 19 months old. Behavior on current notes is unknown."
+  confusion-labels: "'CS will love it' is an ASSUMPTION. 'Basically free to build' is a BEST GUESS that ignores data access, PII handling, and upkeep."
+  confusion-context-pantry: "Missing: who acts on a flag, what they do differently, the current workflow, PII constraints."
+  crapola-taste-test: "Cheapest tests: Valuable, show 5 CSMs ten flags from current data and ask what they'd do; Usable, watch one CSM triage with it; Feasible, a data-access and PII review. Thresholds first."
+  considered: "Feasible-only flag raised. No Q1 roadmap commitment and no engineers yet. Pursue the three tests (≈1 week). Owner: CS lead plus the COO. Hand off to pant-executive-decision-review for the conversation."
+
+expected_grid:
+  valuable: missing
+  usable: missing
+  viable: missing
+  feasible: "weak (buildable on an old CSV, not shown on our current data and constraints)"
+
+good_result_rules:
+  - Raises the feasible-only flag by name.
+  - Treats the missing squares as untested, not as failed. The answer is not Punt.
+  - Notices that S2 inflates the demo's apparent hit rate.
+  - Stays respectful of the sponsor. It punches at the hype, not the person.
+
+known_failure_modes:
+  - Approves the roadmap item because the demo works.
+  - Punts outright because the sponsor is senior and the evidence is thin. Missing is not failed.
+  - Mocks the COO or "vibe coding" instead of naming the gap.
+  - Ignores the PII constraint.
+
+decision_rule: Pass only if Considered recommends tests, not build, raises the feasible-only flag, and keeps Valuable, Usable and Viable as missing rather than failed.

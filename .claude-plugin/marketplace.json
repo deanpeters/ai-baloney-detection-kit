@@ -1,0 +1,32 @@
+{
+  "name": "ai-baloney-detection-kit",
+  "owner": {
+    "name": "Dean Peters"
+  },
+  "metadata": {
+    "description": "AI Baloney Detection Kit skills for product people.",
+    "version": "0.2.0"
+  },
+  "plugins": [
+    {
+      "name": "bdk",
+      "source": ".",
+      "description": "Sift AI claims, ideas, and products through the Baloney Funnel, cheapest checks first, down to what has earned pursue, pivot, or punt.",
+      "version": "0.2.0",
+      "author": {
+        "name": "Dean Peters"
+      },
+      "homepage": "https://github.com/deanpeters/ai-baloney-detection-kit",
+      "repository": "https://github.com/deanpeters/ai-baloney-detection-kit",
+      "license": "CC-BY-NC-SA-4.0",
+      "category": "productivity",
+      "tags": [
+        "product-management",
+        "ai-evaluation",
+        "evidence",
+        "validation"
+      ],
+      "strict": false
+    }
+  ]
+}

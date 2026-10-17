@@ -1,0 +1,85 @@
+# Funnel case 09: Twelve AI roadmap ideas in, one Truth out
+# Synthetic case. All organizations, people, dates, and results are invented for teaching.
+
+id: loop-09-roadmap-funnel
+title: Sifting a Q1 "AI roadmap" of twelve ideas
+synthetic: true
+assessment_date: 2026-10-11
+targets: >
+  The funnel as a process of elimination. Many claims go in. The cheapest sifts
+  run first. Each exit is named (Pass, Sifted out, Send back, Pivot). Missing is
+  kept apart from failed. One work item is routed out before the funnel. This is
+  the candidate stage demo.
+exits_at: "12 in. 1 routed to the work family. Chaos sifts 5, Confusion sifts 2, Crapola holds or sifts 3. 1 reaches Truth."
+
+claim: >
+  Fictional Marrowgate Software (invented), a mid-size B2B help-desk SaaS, has a
+  Q1 slide titled "Our AI Roadmap" with twelve items. The CPO asks the product
+  team which ones deserve Q1 investment. The evidence line beside each item is
+  everything the team has.
+
+supplied_evidence:
+  R01: "'Agentic everything': a line from the CEO's town hall, 2026-09. No specific claim, user or outcome."
+  R02: "Copilot sidebar: a competitor announced one in a press release, 2026-09-18. No Marrowgate customer has asked for it; sales logged no lost deals citing it."
+  R03: "AI meeting notes for agents: 'saves 5 hours a week' from an analyst report dated 2023-11, measured on a model generation since retired."
+  R04: "AI-written internal release notes: PMs spend ~2 hours a sprint on them; 4 internal readers."
+  R05: "Smart help-doc search: Q3 ticket analysis shows 38% of tickets are how-to questions already answered in docs. A 2-week test (2026-09-15 to 09-29) on 10% of traffic, with thresholds written 2026-09-10 (≥10% deflection, CSAT not down, ≤$0.01 per query): deflection +12%, CSAT flat, $0.004 per query."
+  R06: "AI pricing optimizer: 'boosts revenue 20%' in a vendor webinar, repeated in three blog posts that each link back to the webinar."
+  R07: "Churn prediction: the data science team has a model with good offline accuracy. Customer success hasn't said what it would do with a flag; no owner for the outcome."
+  R08: "AI onboarding assistant: 8 of 10 new admins interviewed (2026-09) struggled with setup. Prototype usability test, 5 admins: 4 finished setup faster, but 3 refused to accept its auto-configured permissions without seeing what changed."
+  R09: "Voice commands for dashboards: survey (n=60) says 'sounds cool' (68%); 0 sales conversations and 0 support requests mention it; no willingness-to-pay question asked."
+  R10: "Contract summarizer for legal-ops customers: 3 enterprise customers requested it in 2026-Q3. Long documents cost ~$0.60 each to summarize; no pricing decided; no test run."
+  R11: "'AI will replace our tier-1 support team by Q3': a board-deck claim whose only source is one vendor's sales pitch."
+  R12: "AI code-review bot (internal): a 2025-06 trial in 2 teams cut PR cycle time 15%, on a model and IDE plugin both since replaced."
+
+expected_exits:
+  before_the_funnel:
+    R04: "Routed to the work family. It's an internal ceremony: Sort grid, PUNT if nobody reads it, otherwise PASS-OFF (hand-off: workflow-to-skill-converter)."
+  chaos:
+    R01: "Sifted out (Punt). No claim to check: a slogan, not a receipt."
+    R03: "Send back (refresh). The receipt is real, but stale: 2023 data on a retired model."
+    R06: "Sifted out (Punt). Four sources collapse to one vendor webinar."
+    R11: "Sifted out (Punt). Single vendor pitch; a consequential workforce claim with no evidence."
+    R12: "Send back (refresh). A real internal receipt on a replaced model and plugin; re-run the trial before deciding."
+  confusion:
+    R02: "Sifted out (Punt), or Send back for customer evidence. 'A competitor announced it' is a FACT; 'our customers want it' is an ASSUMPTION with no support. Hand-off: mi-build-battle-card."
+    R07: "Send back. Nobody owns the outcome; no defined action on a flag. Context missing, not failed."
+  crapola:
+    R08: "Pivot. Valuable is earned (8 of 10 struggle); Usable fails on trust (3 of 5 won't accept auto-configured permissions). Pivot to show proposed changes before applying them, then back into Crapola."
+    R09: "Sifted out (Punt). Valuable fails: 'sounds cool' with zero demand signals. No test is worth its cost."
+    R10: "Held at Crapola for a test. Valuable has a weak signal (3 requests). Viable is missing (cost $0.60 a document, no price). Test willingness to pay with the 3 requesters before building."
+  considered:
+    R05: "Pursue → Truth, scoped: expand smart search from 10% to 50% of traffic, with the same thresholds and a re-check date on the model price."
+
+expected_counts:
+  entered: 12
+  routed_to_work_family: 1
+  entered_funnel: 11
+  left_at_chaos: 5        # 3 sifted out, 2 sent back
+  left_at_confusion: 2    # either sifted out or sent back (R02 may go either way)
+  left_at_crapola: 3      # 1 pivot, 1 sifted out, 1 held for a test
+  reached_truth: 1
+
+good_result_rules:
+  - Runs the cheap Chaos questions before designing any test.
+  - Names the exit type and the tier for every item.
+  - Keeps stale (R03, R12) apart from sifted out. They're sent back for a refresh, not killed.
+  - Collapses R06's four sources to one origin.
+  - Routes R04 out as work instead of running it through the funnel.
+  - Scopes R05's Pursue to the next traffic step, not "ship it everywhere."
+  - Gives a funnel report with counts per tier and one line per item.
+  - Doesn't punch at the CEO, the board or the data science team. The baloney is in the claims, not the people.
+
+known_failure_modes:
+  - Designs twelve experiments.
+  - Kills R03 and R12 outright because they're old. Stale is not false.
+  - Advances R02 because "competitors are doing it."
+  - Calls R07 a Pursue because the model's accuracy is good.
+  - Averages the roadmap into one Baloney Scale score.
+  - Says R11 is "probably true eventually." Best guesses don't pass Chaos.
+
+decision_rule: >
+  Pass if every item's exit tier and exit type match expected_exits. R02 may be
+  Sifted out or Send back. Any other item may be off by one tier only if the
+  reasoning cites the right check and the right exit type. The counts must add up
+  to 12, and R05 must be the only Pursue.

@@ -1,0 +1,6 @@
+.DS_Store
+__pycache__/
+*.pyc
+.env*
+# Raw session dumps: keep the readable transcript.md, not the jsonl
+evals/runs/**/transcript.jsonl

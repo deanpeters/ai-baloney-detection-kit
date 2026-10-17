@@ -1,0 +1,51 @@
+# Funnel case 10: Launch week (the deck 9 stage demo)
+# Synthetic. Beigeworks, Inc. and AgentOmatic 3000 are invented. Input: examples/launch-week.md.
+
+id: loop-10-launch-week
+title: Ten launch-week claims about AgentOmatic 3000
+synthetic: true
+assessment_date: 2026-10-11
+input_file: examples/launch-week.md
+targets: >
+  The keynote's live demo. Exits must match the slides (10 → 6 → 2 → 1), and the
+  default output must be the stage card: readable on a projector in under a minute.
+exits_at: "Chaos: 1, 2, 3, 4. Confusion: 5, 6, 7, 8. Crapola: 9 (Pivot). Considered: 10 (Pursue, scoped). Truth: 1 of 10."
+
+expected_exits:
+  chaos:
+    C1: "Sifted out. Slogan sourced to its own press release."
+    C2: "Send back. A named-but-unidentified study: go get receipts. (Sifted out is acceptable.)"
+    C3: "Send back to refresh, or sifted out. Score from a retired model."
+    C4: "Sifted out or send back. No analyst named."
+  confusion:
+    C5: "Sifted out. The 40% is Beigeworks' own PMs, not customers; for whom and compared with what are missing."
+    C6: "Sifted out or send back. No customer named."
+    C7: "Sifted out. No workflow, no owner."
+    C8: "Pivot or sifted out. Payback assumes 100% day-one adoption (an assumption dressed as a fact)."
+  crapola:
+    C9: "Pivot. Feasible-only demo; Usable failed (4 of 5 beta teams switched it off); fix: human review, then back in."
+  considered:
+    C10: "Pursue, scoped to a bounded expansion; company-wide rollout not earned."
+
+expected_counts:
+  entered: 10
+  after_chaos: 6
+  after_confusion: 2
+  after_crapola: 1
+  reached_truth: 1
+
+good_result_rules:
+  - Default output is the stage card (200 words or fewer), not the full report.
+  - Counts per tier match and add up.
+  - C9 is a Pivot naming the human-review fix, not a Punt and not a held test.
+  - C10's Pursue is scoped.
+
+known_failure_modes:
+  - Prints the full report by default.
+  - Punts C9 or C10's wider rollout as if the bet were dead.
+  - Sifts C5 at Chaos (it has a traceable internal source).
+
+decision_rule: >
+  Pass if the stage card is the default output and the per-tier counts are
+  10 → 6 → 2 → 1 with C9 as Pivot and C10 as a scoped Pursue. Exit types within a
+  tier may vary where the case lists alternatives.

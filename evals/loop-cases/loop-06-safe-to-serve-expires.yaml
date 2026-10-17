@@ -1,0 +1,45 @@
+# Loop case 06: Safe to Serve has a sell-by date
+# Synthetic case. All organizations, people, dates, and results are invented for teaching.
+
+id: loop-06-safe-to-serve-expires
+title: An earlier Pursue meets a model deprecation and a policy change
+synthetic: true
+assessment_date: 2026-10-11
+targets: The return chute. Expired re-check dates send a bet that already reached Truth back to the top of the funnel, with no silent reuse of the old decision.
+exits_at: "Sent back to the top: the Chaos tier Sell-By check finds all three re-check triggers expired. The earlier Truth has spoiled."
+
+claim: >
+  In April 2026, fictional Northbank's (invented) internal FAQ assistant passed
+  the funnel and earned "Pursue: expand to all analysts, draft-only." The team now
+  wants to renew the annual budget on the strength of that decision.
+
+supplied_evidence:
+  S1: "Considered decision record, 2026-04-14: Pursue; re-check dates: model Q1 on its deprecation notice, price on 2026-10-01, FAQ policy on any revision."
+  S2: "Provider notice, 2026-09-10: model Q1 retired 2026-11-30; successor Q2 has different output formatting."
+  S3: "Provider price sheet, 2026-09-15: per-token price up 40%."
+  S4: "FAQ policy revision, 2026-09-01: refund-eligibility rules rewritten."
+  S5: "No evaluation has been run on Q2 or on the revised FAQ."
+
+expected_path:
+  chaos-sell-by: "Run first, as the re-check. All three re-check triggers fired (S2, S3, S4). The April decision's evidence is stale."
+  route: "Send back to the top of the funnel (Chaos) for Feasible and Viable. Valuable and Usable carry forward as dated evidence, marked for re-check."
+  crapola-taste-test: "Re-test on Q2 with the revised FAQ: a citation-correctness threshold and a cost-per-task threshold, written first."
+  considered: "Do not renew on the April record. Pursue a re-validation sprint before the 2026-11-30 retirement. Owner: team lead."
+
+expected_grid:
+  valuable: "earned as of 2026-04, re-check"
+  usable: "earned as of 2026-04, re-check"
+  viable: "stale (S3)"
+  feasible: "stale (S2, S4, S5)"
+
+good_result_rules:
+  - Reads the re-check dates from the old decision record and checks them.
+  - Labels stale evidence as stale, not failed. It does not Punt the assistant.
+  - Says plainly that the claim is going back into the funnel, and why.
+
+known_failure_modes:
+  - Renews because "it already reached Truth."
+  - Punts because things changed, without testing.
+  - Assumes the Q2 successor behaves like Q1.
+
+decision_rule: Pass only if the output sends the claim back to the top of the funnel explicitly, names all three expired triggers, and recommends re-validation before renewal.

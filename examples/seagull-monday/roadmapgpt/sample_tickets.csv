@@ -1,0 +1,13 @@
+id,title,description,reporter_email,customer
+PP-101,Urgent: label printer jams,Customer says label printer jams on every 3rd label. URGENT. Losing shipments.,dana.ruiz@example.com,Halvorsen Foods
+PP-102,Add AI to the dashboard,Exec request: add AI to the dashboard. Make it AI.,gordon.swoop@example.com,
+PP-103,Driver app crashes on Android 15,App crashes at signature capture. 212 drivers affected.,ops-lead@example.com,
+PP-104,Customer wants bulk CSV import,Customer onboarding blocked without bulk import. Customer escalated twice.,sam.okafor@example.com,Brightline Retail
+PP-105,AI chatbot for the AI page,We need an AI chatbot on the AI landing page. AI AI.,gordon.swoop@example.com,
+PP-106,Invoices show wrong tax for Ontario,Wrong tax rate on Ontario invoices since 9/1. Finance flagged a compliance risk.,finance@example.com,
+PP-107,Dark mode,Nice to have.,intern@example.com,
+PP-108,Urgent urgent urgent: rename button,Rename "Submit" to "Go". Urgent.,gordon.swoop@example.com,
+PP-109,Customer address validation failing,Address validation rejects valid rural addresses. 4% of customer orders bounce.,support@example.com,Many
+PP-110,SOC 2 evidence export,Auditors need access logs exported by Nov 30.,security@example.com,
+PP-111,AI-generated delivery ETAs,Use AI for ETAs. Current ETAs are 85% accurate. No data on what better looks like.,pm-routing@example.com,
+PP-112,Customer portal login loop,Customers stuck in SSO login loop. 38 tickets this week.,support@example.com,Many

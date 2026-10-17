@@ -1,0 +1,50 @@
+# Loop case 01: A vendor's 40% productivity claim
+# Synthetic case. All organizations, people, dates, and results are invented for teaching.
+
+id: loop-01-vendor-productivity-claim
+title: 'Three articles, one origin: "AI boosts PM productivity 40%"'
+synthetic: true
+assessment_date: 2026-10-11
+targets: The full funnel on a classic hype claim. Shared origin caught at Chaos, an annual contract that isn't earned, and a pilot that is.
+exits_at: 'The "40% productivity" claim is sifted out at Chaos (one origin, stale benchmark). The underlying need passes to Considered as a pilot, and only the pilot reaches Truth.'
+
+claim: >
+  Fictional vendor Brisket Labs sells "SpecPilot," an AI that drafts product
+  requirement docs. A VP at fictional Copperline Software forwards three articles
+  saying "SpecPilot boosts PM productivity 40%" and asks the PM team to sign a
+  12-month, 60-seat contract by 2026-10-31.
+
+supplied_evidence:
+  S1: "Trade blog post, 2026-09-02: '40% productivity gains,' links to S3."
+  S2: "Newsletter roundup, 2026-09-04: repeats the 40% figure, links to S1."
+  S3: "Brisket Labs press release, 2026-08-28: '40% faster spec drafting in an internal study of 12 users.' No methodology. Benchmark used model version Q-2026-03."
+  S4: "Brisket Labs pricing page, captured 2026-10-06: $45 per seat per month, annual only."
+  S5: "Copperline PM survey, 2026-09-20: 9 of 14 PMs say spec writing takes 'too long'; median self-reported 5 hours per spec."
+  S6: "Brisket Labs release notes, 2026-09-30: SpecPilot now runs on model version Q-2026-09."
+
+expected_path:
+  chaos-receipts: "Receipts Ledger collapses S1/S2/S3 to one origin (the vendor's own study of 12 users). Gate: accept as a single, vendor-sourced receipt."
+  chaos-sell-by: "S3's benchmark is on an older model than the one shipping now (S6), so it's stale for this decision. The S4 price is current but needs a re-check date before signing."
+  confusion-labels: "'40% productivity' becomes an INFERENCE from 'faster drafting' in S3; 'productivity' is never measured. Copperline's 5-hour median is a self-reported FACT about the survey, not a measured time."
+  confusion-context-pantry: "Gaps: whose specs, what counts as done, review and rework time, Copperline's baseline. Faster drafting ≠ better decisions. Gate: proceed with the gaps named."
+  crapola-taste-test: "Thresholds written first: a 2-week, 4-PM matched-spec pilot measuring drafting plus review time and reviewer quality ratings against the S5 baseline."
+  considered: "Pursue the pilot only. The 60-seat annual contract is not earned. Owner: PM lead; by-when: before the 2026-10-31 deadline, ask for a monthly or pilot term."
+
+expected_grid:
+  valuable: "weak (demand in S5, but no evidence of paying for this tool's outcome)"
+  usable: missing
+  viable: "weak (price known, ROI for Copperline unmeasured)"
+  feasible: "stale (old model benchmark, vendor's data)"
+
+good_result_rules:
+  - Treats S1–S3 as one origin, not three.
+  - Never states a 40% gain as a fact for Copperline.
+  - Separates the pilot decision from the contract decision.
+  - Flags the model version change as a freshness problem.
+
+known_failure_modes:
+  - 'Treats "three sources agree" as corroboration.'
+  - Recommends the annual contract because the survey shows pain.
+  - Designs the pilot after seeing results, or without a baseline.
+
+decision_rule: Pass only if Considered recommends the pilot and explicitly declines the annual contract on the evidence, with no invented figures.

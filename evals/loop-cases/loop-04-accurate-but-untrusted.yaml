@@ -1,0 +1,47 @@
+# Loop case 04: Accurate, but nobody trusts it
+# Synthetic case. All organizations, people, dates, and results are invented for teaching.
+
+id: loop-04-accurate-but-untrusted
+title: AI draft replies for claims adjusters
+synthetic: true
+assessment_date: 2026-10-11
+targets: Usable fails while accuracy is high. The right move is to Pivot the workflow without blaming the adjusters.
+exits_at: "Pivot at Crapola: Usable fails. It re-enters Crapola with the workflow change."
+
+claim: >
+  Fictional insurer Pemberwick Mutual (invented) piloted AI draft replies to
+  policyholder claim questions. The vendor scorecard says 94% accurate.
+  Leadership wants to roll it out to all 120 adjusters.
+
+supplied_evidence:
+  S1: "Vendor eval, 2026-08-20: 94% of 500 historical replies judged accurate by the vendor's rubric."
+  S2: "Pilot log, 2026-09-08 to 2026-09-26, 10 adjusters: 70% of drafts substantially rewritten; median handling time 11.5 min with AI vs 9.5 min without."
+  S3: "Adjuster interviews, n=6: 'I can't tell which policy clause it used, so I check everything.' 'Faster to write it myself.'"
+  S4: "Claims backlog grew 18% between Q2 and Q3; leadership funded the work to cut it."
+  S5: "Drafts never cite policy sections. The system can retrieve clause text but doesn't show it."
+
+expected_path:
+  chaos-receipts: "S1 is a vendor-run eval on historical data. S2 and S3 are first-party pilot evidence, and the pilot evidence counts for more."
+  chaos-sell-by: "Pilot evidence is recent. The vendor eval's data period isn't stated, so it gets a re-check."
+  confusion-labels: "'94% accurate' is a FACT about the vendor's rubric, an INFERENCE for live use. 'Will cut the backlog' is an ASSUMPTION that S2 contradicts."
+  confusion-context-pantry: "The workflow requires checking against policy. A draft without its clause costs more checking than it saves."
+  crapola-taste-test: "Test the pivot: drafts that show cited clauses, limited to the three simplest claim types. Thresholds: rewrite rate under 30% and handling time below 9.5 min."
+  considered: "Pivot the workflow (citations plus a narrower scope). No rollout to 120 adjusters. Owner: claims ops lead; re-decide after a 3-week test."
+
+expected_grid:
+  valuable: "earned (S4, a real backlog and funding)"
+  usable: "failed (S2, S3: no trust, extra time)"
+  viable: "weak (depends on Usable; currently negative on time)"
+  feasible: "earned for retrieval; showing citations is a design change"
+
+good_result_rules:
+  - Puts the failure in the product's design (no citations), not in the adjusters.
+  - Treats accuracy and trust as different things.
+  - Ties Viable to Usable instead of rating it on its own.
+
+known_failure_modes:
+  - 'Blames the adjusters ("they need change management," "they resist AI"). That punches down.'
+  - Rolls out because accuracy is 94%.
+  - Punts a valuable problem because the first workflow failed.
+
+decision_rule: Pass only if Considered recommends Pivot with a specific workflow change and a written threshold, and no output blames users.

@@ -1,0 +1,47 @@
+# Loop case 03: Fun to try, nobody would buy it
+# Synthetic case. All organizations, people, dates, and results are invented for teaching.
+
+id: loop-03-nobody-would-buy-it
+title: AI haiku summaries for expense reports
+synthetic: true
+assessment_date: 2026-10-11
+targets: Valuable fails while Usable, Viable and Feasible look fine. The right move is Punt, not a pivot into better haiku.
+exits_at: "Sifted out at Crapola: Valuable fails. Punt."
+
+claim: >
+  Fictional expense app Tabulary (invented) shipped a beta that summarizes each
+  expense report as a haiku. Product leadership wants it in the paid tier,
+  citing strong engagement.
+
+supplied_evidence:
+  S1: "Beta telemetry, 2026-08-15 to 2026-09-30: 31% of 1,200 beta users clicked 'Try it' at least once; 4% used it more than twice."
+  S2: "Post-beta survey, n=88: 72% said it was 'fun'; 6% said they would pay for it."
+  S3: "Paid-tier trial, 2026-09: 0 of 40 trial accounts enabled it after day 3."
+  S4: "Sales notes, Q3: no deal mentions the feature; two finance buyers asked to turn it off."
+  S5: "Inference cost: $0.002 per report; runs reliably; no support tickets."
+
+expected_path:
+  chaos-receipts: "The receipts are first-party and independent of each other: telemetry, survey, trial, sales."
+  chaos-sell-by: "All evidence is from 2026-Q3. Fresh enough."
+  confusion-labels: "'Strong engagement' is an INFERENCE from one-time clicks (S1). 'Fun' is a FACT about the survey, not evidence of buying."
+  confusion-context-pantry: "The buyer is a finance lead, not the person submitting the expense. S4 shows buyers asking to turn it off."
+  crapola-taste-test: "Not needed. The evidence already answers 'would someone buy it?'"
+  considered: "Punt the paid-tier plan. Optionally leave it as a free toggle that's off by default. Owner: product lead. What would change the call: buyers naming it in deals."
+
+expected_grid:
+  valuable: "failed (S2, S3, S4)"
+  usable: "earned for trying, not for repeat use (S1)"
+  viable: "earned on cost, irrelevant without demand"
+  feasible: earned
+
+good_result_rules:
+  - Separates engagement from willingness to buy.
+  - Recognizes that the other three squares holding doesn't rescue a failed Valuable.
+  - Identifies the buyer and the user as different people.
+
+known_failure_modes:
+  - Pivots to "better haiku" or "more personalization."
+  - Counts 72% "fun" as validation.
+  - Averages the four squares into "mostly positive."
+
+decision_rule: Pass only if Considered recommends Punt for the paid-tier plan, citing the Valuable evidence, with no averaged score.

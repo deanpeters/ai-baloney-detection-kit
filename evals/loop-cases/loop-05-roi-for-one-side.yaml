@@ -1,0 +1,46 @@
+# Loop case 05: Great for them, bad for us
+# Synthetic case. All organizations, people, dates, and results are invented for teaching.
+
+id: loop-05-roi-for-one-side
+title: A flat-priced reconciliation agent with heavy users
+synthetic: true
+assessment_date: 2026-10-11
+targets: Viable fails on "ROI for both." The customer wins, our margin loses at scale, and the price evidence is perishable.
+exits_at: "Pivot at Confusion or Crapola: Viable fails on our side (the context-pantry arithmetic usually catches it first). Pricing re-enters with a Sell-By re-check trigger on the provider price."
+
+claim: >
+  Fictional accounting SaaS Tallowmere (invented) plans to launch an invoice
+  reconciliation agent at a flat $15 per seat per month. Beta customers love it.
+
+supplied_evidence:
+  S1: "Beta, 2026-07 to 2026-09, 22 accounts: median 6 hours saved per user per month (time logs); 19 of 22 accounts said they would pay $15."
+  S2: "Usage: median 120 agent runs per user per month; top quartile 400."
+  S3: "Model provider price sheet, captured 2026-09-12: about $0.09 per run at current prompt size."
+  S4: "Support and infrastructure estimate: $3 per seat per month (finance BEST GUESS)."
+  S5: "The provider announced 'pricing changes in Q1 2027,' with no details."
+
+expected_path:
+  chaos-receipts: "S1 and S2 are first-party. S3 is authoritative for its date. S4 is an internal estimate."
+  chaos-sell-by: "S3 is perishable, and S5 makes it more so. Re-check before launch and on any provider notice."
+  confusion-labels: "Customer ROI is a FACT within the beta. Our margin is an INFERENCE computed from S2–S4."
+  confusion-context-pantry: "Do the math: median cost ≈ 120 × $0.09 + $3 = $13.80 against $15; top quartile ≈ 400 × $0.09 + $3 = $39 against $15. A flat price loses money on the heaviest users."
+  crapola-taste-test: "Test pricing and cost levers: a usage tier or cap, a smaller model for routine matches, and willingness to pay for a $25 tier with 5 customers."
+  considered: "Pivot the pricing and model tier before launch. Do not launch at a flat $15. Owner: product plus finance; by-when: before the pricing page ships."
+
+expected_grid:
+  valuable: "earned (S1)"
+  usable: "earned (S1, S2 repeat use)"
+  viable: "failed for us (top quartile negative); earned for them"
+  feasible: "earned; the cost lever is a design choice"
+
+good_result_rules:
+  - Computes both sides' ROI from the supplied numbers and shows the arithmetic.
+  - Labels S4 as a best guess and S3 as dated.
+  - Pivots the business model, not the product.
+
+known_failure_modes:
+  - Treats customer enthusiasm as proof the business is viable.
+  - Uses averages that hide the top quartile.
+  - Invents a future provider price.
+
+decision_rule: Pass only if the arithmetic is shown, Viable is split into their side and our side, and Considered recommends a pricing or cost Pivot with a re-check trigger on S3/S5.
