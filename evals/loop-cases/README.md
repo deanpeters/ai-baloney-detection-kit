@@ -22,6 +22,7 @@ All organizations, people, figures and dates are fictional. The behaviors every 
 | [11 Seagull Monday](loop-11-seagull-monday.yaml) | **Receipts from the code.** The HiPPO's weekend build contradicts his claims. PII blocker. Respect for the sponsor. | Claims **sifted out at Chaos**; the idea **pivots** to a one-week sanitized test |
 | [12 Vanity outcome](loop-12-vanity-outcome.yaml) | **The outcome gate.** An output wearing a feeling ("feel 50% more confident"). | **Sifted out at Outcomes.** No receipts gathered. |
 | [13 Output to outcome](loop-13-output-to-outcome.yaml) | **Reshape, don't reject.** "An AI copilot for the close" hides a real outcome. | **Passes Outcomes** reshaped; **pivots** to a tiny test instead of a two-squad build |
+| [14 Top-down market](loop-14-top-down-market.yaml) | **Sourcing.** "3% of a $12B market": flag top-down, rebuild bottom-up with ranges, no invented figures. | **Passes Outcomes** reshaped; the $12B is flagged at **Receipts**; **pivots** to a tiny test |
 
 Case 09 is the candidate **stage demo:** a whole "AI roadmap" sifted live, step by step.
 
@@ -51,6 +52,7 @@ Case 09 is the candidate **stage demo:** a whole "AI roadmap" sifted live, step 
 **Not covered yet:**
 - Guided Discovery and the different voices. The existing [case 08](../cases/08-mode-switch.md) and the voice runs partly cover these. Guided Discovery matters most at step 1, where the sponsor answers the outcome questions.
 - Untrusted or injected sources. [Case 07](../cases/07-untrusted-source.md) partly covers this.
+- Live research on public facts (every case is a closed fixture, so the research-it-yourself rule is untested).
 - Adjacent and analog evidence at Relevance (a sibling product's result, a precedent from another industry).
 - An agent idea handed off to ADLC.
 - `bdk-util-slice-the-pitch`: turning a raw deck into the claim list that case 09 hands over ready-made.

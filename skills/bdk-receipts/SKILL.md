@@ -73,6 +73,10 @@ Accept an outcome statement, claims, URLs, attachments, record extracts, source 
 
 *Violation signal:* the ledger calls a link "verified" when nothing was opened.
 
+**Top-down is a claim, not a receipt.** "3% of a $40B market" or "AI saves 30% of knowledge work" needs rebuilding from countable parts (buyers × price × adoption; tasks × minutes × users) before it can support a decision. Show both, and say which the decision should rest on.
+
+*Violation signal:* a market-share percentage is accepted as the receipt for the outcome's target, with no count of actual buyers behind it.
+
 ## Outputs
 
 Two sizes. **Lead with the stage card; give the full ledger when asked.**
@@ -103,9 +107,9 @@ List each claim once. The **headline claim** is the one the decision leans on mo
 ## Method
 
 1. Identify the decision-bearing claims and assign IDs. If an outcome statement was supplied, add the receipts it needs as claims: the metric's current baseline, evidence the proposed change moves it in the stated direction, and evidence for the size of the target. Separate the claim that an announcement exists from the claim that its promise occurred.
-2. Inventory sources. For each record title, exact URL or attachment location, publisher/record owner, relevant dates, inspection status, and what it supports. Never call a supplied URL verified before inspecting it.
+2. Inventory sources. When tools allow and the input isn't a closed fixture, find the public sources yourself rather than asking the user for them; ask only for private records. Prefer the source classes in the bundled contract: the authoritative record, government statistics, company filings, trade bodies, workforce data, analyst reports with method and sponsor named, then commentary. For each record title, exact URL or attachment location, publisher/record owner, relevant dates, inspection status, and what it supports. Never call a supplied URL verified before inspecting it.
 3. Trace repetitions back to their origin. Group shared press releases, studies, datasets, quotes, or generated summaries. If lineage is unclear, independence is unresolved; do not count it as independent.
-4. Inspect authority and method for this claim: sample, denominator, baseline, exclusions, incentives, and relevance. One authoritative transaction can settle that transaction; many articles cannot establish it.
+4. Inspect authority and method for this claim: sample, denominator, baseline, exclusions, incentives, and relevance. Flag top-down numbers and rebuild them bottom-up where the parts exist; where a number stays uncertain, give a range and the reason. One authoritative transaction can settle that transaction; many articles cannot establish it.
 5. For records such as financial entries, patient data, policies, contractual terms, or telemetry, identify and retrieve the authoritative record when permitted. If unavailable, state what cannot be established rather than constructing it.
 6. Preserve disagreements. Compare scope, period, method, and authority; resolve only if the evidence warrants it. Do not split conflicting numbers into an unsupported average.
 7. Note which of the four risk squares (Valuable, Usable, Viable, Feasible) each surviving receipt informs, so later tiers do not re-derive it.

@@ -1,0 +1,81 @@
+# Funnel case 14: 3% of a $12B market
+# Synthetic case. All organizations, people, dates, figures, and results are invented for teaching.
+# Written 2026-10-18 for the sourcing rules (bottom-up, source classes, ranges), before any run.
+
+id: loop-14-top-down-market
+title: '"Capture just 3% of the $12B recruiting software market"'
+synthetic: true
+assessment_date: 2026-10-18
+targets: >
+  Sourcing discipline. The pitch's target is top-down (a share of a market size
+  from a vendor-sponsored report). The kit should flag it, rebuild the opportunity
+  bottom-up from the company's own counts with ranges and labeled assumptions,
+  stay inside the closed fixture (no browsing, no invented market figures), and
+  hand market sizing to the right sibling skill.
+exits_at: "Outcome reshaped (the $360M is not accepted as the target). The $12B/3% is flagged as top-down at Receipts. The bet pivots to a tiny test sized bottom-up."
+
+claim: >
+  The CEO of fictional Brambleworth (invented), an HR software company, pitches
+  an AI interview-scheduling agent: "The recruiting software market is $12B. If
+  we capture just 3%, that's $360M in new ARR." She asks for a dedicated team of
+  six for 2027.
+
+supplied_evidence:
+  S1: "Market report summary, 2026-03: 'Recruiting software is a $12B market.' Published by a recruiting-software vendor; no method or definition of the market supplied."
+  S2: "Brambleworth CRM, 2026-10-01: 1,800 customers; 720 of them (40%) have more than five recruiters."
+  S3: "Brambleworth interviews, 2026-09 (10 recruiting coordinators at customers): 7 of 10 say scheduling takes about 6 hours a week; 3 say their current scheduling tool is 'fine'."
+  S4: "Engineering estimate, 2026-10-12: about $0.12 in model usage per scheduled interview."
+  S5: "Brambleworth usage data, Q3 2026: the median customer with more than five recruiters schedules about 300 interviews a month."
+  S6: "No pricing conversation, prototype, or willingness-to-pay test exists. Brambleworth's average contract is $14,000 a year."
+
+expected_path:
+  chaos-outcomes: >
+    Pass, reshaped with labels. A revenue outcome is legitimate, but the $360M
+    target is top-down and stays an ASSUMPTION at best. A better-grounded shape:
+    reduce recruiting coordinators' scheduling hours (S3) at customers with more
+    than five recruiters, or grow add-on revenue among those 720 customers, with
+    the target built from S2/S5/S6 and labeled. A guardrail on cost to serve is a
+    plus.
+  chaos-receipts: >
+    S1 is flagged as top-down and vendor-sponsored with no method: not a receipt
+    for the target. The opportunity is rebuilt bottom-up from our own counts:
+    720 customers × an adoption range × a price range (prices and adoption are
+    labeled ASSUMPTIONs, since S6 has no pricing evidence). The result is a range
+    far below $360M (for example, 720 × 10-30% × $3,000-$6,000 a year is roughly
+    $0.2M-$1.3M ARR). The exact range may differ; the arithmetic and labels must be
+    shown. Cost to serve: 300 interviews × $0.12 ≈ $36 per customer per month.
+  confusion-relevance: S2, S3, S5 are direct pantry evidence. S1 is about an undefined market, not our buyers.
+  crapola-taste-test: >
+    A solution hypothesis with tiny acts tagged by square: a price ask or fake door
+    with the 720 larger customers (Valuable), a concierge scheduling trial with a few
+    coordinators (Usable), and the unit-cost check (Viable). Measures include a
+    quantitative one, a qualitative one, and a hard stop or guardrail.
+  considered: >
+    Pivot: no team of six on a top-down number. Run the tiny tests first. Name
+    dlab-step02-segment (or an equivalent market-sizing hand-off) if market size
+    still matters to the decision.
+
+good_result_rules:
+  - Flags the $12B/3% as top-down and the report as vendor-sponsored with no method.
+  - Rebuilds the opportunity bottom-up from S2, S5, and S6, with ranges and labeled assumptions.
+  - Shows the cost-to-serve arithmetic from S4 and S5.
+  - Does not browse or invent outside market figures for this closed fixture.
+  - Names a market-sizing hand-off rather than building a TAM/SAM/SOM.
+  - Recommends Pivot to a test, not Pursue of the team and not Punt.
+
+known_failure_modes:
+  - Accepts $360M as the target or as a forecast.
+  - Invents a price, a market figure, or a citation not in the fixture and presents it as fact.
+  - Gives a single exact revenue number with no range or labels.
+  - Punts because the market number is bad, when the underlying need (S3) is real.
+
+decision_rule: >
+  Pass only if the $12B/3% is flagged as top-down and not used as the target, a
+  bottom-up estimate is shown with ranges and labeled assumptions from the
+  supplied counts, no outside figures are invented, and Considered recommends a
+  Pivot to a tiny test rather than funding the team.
+
+expected_outcome: >
+  Pass at Outcomes, reshaped: a coordinator-time or add-on-revenue outcome for
+  Brambleworth customers with more than five recruiters, with the target labeled
+  and built bottom-up, not 3% of $12B.

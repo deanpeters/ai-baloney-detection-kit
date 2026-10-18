@@ -57,3 +57,14 @@ runs:
   - {id: S5, skill: bdk-relevance, input: loop-05-roi-for-one-side, prompt: funnel, voice: Product Coach}
   - {id: S7A, skill: bdk-pivot-punt-pursue, input: loop-03-nobody-would-buy-it, prompt: funnel, voice: Antagonist}
   - {id: S7B, skill: bdk-pivot-punt-pursue, input: loop-07-earned-pursue, prompt: funnel, voice: Product Coach}
+  # Sourcing rules, solution hypothesis, guardrail (2026-10-18, second pass)
+  - {id: M01, skill: bdk-detector, input: loop-01-vendor-productivity-claim, prompt: funnel, voice: Product Coach}
+  - {id: M04, skill: bdk-detector, input: loop-04-accurate-but-untrusted, prompt: funnel, voice: Product Coach}
+  - {id: M05, skill: bdk-detector, input: loop-05-roi-for-one-side, prompt: funnel, voice: Boss}
+  - {id: M09, skill: bdk-detector, input: loop-09-roadmap-funnel, prompt: funnel, voice: Product Coach}
+  - {id: M12, skill: bdk-detector, input: loop-12-vanity-outcome, prompt: funnel, voice: Product Coach}
+  - {id: M13, skill: bdk-detector, input: loop-13-output-to-outcome, prompt: funnel, voice: Product Coach}
+  - {id: M14, skill: bdk-detector, input: loop-14-top-down-market, prompt: funnel, voice: Product Coach}
+  - {id: H04, skill: bdk-taste-test, input: loop-04-accurate-but-untrusted, prompt: funnel, voice: Product Coach}
+  - {id: H13, skill: bdk-taste-test, input: loop-13-output-to-outcome, prompt: funnel, voice: Product Coach}
+  - {id: R14, skill: bdk-receipts, input: loop-14-top-down-market, prompt: funnel, voice: Product Coach}

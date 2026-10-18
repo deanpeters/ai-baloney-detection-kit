@@ -22,13 +22,26 @@ Status: earned · weak · missing · stale · failed
 |---|---|---|
 | | | |
 
-## 3. Hypothesis
+## 3. Solution hypothesis
 
-If ___ reaches ___ under ___, then ___ should improve compared with ___.
+**If we** ___ (the change)
+**for** ___ (the beneficiary from the outcome statement)
+**then we will** ___ (the outcome statement: direction, metric, by how much, by when, without the guardrail crossing its limit)
+
+**We will test it by** (at least two tiny acts, riskiest square first):
+1. ___ · tests **Valuable / Usable / Viable / Feasible**
+2. ___ · tests **Valuable / Usable / Viable / Feasible**
+
+**It is valid if, within** ___ (no later than the outcome's by-when), **we observe:**
+- Quantitative: ___ (threshold, denominator, baseline)
+- Qualitative: ___ (paired with an observed behavior)
+- Hard stop: ___ (the guardrail, or what must never happen)
+
+Vanity check on each measure: could it rise while nothing that matters changes? ☐ no
 
 ## 4. Tests: write the thresholds before any results
 
-| Square | Cheapest test | Cohort / context | Comparator | Measure (denominator) | Pass | Fail | Hard stop | Budget | Owner role |
+| Square | Tiny act of discovery | Cohort / context | Comparator | Measure (denominator) | Pass | Fail | Hard stop | Budget | Owner role |
 |---|---|---|---|---|---|---|---|---|---|
 | | | | | | | | | | |
 

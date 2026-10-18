@@ -10,7 +10,7 @@
 
 **As supplied:** "…"
 
-**Shaped:** [direction] [metric] [by how much] [by when] for [beneficiary persona] in [problem context]
+**Shaped:** [direction] [metric] [by how much] [by when] for [beneficiary persona] in [problem context], without [guardrail] (optional)
 
 ## 2. Parts check
 
@@ -19,10 +19,11 @@
 | Direction | | | |
 | Metric | | | |
 | How it is observed | | | |
-| By how much | | | |
+| By how much (and how it was built: baseline, bottom-up, or range) | | | |
 | By when | | | |
 | Beneficiary persona | | | |
 | Problem context | | | |
+| Guardrail (optional): what must not get worse | | | |
 
 **Output set aside:** (what would be shipped; not the outcome)
 **Vanity check:** could this metric rise while nothing that matters changes? ☐ no ☐ yes, because…

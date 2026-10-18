@@ -10,7 +10,7 @@
 
 **As supplied:** "Build an AI copilot for the close so our accounting customers stop dreading month-end."
 
-**Shaped:** *Reduce* *median days-to-close* *from 6 to 4* *by end of Q2 2027* for *corporate-accounting controllers at mid-market customers* in *the month-end close inside Ledgerline*.
+**Shaped:** *Reduce* *median days-to-close* *from 6 to 4* *by end of Q2 2027* for *corporate-accounting controllers at mid-market customers* in *the month-end close inside Ledgerline*, *without raising close-module support tickets or cost to serve above $1 per entity per close*.
 
 ## Parts check
 
@@ -23,6 +23,7 @@
 | By when | End of Q2 2027 | inserted | ASSUMPTION: matches the two-quarter build ask |
 | Beneficiary persona | Corporate-accounting controllers, mid-market | stated | The pitch names "accounting customers"; the supplied segment list narrows it |
 | Problem context | Month-end close in Ledgerline | stated | The pitch |
+| Guardrail | Close-module tickets don't rise; cost to serve ≤ $1 per entity per close | inserted | ASSUMPTION: a copilot can shorten the close by pushing work into support or model spend; this keeps it honest |
 
 **Output set aside:** the copilot. It might be the right how; it is not the outcome.
 **Vanity check:** "Dread" could fall in a survey while the close stays six days long. Days-to-close cannot.

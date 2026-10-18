@@ -90,9 +90,9 @@ Lead with the recommendation for each scope and the why in one line each. Then t
 
 1. Name the bet, its outcome statement, and every scope on the table (pilot, rollout, contract, public launch, automatic action). Each gets its own call.
 2. Gather what the funnel found: the outcome, the receipts and their labels, their freshness, their relevance, and the tiny-test results. Note what each step left missing.
-3. Place the evidence in the four squares. Rate each **earned**, **weak**, **missing**, **stale**, or **failed**, naming the evidence. Show Viable's two sides: their ROI, and ours including the cost per additional user at scale. For Feasible, name the people, process, culture, and capital.
+3. Place the evidence in the four squares. Rate each **earned**, **weak**, **missing**, **stale**, or **failed**, naming the evidence. Show Viable's two sides: their ROI, and ours including the cost per additional user at scale, built bottom-up (users × uses × cost per use against price), with ranges and their reasons where usage or price is uncertain. Never let a top-down market share stand in for Viable. For Feasible, name the people, process, culture, and capital.
 4. Raise the **feasible-only flag** by name if a working demo is the only evidence.
-5. Check the outcome: did the evidence earn the target and timeframe in the outcome statement, a smaller target, or none?
+5. Check the outcome: did the evidence earn the target and timeframe in the outcome statement, a smaller target, or none? Did the guardrail hold? Did the solution hypothesis's validation measures pass, fail, or never run?
 6. Make the call for each scope:
    - All four squares earned for this scope → **Pursue** as planned.
    - A Usable or Feasible square failed and the others hold → **Pivot** the how (trust, workflow, review burden, or the people, process, or capital we lack).

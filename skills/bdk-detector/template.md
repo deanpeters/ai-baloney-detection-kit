@@ -26,13 +26,13 @@ The counts must add up to "Entered."
 ## 3. Step findings
 
 **Chaos: Is it a real outcome, with real receipts?**
-Outcome statements (before → after, inserted parts labeled): · Sifted out as output or vanity: · Origins collapsed: · Receipts rating:
+Outcome statements (before → after, inserted parts labeled, guardrail if any): · Sifted out as output or vanity: · Origins collapsed: · Top-down numbers flagged (and rebuilt bottom-up, or ranged): · Receipts rating:
 
 **Confusion: What do we actually know, is it still fresh, and does it apply to us?**
 Label mix (FACT · INFERENCE · ASSUMPTION · BEST GUESS): · Stale items and refresh: · Relevance (direct · adjacent · analog · not relevant) and pantry gaps: · Labels rating: · Sell-By rating: · Context Pantry rating:
 
 **Crapola: Would reality disagree?**
-Tiniest tests and thresholds (from the outcome's target): · Feasible-only flags: · Taste rating:
+Solution hypothesis (If we / for / then we will): · Tiny acts of discovery, tagged by square: · Validation measures (quantitative · qualitative · hard stop), written first: · Feasible-only flags: · Taste rating:
 
 ## 4. Considered: Pursue, pivot, or punt, and why
 

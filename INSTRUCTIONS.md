@@ -135,7 +135,7 @@ Seven steps in four tiers, outcome first, then the cheapest checks, as a process
 
 1. **Chaos**: *Is it a real outcome, with real receipts?* (1) **Name the Outcome**: [direction] [metric] [by how much] [by when] for [beneficiary] in [context] · (2) **Show Me the Receipts** for that outcome
 2. **Confusion**: *What do we actually know, is it still fresh, and does it apply to us?* (3) **Label the Lunch Meat** · (4) **Check the Sell-By Date** · (5) **Check the Context Pantry: Relevance** (direct, adjacent, or analog)
-3. **Crapola**: *Would reality disagree?* (6) **Taste Before You Ship**: the tiniest test that returns the most brutal truth
+3. **Crapola**: *Would reality disagree?* (6) **Taste Before You Ship**: a solution hypothesis (If we / for / then we will), and the tiniest tests that return the most brutal truth, with measures and a hard stop written first
 4. **Considered**: *Pursue, pivot, or punt, and why?* (7) **Pivot, Punt, or Pursue**, read from the four risks: **Valuable** "Is this something someone would buy?" · **Usable** "Will users trust and adopt it?" · **Viable** "Is this good business?" · **Feasible** "Can we even do this with what we know and have?"
 
 Each claim leaves a step by **Pass**, **Sifted out**, **Send back** (missing or stale, back to the step that can fetch it), or **Pivot**. **Pursue** means so much proof we go forward as planned; **Pivot** means adjust based on the evidence; **Punt** means the orange is not worth the squeeze. What survives is **Truth**.

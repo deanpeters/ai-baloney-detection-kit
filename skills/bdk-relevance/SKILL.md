@@ -84,10 +84,10 @@ A Relevance Map (evidence ID, kind of relevance, mechanism, differences that mat
 2. List the evidence that survived Receipts, Labels, and Sell-By, with its labels and dates.
 3. Rate each piece **direct**, **adjacent**, **analog**, or **not relevant**. For adjacent and analog, name the mechanism in one sentence, then the differences in people, data, incentives, workflow, and economics.
 4. Decide whether each mechanism survives its differences for our beneficiary and context. If it does, say for what scope. If it doesn't, say which difference breaks it.
-5. Pull from the pantry: what our own usage, support, sales, interview, and cost records say about the outcome's metric and about each of the four squares. Name the record and its owner. Show the cost to serve where it matters (AI usage costs grow with users). If the records exist but aren't in hand, that is a Send back, not a guess.
+5. Pull from the pantry: what our own usage, support, sales, interview, and cost records say about the outcome's metric and about each of the four squares. Name the record and its owner. Show the cost to serve where it matters (AI usage costs grow with users), built bottom-up (uses per user × cost per use × users), with a range and its reason where usage is uncertain. If the records exist but aren't in hand, that is a Send back, not a guess. Public market facts (segment sizes, peer adoption, published prices) are yours to look up when tools allow; private pantry records are the user's to supply.
 6. Name contradictions between outside evidence and the pantry. The pantry wins unless the outside evidence is about a condition the pantry can't see.
 7. Map each relevant piece to the square it informs, and mark squares left with only analog or not-relevant evidence as **weak** or **missing**.
-8. Rate Check the Context Pantry for this outcome and scope, and name the single pantry record that would most change the call.
+8. Rate Check the Context Pantry for this outcome and scope, and name the single pantry record that would most change the call. If relevance hinges on market size (how many buyers like ours exist), name `dlab-step02-segment` for a TAM/SAM/SOM rather than borrowing a top-down market figure.
 
 ## Human decision gate
 

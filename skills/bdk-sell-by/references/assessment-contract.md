@@ -33,7 +33,15 @@ Missing evidence is a status, not a fifth evidence label and not an assumption t
 
 Retrieve consequential records from their authoritative document or system. Generative synthesis can interpret them, not create them. When current or external facts matter and tools are available, briefly name the research routes, inspect original sources, and cite clickable URLs near the claims. Record publication/observation dates and retrieval date separately. Collapse sources with a shared origin. No number of reposts supplies independent corroboration.
 
-When access fails, try a relevant authorized source or assess the supplied excerpt with that limit. Do not fabricate citations, customers, figures, quotes, prices, experiment results, approvals, or dates. Do not imply a URL was inspected when it was merely supplied. Bound searches to gaps that could change the decision; stop when additional effort is unlikely to do so and name residual gaps. Closed synthetic fixtures are assessed as supplied; do not browse for fictional companies.
+**Research it yourself; ask only for what is private.** When tools are available, look up publicly discoverable facts (market sizes, prices, filings, regulations, workforce counts, published studies) instead of asking the user for them, in every mode. Ask the user only for private context: their own data, their sponsor's intent, their costs and constraints, their customers. Guided Discovery questions are for what only the user can know.
+
+**Source classes.** Prefer, roughly in this order: the authoritative record itself (a filing, a contract, a policy, telemetry); government and official statistics; company filings and audited reports; trade and standards bodies; workforce and labor data (a proxy: say what it counts); industry analyst reports (only with the method and the sponsor named; many are vendor-funded); then press and commentary, which point to sources rather than being sources. The user's own pantry (usage, support, sales, cost records) is often the most relevant source of all for their decision. Cite a clickable URL, or the exact record location, for every major data point.
+
+**Bottom-up beats top-down.** A top-down number ("3% of a $40B market," "AI will save 30% of knowledge work") is a weak receipt until it is rebuilt bottom-up from countable parts: how many buyers or users, times what each would pay or save, times a stated adoption rate. Show the arithmetic. When the top-down and bottom-up figures disagree, report both and say which the decision should rest on.
+
+**Ranges, with reasons.** Where a number is uncertain, give a range and say why it is that wide (sample size, conflicting sources, an unknown adoption rate). An honest range beats a precise invention; never collapse a range to its midpoint to look decisive.
+
+When access fails, try a relevant authorized source or assess the supplied excerpt with that limit. Do not fabricate citations, customers, figures, quotes, prices, experiment results, approvals, or dates. Do not imply a URL was inspected when it was merely supplied. Bound searches to gaps that could change the decision; stop when additional effort is unlikely to do so and name residual gaps. Closed synthetic fixtures are assessed as supplied; do not browse for fictional companies. The research-it-yourself rule never applies to a fictional fixture or a stage demo.
 
 ## The Baloney Funnel
 
@@ -80,13 +88,29 @@ Step 1 turns a pitch, claim, or idea into an outcome the rest of the funnel can 
 - **Beneficiary persona:** whose world changes (a role or segment, not "users").
 - **Problem context:** the situation, workflow, or market where the change happens.
 
-Direction, metric, beneficiary, and context are required. A pitch fails step 1 when it cannot be shaped into such a statement:
+Direction, metric, beneficiary, and context are required.
+
+**Optional guardrail:** "…without [a health metric] crossing [a limit]," for example "without raising cost to serve above $0.40 per user per month" or "without lowering CSAT." A success metric says what should improve; a guardrail says what must not get worse on the way. Propose one when the outcome could be hit by breaking something else (AI usage cost, trust, error rates, support load); it becomes a hard stop in the Taste Test.
+
+**By how much, built bottom-up.** A target taken from a vendor or a top-down market share is an ASSUMPTION until it is built from countable parts or a baseline. A pitch fails step 1 when it cannot be shaped into such a statement:
 
 - **Output, not outcome:** the "metric" is something we ship ("an AI interface," "launch an agent," "add copilots"). Outputs are not outcomes.
 - **Vanity metric:** a number that can rise while nothing that matters changes (page views, sign-ups without activation, prompts sent, model accuracy alone, number of AI features), or a feeling with no way to observe it ("feel 50% more confident").
 - **No beneficiary:** nobody whose world changes can be named, even as an assumption.
 
 Rework before rejecting: most pitches hide an outcome. Ask (Guided Discovery) or reshape (Context Dump), show the before and after, and label every inserted part. Only a pitch that cannot be shaped at all, or that leads only to vanity metrics, is sifted out. If shaping it would mean inventing the metric, the beneficiary, and the context yourself, it is sifted out with the outcome that would reopen it; Send back is for a recoverable outcome missing one suppliable fact. The outcome statement then travels: Receipts looks for evidence about its metric and direction, Sell-By checks evidence against its timeframe, Taste sets thresholds from its target, and Considered decides whether it was earned.
+
+## The solution hypothesis
+
+Step 6 states the bet as a falsifiable hypothesis before testing it:
+
+- **If we** [the change, action, or solution]
+- **for** [the beneficiary persona from the outcome statement]
+- **then we will** [the outcome statement: direction, metric, by how much, by when]
+- **We will test it by** at least two tiny acts of discovery, each tagged with the risk square it tests (Valuable, Usable, Viable, Feasible), riskiest square first.
+- **It is valid if, within** [a timeframe no later than the outcome's by-when], **we observe:** at least one quantitative measure, at least one qualitative measure, and a hard stop (the guardrail, or what must never happen, such as an unauthorized action). Every threshold is written before any result is seen.
+
+Each measure passes step 1's vanity check: it could not rise while nothing that matters changes. A reported feeling ("80% feel more confident") counts only as the qualitative measure, paired with an observed behavior; model accuracy alone never measures Usable. For a deeper hypothesis or experiment design, hand off to `adlc-util-solution-hypothesis` (ADLC Skills) or `dlab-step07-solution-hypothesis` (AI-Augmented Product Discovery Lab).
 
 ## The four risks
 
@@ -144,7 +168,7 @@ These are qualitative anchors, not a numerical formula. Missing information can 
 
 **Decision record.** Every move names: the scope it applies to, the deciding squares and evidence, a suggested owner role (a named owner only if supplied), a by-when, what would change the call, and where the claim goes next (Truth, back in at a tier, or out). Perishable evidence behind a Pursue carries a re-check date or trigger so Truth can be sent back when it spoils. Never restart the funnel, or reuse an old Truth, without saying which evidence expired.
 
-**Hand-offs.** Point to a sibling kit instead of reimplementing it when the funnel finds: a ceremony worth passing off (`workflow-to-skill-converter`, AI Product Operating Model Skills); "the model said so" with no human decision rule (`human-aipom-work-contract`); an executive's weekend prototype (`pant-executive-decision-review`, Product Manager Antagonist Skills); a synthetic persona standing in for customers (`dlab-step03-persona`, AI-Augmented Product Discovery Lab, plus a real interview); "efficiency is our moat" (`mi-build-battle-card`, Market Intelligence Skills); theater to trim (`itk-trimming`, Mitre Skills); an agent idea that reaches Truth (`adlc-step1-frame-intent`, ADLC Skills). Name the hand-off; do not claim it was run.
+**Hand-offs.** Point to a sibling kit instead of reimplementing it when the funnel finds: an outcome that depends on market size (`dlab-step02-segment`, AI-Augmented Product Discovery Lab, for TAM/SAM/SOM); a hypothesis that needs deeper experiment design (`adlc-util-solution-hypothesis`, `dlab-step07-solution-hypothesis`); a ceremony worth passing off (`workflow-to-skill-converter`, AI Product Operating Model Skills); "the model said so" with no human decision rule (`human-aipom-work-contract`); an executive's weekend prototype (`pant-executive-decision-review`, Product Manager Antagonist Skills); a synthetic persona standing in for customers (`dlab-step03-persona`, AI-Augmented Product Discovery Lab, plus a real interview); "efficiency is our moat" (`mi-build-battle-card`, Market Intelligence Skills); theater to trim (`itk-trimming`, Mitre Skills); an agent idea that reaches Truth (`adlc-step1-frame-intent`, ADLC Skills). Name the hand-off; do not claim it was run.
 
 ## Capture shape
 

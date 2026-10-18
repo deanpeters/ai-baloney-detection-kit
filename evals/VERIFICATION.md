@@ -2,6 +2,12 @@
 
 Current as of **2026-10-18** (the seven-step loop). The 2026-10-11 records below describe the earlier four-tier build. This record separates mechanical checks, synthetic model behavior, and real-world use. It describes observed runs, not a guarantee of future behavior. The 2026-10-10 record for the earlier six-skill layout is preserved below as history.
 
+## 2026-10-18 (later): sourcing, solution hypothesis, guardrails
+
+- **Mechanical:** `check-library.py` passes with 14 funnel cases; ZIPs rebuilt.
+- **Behavioral:** 10 runs plus 2 re-runs through headless Claude (Sonnet), expectations written first, including new case 14 (top-down market). **10 pass, 0 fail** (latest per run); one fix (split the claim from the need) re-verified on cases 01 and 14. [Grade sheet](runs/sourcing-2026-10-18/GRADES.md).
+- **Limits:** same as below; live research on public facts is untested (all cases are closed fixtures).
+
 ## 2026-10-18: the seven-step loop
 
 - **Mechanical:** `python3 scripts/check-library.py` passes with 10 funnel skills (detector, seven steps, two deep dives), 1 utility, 2 quick checks, 8 check cases, and 13 funnel cases. `scripts/build-distribution.py` rebuilt the ZIPs.

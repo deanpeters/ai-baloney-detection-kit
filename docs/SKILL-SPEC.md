@@ -128,7 +128,8 @@ Skill files teach in prose and tables. No mermaid diagrams under `skills/`; they
 Use the house vocabulary exactly (see [CLAUDE.md](../CLAUDE.md)):
 - **Five checks:** Show Me the Receipts · Label the Lunch Meat · Check the Context Pantry · Check the Sell-By Date · Taste Before You Ship
 - **Funnel:** Chaos → Confusion → Crapola → Considered → Truth, in seven steps
-- **Outcome statement:** [direction] [metric] [by how much] [by when] for [beneficiary persona] in [problem context]
+- **Outcome statement:** [direction] [metric] [by how much] [by when] for [beneficiary persona] in [problem context], optionally without [a health metric] crossing [a limit] (the guardrail)
+- **Solution hypothesis:** If we [change] for [beneficiary] then we will [outcome]; tested by tiny acts of discovery tagged by square; valid if within [timeframe] we observe a quantitative measure, a qualitative measure, and a hard stop
 - **Exits:** Pass · Sifted out · Send back · Pivot
 - **Four risks:** Valuable · Usable · Viable · Feasible, with Dean's questions verbatim
 - **Moves for claims:** Pursue · Pivot · Punt

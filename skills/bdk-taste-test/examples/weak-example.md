@@ -22,6 +22,7 @@
 - **Targets appeared with the results.** Nothing shows 90% was set in advance.
 - **Outputs, not outcomes.** "1,240 drafts generated" is activity. The backlog is the outcome.
 - **It punches down.** Calling careful adjusters "resistant" turns a product finding into a people problem. They can't see which clause the draft used, so they check everything. That is correct behavior.
+- **No hypothesis, no hard stop.** There's no "then we will" tied to the backlog, and nothing that must never happen. A test that can't fail can't teach.
 - **A mandate is not adoption.** Forcing use of a tool that makes the job slower makes Viable worse.
 
 A reviewer should ask: *"Which of these numbers would change if nobody trusted the output?"* None of them would.

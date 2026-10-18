@@ -186,3 +186,14 @@ Dean redesigned the funnel: **outcome first**, then evidence for that outcome. H
 - **Evals:** new cases 12 (vanity outcome) and 13 (output to outcome); case 09's expected exits revised for the new order; an `expected_outcome` added to cases 01–08. All written before any run. Results: [first run](../evals/runs/loop7-2026-10-18/GRADES.md), [re-run after the step-1 fix](../evals/runs/loop7-2026-10-18-rerun/GRADES.md).
 - **Harness:** Codex rejected every model on the ChatGPT account, so [`run-claude.sh`](../evals/harness/run-claude.sh) runs the same workspaces through headless Claude (Sonnet). The eval prompt now takes each case's own assessment date.
 - **Keynote impact (for Dean):** deck 11's funnel slides show the old six commands and the old tier pairs. `/bdk-receipts` (the live demo) still works and prints the same stage card.
+
+## 10. Sourcing, the solution hypothesis, and guardrails (2026-10-18, later)
+
+Dean shared two Productside worksheets (measuring the four risks; the solution hypothesis) and the sourcing rules from his TAM/SAM/SOM prompt, and asked for the whole plan to run unattended. The Productside PDFs are licensed for internal use only, so the kit borrows ideas, not wording, and credits the source in the README.
+
+- **Sourcing (contract, AGENTS.md, Receipts):** research public facts yourself and ask only for private ones (never browse a fictional fixture or stage demo); a ranked list of credible source classes, with analyst reports counted only when their method and sponsor are named; bottom-up beats top-down; ranges with reasons.
+- **Outcome statement:** an optional guardrail, "without [a health metric] crossing [a limit]"; targets built bottom-up or labeled ASSUMPTION.
+- **Taste Test:** writes a solution hypothesis (If we / for / then we will [the outcome] · at least two tiny acts of discovery tagged by square · valid if within [timeframe] we observe a quantitative measure, a qualitative measure, and a hard stop, written first), with a menu of tiny acts and hard-to-fake measures per square. Hand-offs: `adlc-util-solution-hypothesis`, `dlab-step07-solution-hypothesis`; market sizing goes to `dlab-step02-segment`.
+- **Detector:** splits the claim from the need at intake, after case 01's first run let a dead vendor claim hide a live need.
+- **Evals:** new case 14 (top-down market claim). 10 runs plus 2 re-runs: **10 pass, 0 fail** (latest per run). [Grade sheet](../evals/runs/sourcing-2026-10-18/GRADES.md).
+- **Defaults chosen for Dean:** the guardrail is optional; case 02's open question (stale demo data: Send back at Sell-By or held for the Taste Test) is left for him.

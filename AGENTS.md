@@ -42,13 +42,16 @@ The [Baloney Funnel](README.md#the-baloney-funnel) runs them as seven steps, sta
 
 When researching or evaluating claims:
 
-- Prefer original and authoritative sources.
-- Cite the source when a claim depends on external evidence.
+- Do the research yourself: look up publicly discoverable facts instead of asking the user for them. Ask only for private context (their data, intent, costs, customers). Never browse for a fictional fixture or stage demo.
+- Prefer original and authoritative sources: the record itself, government statistics, company filings, trade bodies, workforce data, then analyst reports with their method and sponsor named. Commentary points to sources; it isn't one.
+- Cite a clickable URL, or the exact record location, for every major data point.
 - Trace repeated claims back to their origin when possible.
 - Do not count five articles repeating one press release as five independent sources.
 - Distinguish deterministic source-of-truth data from generative synthesis.
 - Do not fabricate citations, quotes, metrics, customers, users, experiments, or outcomes.
 - When evidence is missing, say it is missing.
+- Build numbers bottom-up (buyers × price × adoption) rather than accepting a top-down share of a market; show the arithmetic.
+- Where a number is uncertain, give a range and say why.
 
 For consequential facts such as patient records, legal cases, financial records, policies, telemetry, contractual terms, or other source-of-truth data, retrieve from the authoritative system or document whenever possible.
 

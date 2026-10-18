@@ -69,7 +69,7 @@ See the [full catalog](catalog/INDEX.md) for human decision gates and handoffs t
 | **Check the Sell-By Date** | Is this information fresh enough to make the call? |
 | **Taste Before You Ship** | Has reality had a chance to disagree? |
 
-For consequential facts, retrieve the authoritative record. Generated synthesis does not become evidence because it reads well. Five articles repeating one press release are still one source.
+For consequential facts, retrieve the authoritative record. Generated synthesis does not become evidence because it reads well. Five articles repeating one press release are still one source. The kit looks up public facts itself, builds numbers bottom-up rather than taking "3% of a $12B market" on faith, and gives ranges with reasons where it can't be precise.
 
 ## The Baloney Funnel
 
@@ -88,7 +88,9 @@ Seven steps in four tiers. Outcome first, then the cheapest checks, so nobody sp
 | 7 | **Considered** | Pursue, pivot, or punt, and why? | `bdk-pivot-punt-pursue` |
 | | **Truth** | What has earned the next investment? | A scoped decision with a re-check date |
 
-The outcome statement: **[direction] [metric] [by how much] [by when] for [beneficiary persona] in [problem context].** "Feel 50% more confident" is not an outcome; "increase product adoption 50% by removing obstacles in the month-end close" is.
+The outcome statement: **[direction] [metric] [by how much] [by when] for [beneficiary persona] in [problem context]**, optionally **without [a health metric] crossing [a limit]**. "Feel 50% more confident" is not an outcome; "increase product adoption 50% by removing obstacles in the month-end close" is.
+
+At step 6 the bet becomes a **solution hypothesis**: *If we* [the change] *for* [the beneficiary] *then we will* [the outcome], tested by at least two tiny acts of discovery (each tagged with the risk it tests) and judged by a quantitative measure, a qualitative measure, and a hard stop, all written before any result.
 
 Each step has four exits: **Pass**, **Sifted out**, **Send back** for missing or stale evidence, or **Pivot** and re-enter at that step. Missing is not failed. Stale is not false. When evidence expires, the claim goes back for a refresh.
 
@@ -106,7 +108,7 @@ Each step has four exits: **Pass**, **Sifted out**, **Send back** for missing or
 - **Viable:** a good business model for us. SaaS is; add generative or agentic AI and you can go broke adding users.
 - **Feasible:** the people, process, culture, and capital to make it happen.
 
-Test the riskiest open square first. A working demo answers only part of Feasible. *The four risks come from Marty Cagan (SVPG); the questions are ours.*
+Test the riskiest open square first. A working demo answers only part of Feasible. *The four risks come from Marty Cagan (SVPG); the questions are ours. The success-versus-health split and the If/Then solution hypothesis draw on Productside's discovery practice, in the kit's own words.*
 
 **Safe to Serve** means: “This bet, for these people, solving this problem, under these conditions, has earned the right to move forward.” Humans own that decision; the next step may be another experiment, a pilot, or a clear “not yet.”
 

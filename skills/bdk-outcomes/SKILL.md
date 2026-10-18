@@ -45,7 +45,7 @@ interface:
 
 Find the outcome inside a pitch, claim, or idea, and write it so that the rest of the funnel can check it:
 
-**[direction] [metric] [by how much] [by when] for [beneficiary persona] in [problem context]**
+**[direction] [metric] [by how much] [by when] for [beneficiary persona] in [problem context]**, optionally **without [a health metric] crossing [a limit]**
 
 This is step 1 of the Baloney Funnel, in the **Chaos** tier: *Is there a real, measurable outcome here?* It is the cheapest sift of all. A pitch that is only an output ("an AI interface"), or that only leads to a vanity metric ("feel more confident"), leaves here, before anyone looks for receipts.
 
@@ -75,9 +75,13 @@ Accept a sentence, a pitch, a roadmap line, a brief, or a stated success metric.
 
 *Violation signal:* the shaped statement reads "increase adoption 50% by Q3" and nobody can tell which half the sponsor said.
 
+**Success needs a guardrail when it can be bought by breaking something.** A success metric says what should improve; a guardrail (a health metric) says what must not get worse: AI cost to serve, trust, error rates, support load. Add one when the outcome could be hit by spending or breaking your way there. It becomes a hard stop in the Taste Test.
+
+*Violation signal:* "increase AI-assisted replies 40%" with nothing about accuracy, review time, or cost per reply.
+
 ## Outputs
 
-For each pitch: the original wording, the shaped outcome statement, a parts check (direction, metric and how it is observed, target, timeframe, beneficiary, context: each **stated**, **inserted** with its label, or **missing**), any secondary outcomes set aside, the risk square the outcome speaks to most, and an exit. Use [the template](template.md).
+For each pitch: the original wording, the shaped outcome statement, a parts check (direction, metric and how it is observed, target and how it was built, timeframe, beneficiary, context, and an optional guardrail: each **stated**, **inserted** with its label, or **missing**), any secondary outcomes set aside, the risk square the outcome speaks to most, and an exit. Use [the template](template.md).
 
 ## Method
 
@@ -85,11 +89,12 @@ For each pitch: the original wording, the shaped outcome statement, a parts chec
 2. Strip the output. Set aside the thing to be built ("AI interface," "agent," "copilot") and ask what would be different for someone if it worked.
 3. Find the beneficiary persona: a role or segment whose world changes, not "users." Use supplied context; if none, ask (Guided) or propose one as a labeled ASSUMPTION (Context Dump or unattended).
 4. Find the metric and the direction. Prefer a metric the business already watches (adoption, retention, cycle time, error rate, revenue, NPS). Name how it would be observed. Test it against the vanity list: could it rise while nothing that matters changes?
-5. Find or propose the target and timeframe. If supplied, keep them verbatim. If absent, propose them as labeled ASSUMPTIONs; they become the Taste Test thresholds and the Sell-By horizon later.
+5. Find or propose the target and timeframe. If supplied, keep them verbatim. If absent, propose them as labeled ASSUMPTIONs; they become the Taste Test thresholds and the Sell-By horizon later. Build a proposed target bottom-up from a baseline or countable parts where you can, or give a range with its reason; a target borrowed from a vendor or a top-down market share stays an ASSUMPTION. Look up public facts (industry baselines, market counts) yourself when tools allow and the input isn't a closed fixture; ask the user only for private ones.
 6. Name the problem context: the workflow, situation, or market where the change happens.
-7. Write the statement in the standard order. Show before and after. If the pitch implies several outcomes, pick the one the decision leans on and list the others.
-8. Note which risk square the outcome speaks to most (an adoption metric speaks to Usable, a revenue metric to Valuable or Viable).
-9. Recommend an exit.
+7. Propose a guardrail when the outcome could be hit by breaking something else (cost to serve, trust, error rate, support load). Optional; label it as proposed.
+8. Write the statement in the standard order. Show before and after. If the pitch implies several outcomes, pick the one the decision leans on and list the others.
+9. Note which risk square the outcome speaks to most (an adoption metric speaks to Usable, a revenue metric to Valuable or Viable).
+10. Recommend an exit. If the outcome depends on market size (a share of a market, a number of buyers), name `dlab-step02-segment` for a TAM/SAM/SOM; don't build one here.
 
 ## Human decision gate
 
