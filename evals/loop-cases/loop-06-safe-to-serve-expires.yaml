@@ -5,8 +5,8 @@ id: loop-06-safe-to-serve-expires
 title: An earlier Pursue meets a model deprecation and a policy change
 synthetic: true
 assessment_date: 2026-10-11
-targets: The return chute. Expired re-check dates send a bet that already reached Truth back to the top of the funnel, with no silent reuse of the old decision.
-exits_at: "Sent back to the top: the Chaos tier Sell-By check finds all three re-check triggers expired. The earlier Truth has spoiled."
+targets: The return chute. Expired re-check dates send a bet that already reached Truth back for a refresh (Receipts and Sell-By), with no silent reuse of the old decision.
+exits_at: "Sent back at Sell-By (step 4): all three re-check triggers have expired. The earlier Truth has spoiled."
 
 claim: >
   In April 2026, fictional Northbank's (invented) internal FAQ assistant passed

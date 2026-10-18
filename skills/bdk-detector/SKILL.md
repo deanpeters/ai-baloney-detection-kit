@@ -67,7 +67,7 @@ Use for a full assessment of a claim, pitch, concept, feature, workflow, agent, 
 
 ## Inputs
 
-Accept a sentence, a messy context dump, a roadmap slide, a list of pitches, links, attachments, prior assessments, or experiment results. If the input is a document rather than a list of ideas, extract the pitches and claims first (as `bdk-util-slice-the-pitch` does) and show the list. Do not require the user to run the tier skills first.
+Accept a sentence, a messy context dump, a roadmap slide, a list of pitches, links, attachments, prior assessments, or experiment results. If the input is a document rather than a list of ideas, extract the pitches and claims first (as `bdk-util-slice-the-pitch` does) and show the list. Do not require the user to run the step skills first.
 
 ## Key concepts
 

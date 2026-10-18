@@ -26,6 +26,7 @@ produces:
 depends-on: []
 combine-with:
   - bdk-detector
+  - bdk-outcomes
   - bdk-receipts
 interface:
   display_name: "Slice the Pitch"
@@ -41,7 +42,7 @@ interface:
 
 Turn a document into a list of claims the Baloney Funnel can actually sift. The funnel needs claims, not documents.
 
-This is a **supporting utility, not a tier.** It hands a claim list to the **Chaos** tier (`bdk-receipts`, `bdk-sell-by`, or `bdk-detector` for the whole funnel). It does **not** continue into the funnel itself: it never rates, labels, or judges a claim. Slicing is the argument about *what is actually being claimed*; the funnel is the argument about whether it holds.
+This is a **supporting utility, not a tier.** It hands a claim list to the **Chaos** tier (`bdk-outcomes` to shape each pitch into an outcome, `bdk-receipts` for the claims, or `bdk-detector` for the whole funnel). It does **not** continue into the funnel itself: it never rates, labels, or judges a claim. Slicing is the argument about *what is actually being claimed*; the funnel is the argument about whether it holds.
 
 **There is no magic in the list.** A slice that agrees with the pitch's own summary has not been done. The value is in noticing that "10x more aligned" is not a claim, that "40% more productive" is three claims, and that "40% more agentic" is not a unit.
 

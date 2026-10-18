@@ -22,13 +22,14 @@ After each stage, make **one** stage card, an HTML file that teaches or visualiz
 
 1. **The swoop.** Read the message and the code. Card `01-swoop`: the eyebrow "Seagull Monday · 8:02 AM", and Gordon's seven claims, each in five words or fewer.
 2. **Strip the glitter.** `bdk-util-slice-the-pitch` → `02-claims.md`. Card `02-claims`: the testable claims, numbered.
-3. **Chaos: receipts.** `bdk-receipts` → `03-receipts.md`. Card `03-receipts`: each claim with its exit (Pass / Sifted out / Send back) and a five-word reason.
-4. **Chaos: the code tells on him.** `bdk-sell-by` → `04-sell-by.md`. Card `04-code`: two columns, "He said" vs. "The code says," with the two or three sharpest contradictions, quoting at most three short code lines each, `<mark>`ed. (Redact the key.)
-5. **Confusion: label the lunch meat.** `bdk-labels` → `05-labels.md`. Card `05-labels`: each claim tagged FACT / INFERENCE / ASSUMPTION / BEST GUESS.
-6. **Confusion: the context pantry.** `bdk-context-pantry` → `06-context.md`. Card `06-ranking`: what "AI-powered prioritization" actually ranks first and last in `sample_tickets.csv` (work it out from the code's scoring function by hand), and the question nobody asked.
-7. **Crapola: taste before you ship.** `bdk-taste-test` → `07-taste.md`. Card `07-tests`: the cheapest tests, each with its threshold and cost in days.
-8. **Considered: the four risks.** `bdk-four-risks` → `08-four-risks.md`. Card `08-decision`: the 2×2 grid (Valuable, Usable, Viable, Feasible, each with its status) and the decision as a `stamp` (PURSUE / PIVOT / PUNT / SEND BACK).
-9. **The reply.** Write Gordon's Slack reply → `09-reply.md`: under 120 words, warm, specific, no baloney, with one concrete next step and a role for him. Card `09-reply`: the reply itself.
+3. **Chaos, step 1: name the outcome.** `bdk-outcomes` → `03-outcomes.md`. Card `03-outcome`: the pitch as he said it, then the outcome statement ([direction] [metric] [by how much] [by when] for [beneficiary] in [context]), or SIFTED OUT if there isn't one.
+4. **Chaos, step 2: the code tells on him.** `bdk-receipts` → `04-receipts.md`. Card `04-code`: two columns, "He said" vs. "The code says," with the two or three sharpest contradictions, quoting at most three short code lines each, `<mark>`ed. (Redact the key.)
+5. **Confusion, step 3: label the lunch meat.** `bdk-labels` → `05-labels.md`. Card `05-labels`: each claim tagged FACT / INFERENCE / ASSUMPTION / BEST GUESS, and the label mix.
+6. **Confusion, step 4: the sell-by date.** `bdk-sell-by` → `06-sell-by.md`. Card `06-sell-by`: each piece of evidence with its date and FRESH / STALE / UNKNOWN.
+7. **Confusion, step 5: does it apply to us?** `bdk-relevance` → `07-relevance.md`. Card `07-ranking`: what "AI-powered prioritization" actually ranks first and last in `sample_tickets.csv` (work it out from the code's scoring function by hand), and the question nobody asked.
+8. **Crapola, step 6: taste before you ship.** `bdk-taste-test` → `08-taste.md`. Card `08-tests`: the tiniest tests, each with its threshold and cost in days.
+9. **Considered, step 7: pursue, pivot, or punt.** `bdk-pivot-punt-pursue` → `09-decision.md`. Card `09-decision`: the 2×2 grid (Valuable, Usable, Viable, Feasible, each with its status) and the recommendation as a `stamp` (PURSUE / PIVOT / PUNT), with the why in one line.
+10. **The reply.** Write Gordon's Slack reply → `10-reply.md`: under 120 words, warm, specific, no baloney, with one concrete next step and a role for him. Card `10-reply`: the reply itself.
 
 ## Finish
 

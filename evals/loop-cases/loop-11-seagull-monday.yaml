@@ -79,4 +79,9 @@ decision_rule: >
 
 # Added 2026-10-18 for the seven-step loop (step 1, bdk-outcomes), before any run.
 expected_outcome: >
-  Not run in this pass.
+  Pass at Outcomes, reshaped with labels: reduce roadmap-planning time (or
+  improve prioritization accuracy against actual decisions) for the company's
+  PMs in quarterly planning. "Basically done" and "AI-powered" are outputs, not
+  the outcome; the board demo date is not an outcome. In the seven-step loop,
+  the confusion-context-pantry expectations above apply to bdk-relevance (step 5),
+  and considered applies to bdk-pivot-punt-pursue (step 7).

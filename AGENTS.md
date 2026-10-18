@@ -34,6 +34,8 @@ All core diagnostics should use or clearly map to:
 
 Do not silently rename these checks or introduce competing frameworks without a clear reason.
 
+The [Baloney Funnel](README.md#the-baloney-funnel) runs them as seven steps, starting with one more question before any evidence is checked: **is there a real, measurable outcome?** Shape every pitch into "[direction] [metric] [by how much] [by when] for [beneficiary persona] in [problem context]" (`bdk-outcomes`), or sift it out as an output or a vanity metric. Then: Receipts → Labels → Sell-By → Context Pantry, as relevance to us (`bdk-relevance`) → Taste → Pursue, Pivot, or Punt (`bdk-pivot-punt-pursue`).
+
 ---
 
 # 3. Evidence Rules
@@ -190,7 +192,16 @@ Validation should test the four risks, using these questions verbatim:
 - **Viable:** "Is this good business?" (Is there ROI for both sides?)
 - **Feasible:** "Can we even do this with what we know and have?"
 
-Test the riskiest open square first; a working demo answers only part of Feasible. Where relevant, also test desirability, governance, risk, operational fit, cost, or accountability. See `bdk-four-risks` and `bdk-taste-test`.
+What each one means:
+
+- **Valuable:** not that people like it, but that they would take money out of their wallets and put it into ours.
+- **Usable:** so usable it ensures and expands adoption, removes obstacles, and creates delight that turns users into advocates.
+- **Viable:** a good business model for us. SaaS is; add generative or agentic AI and every added user carries a usage cost, so you can go broke adding users.
+- **Feasible:** the people, process, culture, and capital to make it happen.
+
+Test the riskiest open square first, with the tiniest test that returns the most brutal truth; a working demo answers only part of Feasible. Where relevant, also test desirability, governance, risk, operational fit, cost, or accountability. See `bdk-taste-test` and `bdk-pivot-punt-pursue`.
+
+Then recommend a move, with the why: **Pursue** (so much proof we go forward as planned), **Pivot** (adjust based on the data and discoveries), or **Punt** (the orange is not worth the squeeze; say no).
 
 Do not declare an idea validated because:
 

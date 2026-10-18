@@ -6,8 +6,8 @@ argument-hint: "[sources with dates, model versions, prices, or an earlier decis
 intent: >-
   Help a product person tell durable evidence from perishable evidence for this
   decision, refresh what has spoiled, and leave a re-check date on everything
-  perishable so that an approved bet (Truth) gets sent back to the top of the
-  funnel when its evidence expires instead of being silently reused.
+  perishable so that an approved bet (Truth) gets sent back for a refresh when
+  its evidence expires instead of being silently reused.
 theme: baloney-detection
 tier: 2-confusion
 sift-question: "Is the evidence fresh enough for this decision?"
@@ -44,7 +44,7 @@ interface:
 
 Check temporal applicability rather than stamping everything older than an arbitrary number of days as rotten. Freshness depends on the claim and the decision.
 
-This is step 4 of the Baloney Funnel, in the **Confusion** tier: *What do we actually know, is it still fresh, and does it apply to us?* It dates the labeled evidence from `bdk-labels`, and checks it against the outcome statement's timeframe: evidence that will spoil before the outcome's by-when needs a re-check before then. It is a date check, so it is cheap, and it belongs before anyone designs a test. It also closes the loop: every perishable piece of evidence behind a Pursue leaves with a re-check date, and when one expires, Truth goes back to the top of the funnel.
+This is step 4 of the Baloney Funnel, in the **Confusion** tier: *What do we actually know, is it still fresh, and does it apply to us?* It dates the labeled evidence from `bdk-labels`, and checks it against the outcome statement's timeframe: evidence that will spoil before the outcome's by-when needs a re-check before then. It is a date check, so it is cheap, and it belongs before anyone designs a test. It also closes the loop: every perishable piece of evidence behind a Pursue leaves with a re-check date, and when one expires, Truth goes back for a refresh (to Receipts and Sell-By) instead of being reused.
 
 ## When to use it
 

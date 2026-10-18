@@ -24,7 +24,7 @@ Replace the sample with your own claim, notes, or attached material. The sample 
 
 **Other assistants:** provide [bdk-detector/SKILL.md](skills/bdk-detector/SKILL.md) and its [assessment contract](skills/bdk-detector/references/assessment-contract.md), then paste your material. If commands aren't discovered, ask the assistant to read those files directly.
 
-[Setup and installation routes](INSTRUCTIONS.md#use-the-skills) · [Download all ten skills](dist/ai-bdk-skills.zip) · [More examples](INSTRUCTIONS.md#try-a-complete-assessment)
+[Setup and installation routes](INSTRUCTIONS.md#use-the-skills) · [Download all thirteen skills](dist/ai-bdk-skills.zip) · [More examples](INSTRUCTIONS.md#try-a-complete-assessment)
 
 Plugin manifests and portable ZIPs are included. Assistant-specific installation and discovery have not been verified in this build; see [verification](evals/VERIFICATION.md).
 

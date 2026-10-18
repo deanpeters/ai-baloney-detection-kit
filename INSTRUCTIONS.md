@@ -10,13 +10,13 @@ Let's see whether you've got lunch or fertilizer.
 
 ## Use the Skills
 
-**Claude Code, from this folder:** open this repository as your working folder. The skills live in `skills/` (`.claude/skills` points there, so commands are discovered). Invoke `/bdk-detector` for the whole funnel, or choose a tier skill from [the catalog](catalog/INDEX.md). Attach a file using your assistant's file picker, or paste the material after the command. If the command is not discovered, ask the assistant to read `skills/bdk-detector/SKILL.md` and its linked assessment contract directly.
+**Claude Code, from this folder:** open this repository as your working folder. The skills live in `skills/` (`.claude/skills` points there, so commands are discovered). Invoke `/bdk-detector` for the whole funnel, or choose a step skill from [the catalog](catalog/INDEX.md). Start with `/bdk-outcomes` if you only want to know whether a pitch has a real outcome. Attach a file using your assistant's file picker, or paste the material after the command. If the command is not discovered, ask the assistant to read `skills/bdk-detector/SKILL.md` and its linked assessment contract directly.
 
 **Claude Code or Codex, as a plugin:** this folder is a plugin (`.claude-plugin/plugin.json`, `.codex-plugin/plugin.json`, both pointing at `skills/`). Installed that way, commands carry the plugin name: `/bdk:bdk-detector`. Plugin installation has not been verified in this build; see [verification](evals/VERIFICATION.md).
 
 **Other assistants:** provide the relevant `SKILL.md` and its `references/assessment-contract.md` together. If file access is unavailable, attach those two files or paste their text. Do not provide only the description and expect the complete method.
 
-**Portable ZIPs:** [download all ten skills](dist/ai-bdk-skills.zip), or choose an individual ZIP named for its skill in `dist/`. Each contains a skill folder, its template and examples, required references, linked teaching cases, a generated `agents/openai.yaml`, and the license. Extract a folder into the skill location supported by your assistant. For Codex, the personal skill location is `~/.codex/skills/`; preserve existing folders and use a candidate location if a name conflicts. No installation is performed by this repository's build commands. Assistant-specific installation and discovery have not been verified in this build.
+**Portable ZIPs:** [download all thirteen skills](dist/ai-bdk-skills.zip), or choose an individual ZIP named for its skill in `dist/`. Each contains a skill folder, its template and examples, required references, linked teaching cases, a generated `agents/openai.yaml`, and the license. Extract a folder into the skill location supported by your assistant. For Codex, the personal skill location is `~/.codex/skills/`; preserve existing folders and use a candidate location if a name conflicts. No installation is performed by this repository's build commands. Assistant-specific installation and discovery have not been verified in this build.
 
 Generate or refresh downloads locally with `python3 scripts/build-distribution.py` (Python 3 and PyYAML required). See [the handoff](docs/HANDOFF.md) for maintenance.
 
@@ -37,7 +37,7 @@ All files in `evals/cases/` are synthetic. Their results teach the method; they 
 ```text
 /bdk-detector DUMP: Run every item in evals/loop-cases/loop-09-roadmap-funnel.yaml
 (claim and supplied_evidence only) through the funnel. Unattended. Give me the
-funnel report: what left at each tier, why, and what earned investment.
+funnel report: what left at each step, why, and what earned investment.
 ```
 
 ### Start with one check
@@ -202,6 +202,6 @@ If you remember nothing else:
 
 **Chaos → Confusion → Crapola → Considered → Truth**
 
-Then ask:
+Start with the outcome: what changes, for whom, by how much? Then ask:
 
 > **Is this the Real Deal, or are we about to put Total Crapola on a roadmap?**

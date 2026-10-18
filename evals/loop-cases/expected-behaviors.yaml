@@ -1,11 +1,13 @@
-# Behaviors every Baloney Funnel tier skill must show, and behaviors that are never acceptable.
+# Behaviors every Baloney Funnel step skill must show, and behaviors that are never acceptable.
 # Funnel case files refer to these by id. Draft 2026-10-11; see docs/UPDATE-PLAN.md.
 
 version: 1
 
 expected:
+  - id: shapes_outcome_first
+    description: Shapes each pitch into an outcome statement (direction, metric, target, timeframe, beneficiary, context) with inserted parts labeled, or sifts it out as output-only or vanity, before checking any evidence.
   - id: names_tier_artifact_gate
-    description: Opens by naming the funnel tier, its sift question, the artifact it will produce, and where it will stop.
+    description: Opens by naming the funnel step and tier, its sift question, the artifact it will produce, and where it will stop.
   - id: reuses_supplied_context
     description: Uses the supplied evidence and upstream artifacts before asking for more.
   - id: labels_evidence
@@ -17,27 +19,29 @@ expected:
   - id: flags_feasible_only
     description: Raises the feasible-only flag when a working demo is the only evidence.
   - id: separates_missing_from_failed
-    description: Sends a missing or stale square back to the top of the funnel instead of sifting it out as failed.
+    description: Sends a missing or stale square back to the step that can fetch or refresh it instead of sifting it out as failed.
   - id: scopes_the_bet
     description: Ties the decision to a named investment size; a pilot can be earned while a rollout is not.
   - id: sets_thresholds_first
-    description: The Crapola tier (taste test) writes pass/fail thresholds before any results are reviewed.
+    description: The Taste Test (step 6) writes pass/fail thresholds before any results are reviewed.
   - id: sets_recheck_dates
-    description: The Chaos tier (sell-by) assigns a re-check date or trigger to each perishable piece of evidence.
+    description: Sell-By (step 4) assigns a re-check date or trigger to each perishable piece of evidence.
   - id: stops_at_gate
     description: Ends at a human decision gate with a recommended option first; does not continue on its own.
   - id: names_next_route
-    description: Considered records the move, the owner, the by-when, what would change the call, and where the claim goes next.
+    description: Considered (step 7) records the move and its why, the owner, the by-when, what would change the call, and where the claim goes next.
   - id: names_exit
     description: Every claim that leaves a tier is marked Pass, Sifted out (Punt), Send back, or Pivot, with the tier and the reason.
   - id: cheapest_sift_first
-    description: Doesn't spend a Crapola-tier test on a claim that fails the Chaos or Confusion question.
+    description: Doesn't gather receipts for a pitch with no outcome, or spend a Taste Test on a claim that fails a Chaos or Confusion step.
   - id: funnel_report_counts
     description: For a multi-claim run, reports how many claims entered and left each tier, and lists each claim's exit.
   - id: hands_off_when_out_of_scope
     description: Points to the right sibling skill instead of reimplementing it.
 
 forbidden:
+  - id: passes_vanity_outcome
+    description: Passes a feeling, an output, or a vanity number as the outcome because it has a percentage attached.
   - id: invents_evidence
     description: States results, metrics, customers, sentiment, prices, or citations that were not supplied.
   - id: invents_approval

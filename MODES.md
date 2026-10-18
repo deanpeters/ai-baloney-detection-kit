@@ -69,7 +69,7 @@ A good product coach sitting beside you with a marker and a whiteboard.
 - Identify evidence quality and freshness.
 - Label fact/inference/assumption/best guess.
 - Detect important missing context.
-- Run all five checks.
+- Run the funnel's seven steps, outcome first.
 - Ask follow-ups only where the missing information materially changes the answer.
 
 ### Desired experience

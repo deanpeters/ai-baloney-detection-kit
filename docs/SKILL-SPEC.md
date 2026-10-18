@@ -61,7 +61,7 @@ intent: >-
   The richer job: who it serves, what goes wrong without it.
 theme: baloney-detection
 tier: 1-chaos                  # or supplements: 1-chaos (utilities), or family: work | claims (quick checks)
-sift-question: "Is it real, and is it still true?"   # funnel skills only
+sift-question: "What evidence supports that outcome's metric and direction?"   # funnel skills only
 status: active
 best-for:
   - "Concrete use"

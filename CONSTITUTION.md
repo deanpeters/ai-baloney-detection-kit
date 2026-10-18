@@ -106,6 +106,8 @@ Automation is not automatically improvement.
 
 The work should connect to meaningful outcomes for users, customers, teams, and the business.
 
+That is why the Baloney Funnel starts by naming the outcome (`bdk-outcomes`): [direction] [metric] [by how much] [by when] for [beneficiary persona] in [problem context]. A pitch that is only an output, or only a vanity metric, stops there.
+
 ---
 
 ## Article VIII — Do Not Automate Waste Faster

@@ -11,6 +11,8 @@ mkdir -p "$SESSION/cards" "$SESSION/shots"
 PROMPT=$(sed "s#{{SESSION}}#$SESSION#g" evals/scenarios/seagull-monday/RUNBOOK.md)
 TOOLS="Skill,Read,Write,Edit,Glob,Grep,Bash(bash evals/scenarios/seagull-monday/snap.sh:*),Bash(ls:*),Bash(mkdir:*)"   # one quoted, comma-separated argument
 echo "Session: $SESSION"
+# An empty-credit ANTHROPIC_API_KEY in the shell overrides the claude.ai login; drop it for this run.
+unset ANTHROPIC_API_KEY
 if [ "${1:-}" = "--live" ]; then
   claude --permission-mode acceptEdits --allowedTools "$TOOLS" -- "$PROMPT"
 else

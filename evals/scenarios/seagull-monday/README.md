@@ -1,6 +1,6 @@
 # Scenario: Seagull Monday
 
-The keynote's recorded agent loop. A fictional SVP swoops into Slack on Monday with a roadmap tool he vibe-coded over the weekend and seven confident claims. A fresh Claude Code session walks the claims through the Baloney Funnel with the kit's own skills, reads the code as evidence, snaps a projector-style card at each stage, and writes him a reply.
+The keynote's recorded agent loop. A fictional SVP swoops into Slack on Monday with a roadmap tool he vibe-coded over the weekend and seven confident claims. A fresh Claude Code session walks the claims through the seven-step Baloney Funnel (outcome first) with the kit's own skills, reads the code as evidence, snaps a projector-style card at each stage, and writes him a reply.
 
 | File | What it is |
 |---|---|
