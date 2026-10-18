@@ -28,7 +28,7 @@ After each stage, make **one** stage card, an HTML file that teaches or visualiz
 6. **Confusion, step 4: the sell-by date.** `bdk-sell-by` → `06-sell-by.md`. Card `06-sell-by`: each piece of evidence with its date and FRESH / STALE / UNKNOWN.
 7. **Confusion, step 5: does it apply to us?** `bdk-relevance` → `07-relevance.md`. Card `07-ranking`: what "AI-powered prioritization" actually ranks first and last in `sample_tickets.csv` (work it out from the code's scoring function by hand), and the question nobody asked.
 8. **Crapola, step 6: taste before you ship.** `bdk-taste-test` → `08-taste.md`. Card `08-tests`: the tiniest tests, each with its threshold and cost in days.
-9. **Considered, step 7: pursue, pivot, or punt.** `bdk-pivot-punt-pursue` → `09-decision.md`. Card `09-decision`: the 2×2 grid (Valuable, Usable, Viable, Feasible, each with its status) and the recommendation as a `stamp` (PURSUE / PIVOT / PUNT), with the why in one line.
+9. **Considered, step 7: pivot, punt, or pursue.** `bdk-pivot-punt-pursue` → `09-decision.md`. Card `09-decision`: the 2×2 grid (Valuable, Usable, Viable, Feasible, each with its status) and the recommendation as a `stamp` (PIVOT / PUNT / PURSUE), with the why in one line.
 10. **The reply.** Write Gordon's Slack reply → `10-reply.md`: under 120 words, warm, specific, no baloney, with one concrete next step and a role for him. Card `10-reply`: the reply itself.
 
 ## Finish

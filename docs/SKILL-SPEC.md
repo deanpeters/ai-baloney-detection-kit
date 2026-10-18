@@ -132,8 +132,8 @@ Use the house vocabulary exactly (see [CLAUDE.md](../CLAUDE.md)):
 - **Solution hypothesis:** If we [change] for [beneficiary] then we will [outcome]; tested by tiny acts of discovery tagged by square; valid if within [timeframe] we observe a quantitative measure, a qualitative measure, and a hard stop
 - **Exits:** Pass · Sifted out · Send back · Pivot
 - **Four risks:** Valuable · Usable · Viable · Feasible, with Dean's questions verbatim
-- **Moves for claims:** Pursue · Pivot · Punt
-- **Moves for work:** Pass-off · Punt · Pivot · Pursue
+- **Moves for claims:** Pivot · Punt · Pursue
+- **Moves for work:** Pass-off · Pivot · Punt · Pursue
 - **Scale:** Real Deal · Mostly Meat · Real Imitation Baloney · Mystery Meat · Total Crapola
 - **Modes:** Guided Discovery · Context Dump · Spitballing
 - **Voices:** Product Coach · Comedian · Pirate · Boss · Antagonist

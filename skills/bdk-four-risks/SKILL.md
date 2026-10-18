@@ -11,7 +11,7 @@ intent: >-
   Truth, with a sell-by date of its own.
 theme: baloney-detection
 tier: 4-considered
-sift-question: "Pursue, pivot, or punt?"
+sift-question: "Pivot, punt, or pursue?"
 status: active
 best-for:
   - "Deciding what size of bet the evidence has earned"
@@ -24,7 +24,7 @@ scenarios:
   - "A bet passed every check and needs a decision record before money moves"
 produces:
   - "Four-Risk Grid: Should we? / Can we? × For them / For us, each square rated with its evidence"
-  - "A move per scope: Pursue, Pivot, Punt, or Send back"
+  - "A move per scope: Pivot, Punt, Pursue, or Send back"
   - "A decision record: owner role, by-when, what would change the call, re-check triggers"
 depends-on: []
 combine-with:
@@ -34,7 +34,7 @@ interface:
   display_name: "The Four Risks"
   short_description: "Valuable, usable, viable, feasible: then decide"
   brand_color: "#00E874"
-  default_prompt: "Use $bdk-four-risks to place this bet's evidence on the valuable, usable, viable, feasible grid, recommend pursue, pivot, or punt for a named investment, and stop with a decision record."
+  default_prompt: "Use $bdk-four-risks to place this bet's evidence on the valuable, usable, viable, feasible grid, recommend pivot, punt, or pursue for a named investment, and stop with a decision record."
   allow_implicit_invocation: true
 ---
 
@@ -44,7 +44,7 @@ interface:
 
 Turn the evidence about an AI bet into a decision a product person can defend, and scope that decision to the investment the evidence has actually earned.
 
-This is the grid behind step 7 of the Baloney Funnel (`bdk-pivot-punt-pursue`), in the **Considered** tier: *Pursue, pivot, or punt?* Use it for a deep dive on the four risks; the step-7 skill uses it to make the call and say why. What comes out the bottom is **Truth**: this bet, for these people, under these conditions, has earned the next named investment. Truth has a sell-by date too, so the decision leaves with re-check triggers.
+This is the grid behind step 7 of the Baloney Funnel (`bdk-pivot-punt-pursue`), in the **Considered** tier: *Pivot, punt, or pursue?* Use it for a deep dive on the four risks; the step-7 skill uses it to make the call and say why. What comes out the bottom is **Truth**: this bet, for these people, under these conditions, has earned the next named investment. Truth has a sell-by date too, so the decision leaves with re-check triggers.
 
 ## When to use it
 

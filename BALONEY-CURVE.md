@@ -61,7 +61,7 @@ Use the Curve to explain *why* a claim isn't ready yet, and the Scale to record 
 ## Curve vs. Funnel
 
 - **The Curve is one claim's journey** over time and evidence.
-- **The [Baloney Funnel](README.md#the-baloney-funnel) is how you sort a pile of claims.** It runs the same five checks as seven steps, outcome first: Chaos (Outcomes, Receipts) → Confusion (Labels, Sell-By, Relevance) → Crapola (Taste) → Considered (Pursue, Pivot, or Punt) → Truth.
+- **The [Baloney Funnel](README.md#the-baloney-funnel) is how you sort a pile of claims.** It runs the same five checks as seven steps, outcome first: Chaos (Outcomes, Receipts) → Confusion (Labels, Sell-By, Relevance) → Crapola (Taste) → Considered (Pivot, Punt, or Pursue) → Truth.
 - **Truth out of the Funnel = Safe to Serve on the Curve = Real Deal on the Scale.**
 
 The Funnel checks Sell-By before any test, in the Confusion tier, because a date check is cheap. On the Curve, "Past the Sell-By Date" sits late because that's when stale claims tend to bite. Both are true; they answer different questions. The Funnel also asks one question the Curve doesn't draw: is there a real outcome at all?

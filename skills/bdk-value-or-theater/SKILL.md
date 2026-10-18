@@ -44,9 +44,9 @@ Answer each from the input itself. If the input doesn't answer a question, that'
 
 ## Verdict
 
-- **Value → PURSUE**: four or five questions answered with specifics
+- **Not yet → PIVOT**: three questions answered with specifics, the rest thin. Name the one piece of evidence that would move it. "Not yet" is a pivot with a calendar invite.
 - **Theater → PUNT**: two or fewer answered, or the answers are adjectives
-- **Not yet → PIVOT**: somewhere in between. Name the one piece of evidence that would move it. "Not yet" is a pivot with a calendar invite.
+- **Value → PURSUE**: four or five questions answered with specifics
 
 If the initiative is really "automate a chore we already do" (a status report, release notes, meeting summaries), say so: that's **PASS-OFF**, a fine thing to do and nobody's strategy. It's a question about work, so point to `/bdk-skill-sorter`, and punt it first if nobody needs the chore at all.
 
@@ -63,8 +63,8 @@ If the initiative is really "automate a chore we already do" (a status report, r
 | How would we know it failed? | ... | ... |
 | Who owns it when it's wrong? | ... | ... |
 
-### Verdict: 🎯 VALUE / 🎭 THEATER / ⏳ NOT YET
-### Move: PURSUE / PUNT / PIVOT
+### Verdict: ⏳ NOT YET / 🎭 THEATER / 🎯 VALUE
+### Move: PIVOT / PUNT / PURSUE
 
 <two sentences, plain language, why>
 

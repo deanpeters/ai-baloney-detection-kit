@@ -1,6 +1,6 @@
 # Pivot, Punt, or Pursue
 
-**Step:** 7 of 7 · **Tier:** Considered · *Pursue, pivot, or punt, and why?*
+**Step:** 7 of 7 · **Tier:** Considered · *Pivot, punt, or pursue, and why?*
 **The bet:** · **Outcome statement:** · **As of:** · **Mode / voice:**
 
 ---
@@ -9,11 +9,11 @@
 
 | Scope | Recommendation | Why (deciding square and its evidence) |
 |---|---|---|
-| | **Pursue** · **Pivot** · **Punt** | |
+| | **Pivot** · **Punt** · **Pursue** | |
 
-- **Pursue:** so much proof that we go forward as planned.
 - **Pivot:** adjust based on the data, the evidence, and the discoveries. Name the change and its threshold.
 - **Punt:** the orange is not worth the squeeze. Say no, and what would reopen it.
+- **Pursue:** so much proof that we go forward as planned.
 
 ## 2. The four risks
 

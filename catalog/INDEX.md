@@ -15,13 +15,13 @@ A process of elimination: seven steps in four tiers. The outcome comes first, th
 | **4 · Confusion** | Is it fresh enough for this decision? | [`bdk-sell-by`](../skills/bdk-sell-by/SKILL.md) | Models, prices, policies, or an earlier decision may have changed | Freshness Ledger with re-check triggers | Refresh, or go forward |
 | **5 · Confusion** | Does it apply to us: directly, adjacent, or by analog? | [`bdk-relevance`](../skills/bdk-relevance/SKILL.md) | Outside evidence (a competitor, an analyst, another segment) is offered as proof | Relevance Map and pantry pull | Fill the pantry gap, narrow, or stop |
 | **6 · Crapola** | What's the tiniest test that returns the most brutal truth? | [`bdk-taste-test`](../skills/bdk-taste-test/SKILL.md) | A bet is about to advance on a demo or a promise | Solution hypothesis (If we / for / then we will), tiny acts tagged by square, measures and a hard stop written first | Approve the test and its owner |
-| **7 · Considered** | Pursue, pivot, or punt, and why? | [`bdk-pivot-punt-pursue`](../skills/bdk-pivot-punt-pursue/SKILL.md) | It's time to decide what the evidence has earned | Recommendation with its why, and a decision record | Pursue, pivot, or punt, for a named scope |
+| **7 · Considered** | Pivot, punt, or pursue, and why? | [`bdk-pivot-punt-pursue`](../skills/bdk-pivot-punt-pursue/SKILL.md) | It's time to decide what the evidence has earned | Recommendation with its why, and a decision record | Pivot, punt, or pursue, for a named scope |
 | Deep dive · Confusion | For whom, which workflow, at what cost to each side? | [`bdk-context-pantry`](../skills/bdk-context-pantry/SKILL.md) | Workflow, ownership, or two-sided economics need a closer look | Context Inventory | Fill the gap, or stop |
 | Deep dive · Considered | Which square decides? | [`bdk-four-risks`](../skills/bdk-four-risks/SKILL.md) | The four-risk grid on its own | Four-Risk Grid | Which square to test next |
 
 Every claim leaves a step one of four ways: **Pass** · **Sifted out** (punt) · **Send back** (missing or stale, back to the step that can fetch it) · **Pivot** (change one thing, re-enter at that step). Missing is not failed; stale is not false.
 
-**Pursue:** so much proof that we go forward as planned. **Pivot:** adjust based on the data and the discoveries. **Punt:** the orange is not worth the squeeze; say no.
+**Pivot:** adjust based on the data and the discoveries. **Punt:** the orange is not worth the squeeze; say no. **Pursue:** so much proof that we go forward as planned.
 
 Use the step skills on their own when you only need one check. Use `bdk-detector` for the whole funnel. No skill requires an upstream artifact.
 
@@ -50,7 +50,7 @@ Outside the funnel. Their names are frozen because the keynote quotes them.
 
 | Skill | Family | Invoke when | Produces |
 |---|---|---|---|
-| [`bdk-value-or-theater`](../skills/bdk-value-or-theater/SKILL.md) | Claims, in one breath | A one-minute verdict on a pitch, roadmap item, or hot take | Five questions, VALUE → PURSUE / THEATER → PUNT / NOT YET → PIVOT |
+| [`bdk-value-or-theater`](../skills/bdk-value-or-theater/SKILL.md) | Claims, in one breath | A one-minute verdict on a pitch, roadmap item, or hot take | Five questions, NOT YET → PIVOT / THEATER → PUNT / VALUE → PURSUE |
 | [`bdk-skill-sorter`](../skills/bdk-skill-sorter/SKILL.md) | Work | A role, a calendar, a backlog, or a team's rituals | The Sort grid: Busywork → PASS-OFF · Beige → PIVOT · Theater → PUNT · Truth → PURSUE, plus Hired · Fired · Promoted and Monday |
 
 ## Hand-offs to sibling kits

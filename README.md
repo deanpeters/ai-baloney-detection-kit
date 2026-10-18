@@ -6,7 +6,7 @@
 
 **13 skills: the whole-funnel detector, seven step skills, two deep dives, one utility, and two quick checks.**
 
-For Product Managers, product leaders, and product teams deciding whether an AI idea deserves investment. The kit checks evidence, assumptions, context, freshness, and validation, then recommends **Pursue, Pivot, or Punt** for a named next step.
+For Product Managers, product leaders, and product teams deciding whether an AI idea deserves investment. The kit checks evidence, assumptions, context, freshness, and validation, then recommends **Pivot, Punt, or Pursue** for a named next step.
 
 **Sort your work, then check your claims.** Use `bdk-skill-sorter` for how you spend your week; use `bdk-detector` for what you're being sold or asked to build.
 
@@ -43,7 +43,7 @@ Each funnel skill works independently with direct notes or partial context. Star
 | 4 · Confusion | [bdk-sell-by](skills/bdk-sell-by/SKILL.md) | Check whether evidence is fresh enough for this decision | Freshness Ledger and re-check triggers |
 | 5 · Confusion | [bdk-relevance](skills/bdk-relevance/SKILL.md) | Check whether the evidence applies to us: direct, adjacent, or analog | Relevance Map and pantry pull |
 | 6 · Crapola | [bdk-taste-test](skills/bdk-taste-test/SKILL.md) | Design the tiniest test that returns the most brutal truth, or review results | Taste Test with thresholds |
-| 7 · Considered | [bdk-pivot-punt-pursue](skills/bdk-pivot-punt-pursue/SKILL.md) | Recommend pursue, pivot, or punt, and say why | Recommendation and decision record |
+| 7 · Considered | [bdk-pivot-punt-pursue](skills/bdk-pivot-punt-pursue/SKILL.md) | Recommend pivot, punt, or pursue, and say why | Recommendation and decision record |
 
 Deep dives: [bdk-context-pantry](skills/bdk-context-pantry/SKILL.md) (workflow, ownership, and both sides' economics, beside step 5) and [bdk-four-risks](skills/bdk-four-risks/SKILL.md) (the four-risk grid on its own, beside step 7).
 
@@ -85,7 +85,7 @@ Seven steps in four tiers. Outcome first, then the cheapest checks, so nobody sp
 | 4 | **Confusion** | Is it fresh enough for this decision? | `bdk-sell-by` |
 | 5 | **Confusion** | Does it apply to us: directly, adjacent, or by analog? | `bdk-relevance` |
 | 6 | **Crapola** | What's the tiniest test that returns the most brutal truth? | `bdk-taste-test` |
-| 7 | **Considered** | Pursue, pivot, or punt, and why? | `bdk-pivot-punt-pursue` |
+| 7 | **Considered** | Pivot, punt, or pursue, and why? | `bdk-pivot-punt-pursue` |
 | | **Truth** | What has earned the next investment? | A scoped decision with a re-check date |
 
 The outcome statement: **[direction] [metric] [by how much] [by when] for [beneficiary persona] in [problem context]**, optionally **without [a health metric] crossing [a limit]**. "Feel 50% more confident" is not an outcome; "increase product adoption 50% by removing obstacles in the month-end close" is.
@@ -94,7 +94,7 @@ At step 6 the bet becomes a **solution hypothesis**: *If we* [the change] *for* 
 
 Each step has four exits: **Pass**, **Sifted out**, **Send back** for missing or stale evidence, or **Pivot** and re-enter at that step. Missing is not failed. Stale is not false. When evidence expires, the claim goes back for a refresh.
 
-**Pursue:** so much proof that we go forward as planned. **Pivot:** adjust based on the data and the discoveries. **Punt:** the orange is not worth the squeeze; say no.
+**Pivot:** adjust based on the data and the discoveries. **Punt:** the orange is not worth the squeeze; say no. **Pursue:** so much proof that we go forward as planned.
 
 ### The four risks
 

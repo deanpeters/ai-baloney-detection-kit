@@ -1,6 +1,6 @@
 # Four-Risk Grid and Decision Record
 
-**Tier:** 4 Considered · *Pursue, pivot, or punt?*
+**Tier:** 4 Considered · *Pivot, punt, or pursue?*
 **The bet:** · **As of:** · **Mode / voice:**
 
 **Scopes on the table** (each gets its own move):
@@ -21,7 +21,7 @@ Status: earned · weak · missing · stale · failed
 
 ## 2. Moves
 
-| Scope | Move (Pursue / Pivot / Punt / Send back) | Deciding square | Why |
+| Scope | Move (Pivot / Punt / Pursue / Send back) | Deciding square | Why |
 |---|---|---|---|
 | | | | |
 

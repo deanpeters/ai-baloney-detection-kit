@@ -1,6 +1,6 @@
 ---
 name: bdk-pivot-punt-pursue
-description: Recommend Pursue, Pivot, or Punt for an AI bet, and say why, from its outcome, its relevant, labeled, fresh receipts, and the tiny tests run on the four risks (valuable, usable, viable, feasible). Use when it's time to decide; step 7 of the Baloney Funnel, the Considered tier.
+description: Recommend Pivot, Punt, or Pursue for an AI bet, and say why, from its outcome, its relevant, labeled, fresh receipts, and the tiny tests run on the four risks (valuable, usable, viable, feasible). Use when it's time to decide; step 7 of the Baloney Funnel, the Considered tier.
 license: CC-BY-NC-SA-4.0
 argument-hint: "[the bet, its outcome statement, evidence, and test results]"
 intent: >-
@@ -11,7 +11,7 @@ intent: >-
   the recommendation is scoped to the investment the evidence actually earned.
 theme: baloney-detection
 tier: 4-considered
-sift-question: "Pursue, pivot, or punt, and why?"
+sift-question: "Pivot, punt, or pursue, and why?"
 status: active
 best-for:
   - "Ending a funnel run with a recommendation and its reasons"
@@ -23,7 +23,7 @@ scenarios:
   - "Everyone agrees it works and nobody has asked who would pay"
   - "The tiny tests came back and someone has to make the call"
 produces:
-  - "The recommendation per scope: Pursue, Pivot, or Punt, with the why"
+  - "The recommendation per scope: Pivot, Punt, or Pursue, with the why"
   - "Four-risk grid: each square earned, weak, missing, stale, or failed, with its evidence"
   - "Outcome check: was the outcome statement's target earned?"
   - "A decision record: owner role, by-when, what would change the call, re-check triggers"
@@ -34,9 +34,9 @@ combine-with:
   - bdk-detector
 interface:
   display_name: "Pivot, Punt, or Pursue"
-  short_description: "Recommend pursue, pivot, or punt, and say why"
+  short_description: "Recommend pivot, punt, or pursue, and say why"
   brand_color: "#00E874"
-  default_prompt: "Use $bdk-pivot-punt-pursue to read this bet's outcome, receipts, and tiny-test results on the four risks, recommend pursue, pivot, or punt for each scope with the why, and stop with a decision record."
+  default_prompt: "Use $bdk-pivot-punt-pursue to read this bet's outcome, receipts, and tiny-test results on the four risks, recommend pivot, punt, or pursue for each scope with the why, and stop with a decision record."
   allow_implicit_invocation: true
 ---
 
@@ -46,11 +46,11 @@ interface:
 
 Turn everything the funnel found into a recommendation and its reasons:
 
-- **Pursue:** so much proof that we go forward as planned.
 - **Pivot:** make adjustments based on the data, the evidence, and the discoveries.
 - **Punt:** the orange is not worth the squeeze. Say no.
+- **Pursue:** so much proof that we go forward as planned.
 
-This is step 7 of the Baloney Funnel, the **Considered** tier: *Pursue, pivot, or punt, and why?* What comes out the bottom is **Truth**: this outcome, for these people, under these conditions, has earned the next named investment. Truth has a sell-by date too, so the recommendation leaves with re-check triggers.
+This is step 7 of the Baloney Funnel, the **Considered** tier: *Pivot, punt, or pursue, and why?* What comes out the bottom is **Truth**: this outcome, for these people, under these conditions, has earned the next named investment. Truth has a sell-by date too, so the recommendation leaves with re-check triggers.
 
 ## When to use it
 
@@ -110,7 +110,7 @@ Present the recommendation for each scope first, with its why, then the alternat
 
 ## Evidence expectations
 
-Read [the assessment contract](references/assessment-contract.md) before running this skill. It defines the funnel, exits, the outcome statement, the four risks, Pursue, Pivot, and Punt, evidence labels, access limits, qualitative ratings, accountable decisions, and capture behavior. The repository Constitution remains the project authority; this bundled contract lets the skill operate outside the repository.
+Read [the assessment contract](references/assessment-contract.md) before running this skill. It defines the funnel, exits, the outcome statement, the four risks, Pivot, Punt, and Pursue, evidence labels, access limits, qualitative ratings, accountable decisions, and capture behavior. The repository Constitution remains the project authority; this bundled contract lets the skill operate outside the repository.
 
 ## Mode behavior
 

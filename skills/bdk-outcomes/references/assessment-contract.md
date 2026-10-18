@@ -1,6 +1,6 @@
 # Assessment contract
 
-Read this before running a funnel skill. This is the shared behavior for the five checks, the seven-step Baloney Funnel, the outcome statement, the four risks, and Pursue, Pivot, or Punt, written for AI-BDK. Bundled copies are generated from `reference/assessment-contract.md`; edit that source and run `python3 scripts/check-library.py --sync`.
+Read this before running a funnel skill. This is the shared behavior for the five checks, the seven-step Baloney Funnel, the outcome statement, the four risks, and Pivot, Punt, or Pursue, written for AI-BDK. Bundled copies are generated from `reference/assessment-contract.md`; edit that source and run `python3 scripts/check-library.py --sync`.
 
 ## Scope and accountability
 
@@ -55,9 +55,9 @@ Claims and ideas pass through seven steps in four tiers. The cheapest sifts run 
 | 4 | `bdk-sell-by` | **Confusion** | Is the evidence fresh enough for this decision? |
 | 5 | `bdk-relevance` | **Confusion** | Does the evidence apply to us: directly, by an adjacent product, or by analog? |
 | 6 | `bdk-taste-test` | **Crapola** | What is the tiniest test that returns the most brutal truth? |
-| 7 | `bdk-pivot-punt-pursue` | **Considered** | Pursue, pivot, or punt, and why? |
+| 7 | `bdk-pivot-punt-pursue` | **Considered** | Pivot, punt, or pursue, and why? |
 
-Tier questions: **Chaos:** Is it a real outcome, with real receipts? **Confusion:** What do we actually know, is it still fresh, and does it apply to us? **Crapola:** Would reality disagree? **Considered:** Pursue, pivot, or punt?
+Tier questions: **Chaos:** Is it a real outcome, with real receipts? **Confusion:** What do we actually know, is it still fresh, and does it apply to us? **Crapola:** Would reality disagree? **Considered:** Pivot, punt, or pursue?
 
 `bdk-context-pantry` (workflow, ownership, and two-sided economics) and `bdk-four-risks` (the four-risk grid on its own) remain as deep dives that steps 5 and 7 may consult.
 
@@ -72,7 +72,7 @@ Every claim that leaves a step gets exactly one exit, with its step and reason:
 
 A single claim is a funnel of one. With many claims, report how many entered and left each tier and give one line per claim. A specialist runs its own step and stops at its gate; it does not continue into the next step on its own.
 
-**Two families.** The funnel judges claims and ideas. Work (what someone spends the week on) is judged by the Sort grid in `bdk-skill-sorter`, whose four moves are Pass-off · Punt · Pivot · Pursue. PASS-OFF is a move for work, not a verdict on a claim. If a supplied "AI initiative" is really a ceremony to automate, say so and point to the Sort grid before running the funnel.
+**Two families.** The funnel judges claims and ideas. Work (what someone spends the week on) is judged by the Sort grid in `bdk-skill-sorter`, whose four moves are Pass-off · Pivot · Punt · Pursue. PASS-OFF is a move for work, not a verdict on a claim. If a supplied "AI initiative" is really a ceremony to automate, say so and point to the Sort grid before running the funnel.
 
 ## The outcome statement
 
@@ -129,13 +129,13 @@ Steps 5 to 7 sort evidence into four squares. Use these questions verbatim, with
 - Mark each square **earned**, **weak**, **missing**, **stale**, or **failed**, naming the evidence. Missing and stale are statuses, not failures.
 - **Feasible-only flag:** raise it by name when the only evidence is a working demo or prototype. AI made building cheap; the demo proves buildable, not feasible with our people, process, culture, and capital, and it says nothing about the other three squares.
 
-## Pursue, pivot, or punt
+## Pivot, punt, or pursue
 
 Step 7 recommends one move per scope, and says why:
 
-- **Pursue:** so much proof that we go forward as planned. All four squares are earned for the scope requested, and the outcome's receipts are relevant, labeled, and fresh.
 - **Pivot:** make adjustments based on the data and the discoveries. A square failed with a nameable fix (trust, workflow, price, cost, scope, segment, people), the requested scope is bigger than the evidence (a rollout or annual contract when a pilot is earned), or a square is still missing and the adjustment is to run the tiny test first. Name the change and the threshold it must meet.
 - **Punt:** the orange is not worth the squeeze. Say no. Valuable failed, the outcome was vanity or output only, the evidence is about somebody else with nothing transferable, or what it would cost to earn the missing proof exceeds what the outcome could return. State what evidence would reopen it.
+- **Pursue:** so much proof that we go forward as planned. All four squares are earned for the scope requested, and the outcome's receipts are relevant, labeled, and fresh.
 
 | Grid state | Move |
 |---|---|
@@ -164,7 +164,7 @@ Rate only the check(s) assessed, with reasons and evidence that would change the
 
 These are qualitative anchors, not a numerical formula. Missing information can warrant Mystery Meat without proving falsehood or dishonesty. Strong records can support Real Deal with one authoritative source; a fixed source-count threshold is inappropriate. Do not average check ratings or the four risk squares. Name the weakest consequential finding, the tier and square where the baloney was caught, and what investment it blocks. A specialist's Real Deal does not establish overall readiness.
 
-**Pursue:** so much proof that the named investment goes forward as planned. **Pivot:** adjust a material part of the bet based on the evidence and discoveries, and explain why. **Punt:** the orange is not worth the squeeze; say no, and state what evidence could reopen it. Distinguish a recommendation to investigate from a recommendation to deploy. Missing evidence can block deployment while still supporting an inexpensive test. A provisional recommendation is not a human approval.
+**Pivot:** adjust a material part of the bet based on the evidence and discoveries, and explain why. **Punt:** the orange is not worth the squeeze; say no, and state what evidence could reopen it. **Pursue:** so much proof that the named investment goes forward as planned. Distinguish a recommendation to investigate from a recommendation to deploy. Missing evidence can block deployment while still supporting an inexpensive test. A provisional recommendation is not a human approval.
 
 **Decision record.** Every move names: the scope it applies to, the deciding squares and evidence, a suggested owner role (a named owner only if supplied), a by-when, what would change the call, and where the claim goes next (Truth, back in at a tier, or out). Perishable evidence behind a Pursue carries a re-check date or trigger so Truth can be sent back when it spoils. Never restart the funnel, or reuse an old Truth, without saying which evidence expired.
 

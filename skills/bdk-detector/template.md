@@ -34,7 +34,7 @@ Label mix (FACT · INFERENCE · ASSUMPTION · BEST GUESS): · Stale items and re
 **Crapola: Would reality disagree?**
 Solution hypothesis (If we / for / then we will): · Tiny acts of discovery, tagged by square: · Validation measures (quantitative · qualitative · hard stop), written first: · Feasible-only flags: · Taste rating:
 
-## 4. Considered: Pursue, pivot, or punt, and why
+## 4. Considered: Pivot, punt, or pursue, and why
 
 For each claim that reached Considered, attach a [recommendation and decision record](../bdk-pivot-punt-pursue/template.md): the move per scope, the why, and the four-risk grid.
 

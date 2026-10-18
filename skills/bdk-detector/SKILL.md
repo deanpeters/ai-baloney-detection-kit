@@ -1,6 +1,6 @@
 ---
 name: bdk-detector
-description: Run one AI idea or a whole pile (a roadmap, vendor pitches) through the seven-step Baloney Funnel - outcome, receipts, labels, sell-by, relevance, taste test, pivot-punt-pursue - and report what was sifted out where, and what earned Pursue, Pivot, or Punt.
+description: Run one AI idea or a whole pile (a roadmap, vendor pitches) through the seven-step Baloney Funnel - outcome, receipts, labels, sell-by, relevance, taste test, pivot-punt-pursue - and report what was sifted out where, and what earned Pivot, Punt, or Pursue.
 license: CC-BY-NC-SA-4.0
 argument-hint: "[a claim, idea, roadmap, pitch, or a pile of them]"
 intent: >-
@@ -39,7 +39,7 @@ interface:
   display_name: "AI Baloney Detector"
   short_description: "Sift AI claims: chaos, confusion, crapola, truth"
   brand_color: "#00E874"
-  default_prompt: "Use $bdk-detector to run these AI ideas through the seven-step Baloney Funnel, outcome first and cheapest sifts next, and stop with a funnel report: what left at each step, why, and what earned pursue, pivot, or punt."
+  default_prompt: "Use $bdk-detector to run these AI ideas through the seven-step Baloney Funnel, outcome first and cheapest sifts next, and stop with a funnel report: what left at each step, why, and what earned pivot, punt, or pursue."
   allow_implicit_invocation: true
 ---
 
@@ -57,7 +57,7 @@ Help an AI bet earn the right to move forward, and help a pile of AI ideas shrin
 | 4 | **Confusion** | Is it fresh enough for this decision? | `bdk-sell-by` |
 | 5 | **Confusion** | Does it apply to us: directly, adjacent, or by analog? | `bdk-relevance` |
 | 6 | **Crapola** | What's the tiniest test that returns the most brutal truth? | `bdk-taste-test` |
-| 7 | **Considered** | Pursue, pivot, or punt, and why? | `bdk-pivot-punt-pursue` |
+| 7 | **Considered** | Pivot, punt, or pursue, and why? | `bdk-pivot-punt-pursue` |
 
 What comes out the bottom is **Truth**: scoped to the bet it earned, with a sell-by date of its own.
 
@@ -112,7 +112,7 @@ Two sizes. **Lead with the stage card; give the full report when asked.**
 **CRAPOLA** · Would reality disagree? · <n> → <n>
 - #<id> <short claim>: PIVOT · <the named change>
 
-**CONSIDERED** · Pursue, pivot, or punt?
+**CONSIDERED** · Pivot, punt, or pursue?
 - #<id> <short claim>: **PURSUE** · <why, in ≤ 12 words>
 
 Say "full report" for the ledger, ratings, and decision records.
@@ -132,7 +132,7 @@ Routed work items get one line above CHAOS ("Not a claim: routed to the work fam
 6. **Step 4, Sell-By (Confusion).** Date the evidence: publication, observation, model or price version, and against the outcome's by-when. Exits: stale or freshness unknown → Send back with the refresh named (stale is not false); depends on a condition that no longer exists → Sifted out; otherwise Pass with re-check triggers.
 7. **Step 5, Relevance (Confusion).** Rate each piece of evidence direct, adjacent, analog, or not relevant to our beneficiary and context, name the mechanism for adjacent and analog evidence, and pull what our own pantry (usage, support, sales, cost to serve) says. Exits: about somebody else's people or economics with no transferable mechanism, or contradicted by our pantry → Sifted out; the deciding pantry record isn't in hand → Send back; applies to a narrower scope → Pivot; otherwise Pass.
 8. **Step 6, Taste Test (Crapola).** For survivors: lay out the four squares, raise the feasible-only flag when a demo is the only evidence, and either review supplied results against prewritten criteria or write a solution hypothesis (If we / for / then we will [the outcome statement]) with at least two tiny acts of discovery tagged by square, riskiest first, and validation measures written first: one quantitative, one qualitative, and a hard stop (the guardrail). Exits: Valuable failed → Sifted out; a Usable, Feasible, or Viable square failed with a specific fix → **Pivot** (name the change and its threshold; never Punt this); squares missing → Held for a test (not a Punt); criteria met → Pass.
-9. **Step 7, Pivot, Punt, or Pursue (Considered).** For survivors and held bets: recommend a move per scope (pilot, rollout, contract, public launch, automatic action), with the why. **Pursue:** so much proof that we go forward as planned (all four squares earned for that scope). **Pivot:** adjust based on the data and discoveries (a fixable failed square, a smaller scope than requested, or the tiny test first when squares are missing). **Punt:** the orange is not worth the squeeze; say no and what would reopen it. **Move the bet, not just the request:** when the requested scope is not earned, say so, then give the bet its move. Write a decision record with re-check triggers.
+9. **Step 7, Pivot, Punt, or Pursue (Considered).** For survivors and held bets: recommend a move per scope (pilot, rollout, contract, public launch, automatic action), with the why. **Pivot:** adjust based on the data and discoveries (a fixable failed square, a smaller scope than requested, or the tiny test first when squares are missing). **Punt:** the orange is not worth the squeeze; say no and what would reopen it. **Pursue:** so much proof that we go forward as planned (all four squares earned for that scope). **Move the bet, not just the request:** when the requested scope is not earned, say so, then give the bet its move. Write a decision record with re-check triggers.
 10. Rate the five checks where assessed, using the shared anchors, and name the weakest consequential finding. Never average ratings or squares.
 11. Map the findings to the damage they would do if ignored: **Chaos initiation** (added workflow, coordination, cost, or risk), **Confusion induction** (unclear meanings, evidence, metrics, or ownership), **Crapola instantiation** (confidence exceeding support). State when a dimension has no material finding.
 12. Write the **stage card** (default) or, when asked, the full **funnel report**: entered, routed to work, left at each tier (by exit type), held for a test, reached Truth. The counts must add up. Do the full analysis either way; the stage card only shortens what is shown.

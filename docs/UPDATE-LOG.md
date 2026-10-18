@@ -197,3 +197,13 @@ Dean shared two Productside worksheets (measuring the four risks; the solution h
 - **Detector:** splits the claim from the need at intake, after case 01's first run let a dead vendor claim hide a live need.
 - **Evals:** new case 14 (top-down market claim). 10 runs plus 2 re-runs: **10 pass, 0 fail** (latest per run). [Grade sheet](../evals/runs/sourcing-2026-10-18/GRADES.md).
 - **Defaults chosen for Dean:** the guardrail is optional; case 02's open question (stale demo data: Send back at Sell-By or held for the Taste Test) is left for him.
+
+## 11. Spoken order (2026-10-18)
+
+Dean's rule: when these are written or said as a list, it's always **Chaos, Confusion, Crapola** · **Pivot, Punt, Pursue** · **Hired, Fired, Promoted**. They're written to ring for humans. Processing order is free: decision tables and grid-reading rules may still check Pursue first.
+
+- About 50 listed sequences reordered across the skills, contract, templates, frontmatter, plugin manifests, README, catalog, AGENTS, INSTRUCTIONS, SKILLS, the spec, and the Seagull runbook. The step-7 question is now "Pivot, punt, or pursue, and why?"
+- Work-family moves read **Pass-off · Pivot · Punt · Pursue**.
+- `bdk-value-or-theater`'s output lines now read "Verdict: ⏳ NOT YET / 🎭 THEATER / 🎯 VALUE" and "Move: PIVOT / PUNT / PURSUE", reordered together so each verdict still sits above its move.
+- Chaos, Confusion, Crapola and Hired, Fired, Promoted were already in order everywhere.
+- Left as is: history (eval runs, earlier log sections), and the HANDOFF quote of deck 11's slide ("Punt / Pivot / Pursue"), now annotated with the spoken order for Dean's slide pass.

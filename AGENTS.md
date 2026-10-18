@@ -34,7 +34,7 @@ All core diagnostics should use or clearly map to:
 
 Do not silently rename these checks or introduce competing frameworks without a clear reason.
 
-The [Baloney Funnel](README.md#the-baloney-funnel) runs them as seven steps, starting with one more question before any evidence is checked: **is there a real, measurable outcome?** Shape every pitch into "[direction] [metric] [by how much] [by when] for [beneficiary persona] in [problem context]" (`bdk-outcomes`), or sift it out as an output or a vanity metric. Then: Receipts → Labels → Sell-By → Context Pantry, as relevance to us (`bdk-relevance`) → Taste → Pursue, Pivot, or Punt (`bdk-pivot-punt-pursue`).
+The [Baloney Funnel](README.md#the-baloney-funnel) runs them as seven steps, starting with one more question before any evidence is checked: **is there a real, measurable outcome?** Shape every pitch into "[direction] [metric] [by how much] [by when] for [beneficiary persona] in [problem context]" (`bdk-outcomes`), or sift it out as an output or a vanity metric. Then: Receipts → Labels → Sell-By → Context Pantry, as relevance to us (`bdk-relevance`) → Taste → Pivot, Punt, or Pursue (`bdk-pivot-punt-pursue`).
 
 ---
 
@@ -204,7 +204,7 @@ What each one means:
 
 Test the riskiest open square first, with the tiniest test that returns the most brutal truth; a working demo answers only part of Feasible. Where relevant, also test desirability, governance, risk, operational fit, cost, or accountability. See `bdk-taste-test` and `bdk-pivot-punt-pursue`.
 
-Then recommend a move, with the why: **Pursue** (so much proof we go forward as planned), **Pivot** (adjust based on the data and discoveries), or **Punt** (the orange is not worth the squeeze; say no).
+Then recommend a move, with the why: **Pivot** (adjust based on the data and discoveries), **Punt** (the orange is not worth the squeeze; say no), or **Pursue** (so much proof we go forward as planned).
 
 Do not declare an idea validated because:
 
