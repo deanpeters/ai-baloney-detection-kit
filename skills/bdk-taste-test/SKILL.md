@@ -33,9 +33,9 @@ combine-with:
   - bdk-four-risks
 interface:
   display_name: "Taste Before You Ship"
-  short_description: "Cheapest tests of the four risks, before you build"
+  short_description: "If/then hypothesis and tiny tests of the four risks"
   brand_color: "#00E874"
-  default_prompt: "Use $bdk-taste-test to pick the riskiest open squares among valuable, usable, viable, and feasible, design the cheapest test for each with thresholds written first, and stop at the test plan."
+  default_prompt: "Use $bdk-taste-test to write a solution hypothesis (if we, for, then we will), pick the riskiest open squares among valuable, usable, viable, and feasible, design the tiniest test for each with measures and a hard stop written first, and stop at the test plan."
   allow_implicit_invocation: true
 ---
 

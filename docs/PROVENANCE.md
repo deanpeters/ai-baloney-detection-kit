@@ -33,3 +33,13 @@ All new AI-BDK content and generated distributions use the repository's CC BY-NC
 | `ai-product-operating-model-skills`, `product-manager-antagonist-skills`, `Mitre-Skills`, `Productside-Market-Intelligence-Skills` | Skill folder names only | Hand-off targets verified to exist: `workflow-to-skill-converter`, `human-aipom-work-contract`, `pant-executive-decision-review`, `pant-meeting-rehearsal`, `itk-trimming`, `mi-build-battle-card`, `adlc-step1-frame-intent`, `dlab-step03-persona`. No text copied. |
 
 The four risks' questions are Dean's own wording (2026-10-11). The four-risk framing (value, usability, viability, feasibility) originates with Marty Cagan (SVPG), which Dean's Product Manager Skills also credit.
+
+## 2026-10-18 additions (the seven-step loop and sourcing)
+
+| Source | What was used | Contribution |
+|---|---|---|
+| Dean Peters, in session | The seven-step loop, the outcome statement format, his meanings for the four risks, the Pivot/Punt/Pursue definitions, and the spoken order of the triads | The loop's design and vocabulary, in his words |
+| Dean's TAM/SAM/SOM prompt (pasted in session) | Four sourcing rules: research it yourself, bottom-up calculations, a clickable URL from credible source classes, ranges with reasons | The sourcing rules in the contract, AGENTS.md, and `bdk-receipts` |
+| Productside worksheets "Measuring the four risks" and "Solution hypothesis" (PDFs, © 2025 Productside, licensed for internal use) | Ideas only: success versus health metrics, a menu of tests per risk, and the If/Then hypothesis with tiny acts of discovery and quantitative and qualitative measures | The outcome guardrail, the Taste Test's solution hypothesis and test menu. **No wording, examples, or layout copied**; credited in the README |
+| `Productside/Productside-ADLC-Skills`, `AI-Augmented-Product-Discovery-Lab` | Skill names only: `adlc-util-solution-hypothesis`, `dlab-step07-solution-hypothesis`, `dlab-step02-segment` | Hand-off targets for deeper hypothesis design and market sizing |
+

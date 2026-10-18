@@ -28,26 +28,27 @@ Case 09 is the candidate **stage demo:** a whole "AI roadmap" sifted live, step 
 
 ## Coverage
 
-| | 01 | 02 | 03 | 04 | 05 | 06 | 07 | 08 | 09 | 12 | 13 |
-|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| Sifted out at Outcomes (output or vanity) | | | | | | | | | ● | ● | |
-| Outcome reshaped, not rejected | ● | ● | ● | ● | ● | | ● | | ● | | ● |
-| Sifted out at Receipts | ● | | ● | | | | | | ● | | |
-| Sifted out at Relevance or Considered | | | | | | | ● | | | | |
-| Sifted out at the Taste Test | | | ● | | | | | | | | |
-| Send back (missing or stale) | | | | | | ● | ● | | ● | | |
-| Pivot (back in at its step) | ● | | | ● | ● | | | | ● | | ● |
-| Held for a test | | ● | | | | | | | ● | | |
-| Reaches Truth | | | | | | | ● | | ● | | |
-| Routed to the work family | | | | | | | | ● | ● | | |
-| Valuable is the deciding square | | | ● | | | | ● | | ● | | |
-| Usable is the deciding square | | | | ● | | | | | ● | | |
-| Viable is the deciding square | ● | | | | ● | ● | | | ● | | |
-| Feasible is the deciding square | ● | ● | | | | ● | | | | | |
-| Shared origin | ● | | | | | | | | ● | | |
-| Feasible-only flag | | ● | | | | | | | | | |
-| Many claims and counts per tier | | | | | | | | | ● | | |
-| Funny ≠ mean guard | | ● | | ● | | | | ● | ● | ● | |
+| | 01 | 02 | 03 | 04 | 05 | 06 | 07 | 08 | 09 | 12 | 13 | 14 |
+|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| Sifted out at Outcomes (output or vanity) | | | | | | | | | ● | ● | | |
+| Outcome reshaped, not rejected | ● | ● | ● | ● | ● | | ● | | ● | | ● | ● |
+| Sifted out at Receipts | ● | | ● | | | | | | ● | | | ● |
+| Sifted out at Relevance or Considered | | | | | | | ● | | | | | |
+| Sifted out at the Taste Test | | | ● | | | | | | | | | |
+| Send back (missing or stale) | | | | | | ● | ● | | ● | | | |
+| Pivot (back in at its step) | ● | | | ● | ● | | | | ● | | ● | |
+| Held for a test | | ● | | | | | | | ● | | | ● |
+| Reaches Truth | | | | | | | ● | | ● | | | |
+| Routed to the work family | | | | | | | | ● | ● | | | |
+| Valuable is the deciding square | | | ● | | | | ● | | ● | | | ● |
+| Usable is the deciding square | | | | ● | | | | | ● | | | |
+| Viable is the deciding square | ● | | | | ● | ● | | | ● | | | |
+| Feasible is the deciding square | ● | ● | | | | ● | | | | | | |
+| Shared origin | ● | | | | | | | | ● | | | ● |
+| Feasible-only flag | | ● | | | | | | | | | | |
+| Many claims and counts per tier | | | | | | | | | ● | | | |
+| Funny ≠ mean guard | | ● | | ● | | | | ● | ● | ● | | |
+| Top-down number flagged and rebuilt bottom-up | | | | | | | | | | | | ● |
 
 **Not covered yet:**
 - Guided Discovery and the different voices. The existing [case 08](../cases/08-mode-switch.md) and the voice runs partly cover these. Guided Discovery matters most at step 1, where the sponsor answers the outcome questions.

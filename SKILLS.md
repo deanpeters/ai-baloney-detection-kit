@@ -22,7 +22,7 @@ The [Baloney Funnel](README.md#the-baloney-funnel) is a process of elimination: 
 | 3 · Confusion | How much is fact, inference, assumption, or best guess? | [bdk-labels](skills/bdk-labels/SKILL.md) | Labels and the label mix |
 | 4 · Confusion | Is it fresh enough for this decision? | [bdk-sell-by](skills/bdk-sell-by/SKILL.md) | Freshness, and re-check triggers so Truth gets sent back when it spoils |
 | 5 · Confusion | Does it apply to us: directly, adjacent, or by analog? | [bdk-relevance](skills/bdk-relevance/SKILL.md) | Relevance to our pantry of product, user, business, and market data |
-| 6 · Crapola | What's the tiniest test that returns the most brutal truth? | [bdk-taste-test](skills/bdk-taste-test/SKILL.md) | Tiny tests of the riskiest open squares, thresholds first |
+| 6 · Crapola | What's the tiniest test that returns the most brutal truth? | [bdk-taste-test](skills/bdk-taste-test/SKILL.md) | A solution hypothesis (If we / for / then we will) and tiny tests of the riskiest open squares, measures and a hard stop written first |
 | 7 · Considered | Pivot, punt, or pursue, and why? | [bdk-pivot-punt-pursue](skills/bdk-pivot-punt-pursue/SKILL.md) | The recommendation, its why, and a scoped decision record |
 | Deep dive · Confusion | For whom, which workflow, at what cost to each side? | [bdk-context-pantry](skills/bdk-context-pantry/SKILL.md) | Workflow, ownership, and both sides' economics |
 | Deep dive · Considered | Which square decides? | [bdk-four-risks](skills/bdk-four-risks/SKILL.md) | The four-risk grid on its own |

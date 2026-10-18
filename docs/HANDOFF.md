@@ -1,6 +1,10 @@
 # AI-BDK skill handoff
 
-Updated 2026-10-18 (the seven-step loop; keynote sync below). Thirteen skills: ten **funnel skills** (the whole-funnel `bdk-detector`, the seven step skills, and two deep dives), one **utility**, and the two **keynote quick checks**. The steps, in order: `bdk-outcomes` → `bdk-receipts` → `bdk-labels` → `bdk-sell-by` → `bdk-relevance` → `bdk-taste-test` → `bdk-pivot-punt-pursue`. The deep dives are `bdk-context-pantry` and `bdk-four-risks`. Canonical skills are in `skills/` (`.claude/skills` is a symlink to it). Shared behavior is authored in [the assessment contract](../reference/assessment-contract.md). What changed today and why: [UPDATE-LOG.md](UPDATE-LOG.md).
+Updated 2026-10-18 (the seven-step loop; keynote sync below). Thirteen skills: ten **funnel skills** (the whole-funnel `bdk-detector`, the seven step skills, and two deep dives), one **utility**, and the two **keynote quick checks**. The steps, in order: `bdk-outcomes` → `bdk-receipts` → `bdk-labels` → `bdk-sell-by` → `bdk-relevance` → `bdk-taste-test` → `bdk-pivot-punt-pursue`. The deep dives are `bdk-context-pantry` and `bdk-four-risks`.
+
+Also on 2026-10-18: the **sourcing rules** (research public facts yourself, ask only for private ones, never browse a fixture; credible source classes; bottom-up over top-down; ranges with reasons), an optional **guardrail** on the outcome statement, the **solution hypothesis** in the Taste Test, the detector's **claim-versus-need split**, and the **spoken order** (Chaos, Confusion, Crapola · Pivot, Punt, Pursue · Hired, Fired, Promoted). Details and evidence: [UPDATE-LOG.md](UPDATE-LOG.md) §9–11 and [VERIFICATION.md](../evals/VERIFICATION.md).
+
+**Open for Dean:** case 02 (stale data behind a demo: Send back at Sell-By, or held for the Taste Test?); Codex rejects every model on the ChatGPT account (re-run with `run-codex.sh` after `codex login`); deck 11's funnel slides still show the old six commands and "Punt / Pivot / Pursue." Canonical skills are in `skills/` (`.claude/skills` is a symlink to it). Shared behavior is authored in [the assessment contract](../reference/assessment-contract.md). What changed today and why: [UPDATE-LOG.md](UPDATE-LOG.md).
 
 ## First use
 

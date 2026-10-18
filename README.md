@@ -42,7 +42,7 @@ Each funnel skill works independently with direct notes or partial context. Star
 | 3 · Confusion | [bdk-labels](skills/bdk-labels/SKILL.md) | Separate fact, inference, assumption, and best guess | Labeled Claims and the label mix |
 | 4 · Confusion | [bdk-sell-by](skills/bdk-sell-by/SKILL.md) | Check whether evidence is fresh enough for this decision | Freshness Ledger and re-check triggers |
 | 5 · Confusion | [bdk-relevance](skills/bdk-relevance/SKILL.md) | Check whether the evidence applies to us: direct, adjacent, or analog | Relevance Map and pantry pull |
-| 6 · Crapola | [bdk-taste-test](skills/bdk-taste-test/SKILL.md) | Design the tiniest test that returns the most brutal truth, or review results | Taste Test with thresholds |
+| 6 · Crapola | [bdk-taste-test](skills/bdk-taste-test/SKILL.md) | Write the solution hypothesis and the tiniest tests that return the most brutal truth, or review results | Solution hypothesis and test plan, thresholds first |
 | 7 · Considered | [bdk-pivot-punt-pursue](skills/bdk-pivot-punt-pursue/SKILL.md) | Recommend pivot, punt, or pursue, and say why | Recommendation and decision record |
 
 Deep dives: [bdk-context-pantry](skills/bdk-context-pantry/SKILL.md) (workflow, ownership, and both sides' economics, beside step 5) and [bdk-four-risks](skills/bdk-four-risks/SKILL.md) (the four-risk grid on its own, beside step 7).
