@@ -1,6 +1,6 @@
 ---
 name: bdk-receipts
-description: Trace AI claims to original or authoritative sources and assess support and independence. Use when citations, provenance, or source-of-truth records need checking; the first sift in the Chaos tier.
+description: Trace AI claims, and the evidence behind an outcome's metric and direction, to original or authoritative sources and assess support and independence. Use when citations, provenance, or source-of-truth records need checking; step 2 of the Baloney Funnel, in the Chaos tier.
 license: CC-BY-NC-SA-4.0
 argument-hint: "[claims, links, excerpts, or a source list]"
 intent: >-
@@ -10,7 +10,7 @@ intent: >-
   cheapest place to stop baloney before anyone designs a test around it.
 theme: baloney-detection
 tier: 1-chaos
-sift-question: "Is it real, and is it still true?"
+sift-question: "What evidence supports that outcome's metric and direction?"
 status: active
 best-for:
   - "Vendor productivity or savings claims"
@@ -28,8 +28,9 @@ produces:
   - "A Receipts rating and an exit for each claim"
 depends-on: []
 combine-with:
-  - bdk-sell-by
+  - bdk-outcomes
   - bdk-labels
+  - bdk-sell-by
 interface:
   display_name: "Show Me the Receipts"
   short_description: "Trace claims to their real origin and support"
@@ -44,15 +45,15 @@ interface:
 
 Establish what each source actually supports before anyone treats a plausible claim as earned confidence. A citation is a route to evidence, not a confidence badge.
 
-This is the first sift in the **Chaos** tier of the Baloney Funnel: *Is it real, and is it still true?* It is cheap, it runs first, and it is where most hype should leave the funnel.
+This is step 2 of the Baloney Funnel, in the **Chaos** tier: *Is it a real outcome, with real receipts?* When `bdk-outcomes` has shaped an outcome statement, this step looks for evidence about that outcome: a baseline for its metric, and support that the proposed change moves the metric in the stated direction by roughly the stated amount. It is cheap, it runs early, and it is where most hype should leave the funnel.
 
 ## When to use it
 
-Use for a vendor claim, research summary, pitch, customer evidence, or consequential record. This skill checks support and provenance. Pair it with `bdk-sell-by` to finish the Chaos tier; use `bdk-detector` when the whole funnel determines the decision.
+Use for a vendor claim, research summary, pitch, customer evidence, or consequential record. This skill checks support and provenance. It follows `bdk-outcomes` and hands its ledger to `bdk-labels`; use `bdk-detector` when the whole funnel determines the decision.
 
 ## Inputs
 
-Accept claims, URLs, attachments, record extracts, source lists, or a previous ledger. No citations supplied is itself a useful finding. Use only authorized access.
+Accept an outcome statement, claims, URLs, attachments, record extracts, source lists, or a previous ledger. Without an outcome statement, work from the claims as given. No citations supplied is itself a useful finding. Use only authorized access.
 
 ## Key concepts
 
@@ -101,7 +102,7 @@ List each claim once. The **headline claim** is the one the decision leans on mo
 
 ## Method
 
-1. Identify the decision-bearing claims and assign IDs. Separate the claim that an announcement exists from the claim that its promise occurred.
+1. Identify the decision-bearing claims and assign IDs. If an outcome statement was supplied, add the receipts it needs as claims: the metric's current baseline, evidence the proposed change moves it in the stated direction, and evidence for the size of the target. Separate the claim that an announcement exists from the claim that its promise occurred.
 2. Inventory sources. For each record title, exact URL or attachment location, publisher/record owner, relevant dates, inspection status, and what it supports. Never call a supplied URL verified before inspecting it.
 3. Trace repetitions back to their origin. Group shared press releases, studies, datasets, quotes, or generated summaries. If lineage is unclear, independence is unresolved; do not count it as independent.
 4. Inspect authority and method for this claim: sample, denominator, baseline, exclusions, incentives, and relevance. One authoritative transaction can settle that transaction; many articles cannot establish it.
@@ -115,7 +116,7 @@ List each claim once. The **headline claim** is the one the decision leans on mo
 
 Recommend one exit per claim, then stop:
 
-- **Pass:** a traceable, relevant origin supports it. It moves on (to `bdk-sell-by`, then the Confusion tier).
+- **Pass:** a traceable origin supports it. It moves on to the Confusion tier (`bdk-labels`, then `bdk-sell-by` and `bdk-relevance`).
 - **Sifted out (Punt):** no claim to check (a slogan), or the only origin is an interested party with no method, for a consequential decision. Record what receipt would reopen it.
 - **Send back:** the receipt probably exists but is not in hand (unopened original, inaccessible record). Name exactly what to fetch.
 
@@ -135,7 +136,7 @@ Follow the contract's Product Coach, Comedian, Pirate, Boss, and Antagonist beha
 
 ## Failure modes
 
-Do not equate five links with five origins, an inspected quotation with a demonstrated outcome, or a broken link with proof of fraud. Do not reject a strong primary record merely because there is only one. Do not sift out a claim for being old; freshness is `bdk-sell-by`'s call.
+Do not equate five links with five origins, an inspected quotation with a demonstrated outcome, or a broken link with proof of fraud. Do not reject a strong primary record merely because there is only one. Do not sift out a claim for being old; freshness is `bdk-sell-by`'s call. Do not judge whether the evidence applies to us; that is `bdk-relevance`'s call.
 
 ## Assets and examples
 

@@ -1,6 +1,7 @@
 # Labeled Claims
 
-**Tier:** 2 Confusion · *What do we actually know, and does it apply to us?*
+**Step:** 3 of 7 · **Tier:** Confusion · *How much of the evidence is fact, inference, assumption, or best guess?*
+**Label mix (load-bearing claims):** FACT · INFERENCE · ASSUMPTION · BEST GUESS · unsupported
 **Decision this informs:** · **As of:** · **Mode / voice:**
 
 ---

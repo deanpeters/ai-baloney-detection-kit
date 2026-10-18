@@ -1,6 +1,6 @@
 ---
 name: bdk-four-risks
-description: Read the four-risk grid (valuable, usable, viable, feasible) and recommend Pursue, Pivot, or Punt for a named investment. Use when deciding what an AI bet has earned; the Considered tier of the Baloney Funnel.
+description: Read the four-risk grid (valuable, usable, viable, feasible) for a named investment and show which square decides. Use for a deep dive on the four risks; the grid behind bdk-pivot-punt-pursue in the Considered tier.
 license: CC-BY-NC-SA-4.0
 argument-hint: "[the bet, its evidence, or earlier funnel artifacts]"
 intent: >-
@@ -44,7 +44,7 @@ interface:
 
 Turn the evidence about an AI bet into a decision a product person can defend, and scope that decision to the investment the evidence has actually earned.
 
-This is the **Considered** tier of the Baloney Funnel: *Pursue, pivot, or punt?* What comes out the bottom is **Truth**: this bet, for these people, under these conditions, has earned the next named investment. Truth has a sell-by date too, so the decision leaves with re-check triggers.
+This is the grid behind step 7 of the Baloney Funnel (`bdk-pivot-punt-pursue`), in the **Considered** tier: *Pursue, pivot, or punt?* Use it for a deep dive on the four risks; the step-7 skill uses it to make the call and say why. What comes out the bottom is **Truth**: this bet, for these people, under these conditions, has earned the next named investment. Truth has a sell-by date too, so the decision leaves with re-check triggers.
 
 ## When to use it
 
@@ -87,8 +87,8 @@ A Four-Risk Grid, a move for each scope, the deciding square, and a decision rec
    - A Can-we square (Usable, Feasible) fails and the others hold → **Pivot** the how.
    - Viable fails while Valuable holds → **Pivot** price, scope, or cost for whichever side's ROI fails.
    - Valuable fails, or no affordable test could move the riskiest square → **Punt**.
-   - A square is missing or stale → **Send back** to the top of the funnel (or run `bdk-taste-test`), not Punt.
-6. **Move the bet, not just the request.** When the requested scope (rollout, contract, roadmap slot) is not earned, say so, then give the bet its move: Pivot with the named fix when a Can-we or Viable square failed, Pursue the cheapest test when squares are missing. Punt only when Valuable failed or nothing affordable could move the riskiest square.
+   - A square is missing or stale → **Pivot** to the tiny test first (`bdk-taste-test`), or **Send back** to the step that can fetch or refresh the evidence. Never Punt it.
+6. **Move the bet, not just the request.** When the requested scope (rollout, contract, roadmap slot) is not earned, say so, then give the bet its move: Pivot with the named fix when a Can-we or Viable square failed, Pivot to the tiny test first when squares are missing. Punt only when Valuable failed or nothing affordable could move the riskiest square.
 7. Name the deciding square for each move, so everyone can see where the baloney entered.
 8. Write the decision record: move, scope, deciding squares and evidence, suggested owner role (named owner only if supplied), by-when, what would change the call, where it goes next, and re-check triggers for perishable evidence behind any Pursue.
 9. Name a sibling hand-off when one fits (for example, an agent idea that reaches Truth goes to `adlc-step1-frame-intent`). Do not claim the hand-off was run.

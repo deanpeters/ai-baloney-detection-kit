@@ -1,6 +1,7 @@
 # Freshness Ledger
 
-**Tier:** 1 Chaos · *Is it real, and is it still true?*
+**Step:** 4 of 7 · **Tier:** Confusion · *Is the evidence fresh enough for this decision?*
+**Outcome's by-when (if any):**
 **Decision this informs:** · **Decision period:**
 **As of (from the environment):** · **Mode / voice:**
 

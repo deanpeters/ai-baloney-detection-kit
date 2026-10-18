@@ -46,12 +46,14 @@ def main():
             shutil.rmtree(workspace)
         skill = ROOT / 'skills' / run['skill']
         shutil.copytree(skill, workspace / 'skill', ignore=shutil.ignore_patterns('examples', '.DS_Store'))
+        date = '2026-10-11'
         if run['input'].startswith('loop-'):
             text = case_input(run['input'])
+            date = str(yaml.safe_load((CASES / f"{run['input']}.yaml").read_text())['assessment_date'])
         else:
             text = (ROOT / run['input']).read_text()
         (workspace / 'input.md').write_text(text)
-        (workspace / 'prompt.txt').write_text(plan['prompts'][run['prompt']].format(**run))
+        (workspace / 'prompt.txt').write_text(plan['prompts'][run['prompt']].format(date=date, **run))
     print(f'Prepared {len(runs)} workspaces in {out}')
 
 

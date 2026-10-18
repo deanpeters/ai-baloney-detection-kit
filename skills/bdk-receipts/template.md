@@ -1,6 +1,7 @@
 # Receipts Ledger
 
-**Tier:** 1 Chaos · *Is it real, and is it still true?*
+**Step:** 2 of 7 · **Tier:** Chaos · *What evidence supports that outcome's metric and direction?*
+**Outcome statement (if any):**
 **Decision this informs:**
 **As of:** · **Mode / voice:** · **Access limits:**
 

@@ -131,14 +131,14 @@ See `VOICES.md`.
 
 # Step 3 — Run the Funnel
 
-The five checks, in the cheapest order, as a process of elimination:
+Seven steps in four tiers, outcome first, then the cheapest checks, as a process of elimination:
 
-1. **Chaos**: *Is it real, and is it still true?* **Show Me the Receipts** · **Check the Sell-By Date**
-2. **Confusion**: *What do we actually know, and does it apply to us?* **Label the Lunch Meat** · **Check the Context Pantry**
-3. **Crapola**: *Would reality disagree?* **Taste Before You Ship**
-4. **Considered**: *Pursue, pivot, or punt?* The four risks: **Valuable** "Is this something someone would buy?" · **Usable** "Will users trust and adopt it?" · **Viable** "Is this good business?" · **Feasible** "Can we even do this with what we know and have?"
+1. **Chaos**: *Is it a real outcome, with real receipts?* (1) **Name the Outcome**: [direction] [metric] [by how much] [by when] for [beneficiary] in [context] · (2) **Show Me the Receipts** for that outcome
+2. **Confusion**: *What do we actually know, is it still fresh, and does it apply to us?* (3) **Label the Lunch Meat** · (4) **Check the Sell-By Date** · (5) **Check the Context Pantry: Relevance** (direct, adjacent, or analog)
+3. **Crapola**: *Would reality disagree?* (6) **Taste Before You Ship**: the tiniest test that returns the most brutal truth
+4. **Considered**: *Pursue, pivot, or punt, and why?* (7) **Pivot, Punt, or Pursue**, read from the four risks: **Valuable** "Is this something someone would buy?" · **Usable** "Will users trust and adopt it?" · **Viable** "Is this good business?" · **Feasible** "Can we even do this with what we know and have?"
 
-Each claim leaves a tier by **Pass**, **Sifted out**, **Send back** (missing or stale, back to the top), or **Pivot**. What survives is **Truth**.
+Each claim leaves a step by **Pass**, **Sifted out**, **Send back** (missing or stale, back to the step that can fetch it), or **Pivot**. **Pursue** means so much proof we go forward as planned; **Pivot** means adjust based on the evidence; **Punt** means the orange is not worth the squeeze. What survives is **Truth**.
 
 ---
 

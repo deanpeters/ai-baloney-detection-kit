@@ -4,7 +4,7 @@
 
 > Help an AI claim, idea, or product earn confidence before it lands on a roadmap or in front of customers.
 
-**10 skills: seven funnel skills, one utility, and two quick checks.**
+**13 skills: the whole-funnel detector, seven step skills, two deep dives, one utility, and two quick checks.**
 
 For Product Managers, product leaders, and product teams deciding whether an AI idea deserves investment. The kit checks evidence, assumptions, context, freshness, and validation, then recommends **Pursue, Pivot, or Punt** for a named next step.
 
@@ -36,13 +36,16 @@ Each funnel skill works independently with direct notes or partial context. Star
 
 | Tier | Skill | Use it to | Leaves you with |
 |---|---|---|---|
-| Whole funnel | [bdk-detector](skills/bdk-detector/SKILL.md) | Assess one claim or a pile of pitches and roadmap items | Stage card; full funnel report on request |
-| Chaos | [bdk-receipts](skills/bdk-receipts/SKILL.md) | Trace source support, provenance, and independence | Receipts Ledger |
-| Chaos | [bdk-sell-by](skills/bdk-sell-by/SKILL.md) | Check whether evidence is fresh enough for this decision | Freshness Ledger and re-check triggers |
-| Confusion | [bdk-labels](skills/bdk-labels/SKILL.md) | Separate fact, inference, assumption, and best guess | Labeled Claims |
-| Confusion | [bdk-context-pantry](skills/bdk-context-pantry/SKILL.md) | Find missing customer, workflow, outcome, and economic context | Context Inventory |
-| Crapola | [bdk-taste-test](skills/bdk-taste-test/SKILL.md) | Design cheap tests of the riskiest assumptions or review results | Taste Test with thresholds |
-| Considered | [bdk-four-risks](skills/bdk-four-risks/SKILL.md) | Decide what investment the evidence has earned | Four-Risk Grid and decision record |
+| Whole funnel | [bdk-detector](skills/bdk-detector/SKILL.md) | Run one idea or a pile of pitches and roadmap items through all seven steps | Stage card; full funnel report on request |
+| 1 · Chaos | [bdk-outcomes](skills/bdk-outcomes/SKILL.md) | Shape the pitch into a measurable outcome, or sift out outputs and vanity metrics | Outcome statement |
+| 2 · Chaos | [bdk-receipts](skills/bdk-receipts/SKILL.md) | Find and trace the evidence for the outcome's metric and direction | Receipts Ledger |
+| 3 · Confusion | [bdk-labels](skills/bdk-labels/SKILL.md) | Separate fact, inference, assumption, and best guess | Labeled Claims and the label mix |
+| 4 · Confusion | [bdk-sell-by](skills/bdk-sell-by/SKILL.md) | Check whether evidence is fresh enough for this decision | Freshness Ledger and re-check triggers |
+| 5 · Confusion | [bdk-relevance](skills/bdk-relevance/SKILL.md) | Check whether the evidence applies to us: direct, adjacent, or analog | Relevance Map and pantry pull |
+| 6 · Crapola | [bdk-taste-test](skills/bdk-taste-test/SKILL.md) | Design the tiniest test that returns the most brutal truth, or review results | Taste Test with thresholds |
+| 7 · Considered | [bdk-pivot-punt-pursue](skills/bdk-pivot-punt-pursue/SKILL.md) | Recommend pursue, pivot, or punt, and say why | Recommendation and decision record |
+
+Deep dives: [bdk-context-pantry](skills/bdk-context-pantry/SKILL.md) (workflow, ownership, and both sides' economics, beside step 5) and [bdk-four-risks](skills/bdk-four-risks/SKILL.md) (the four-risk grid on its own, beside step 7).
 
 ### Utility and quick checks
 
@@ -72,17 +75,24 @@ For consequential facts, retrieve the authoritative record. Generated synthesis 
 
 **Chaos → Confusion → Crapola → Considered → Truth**
 
-The cheapest checks run first, so nobody spends a week testing a claim whose only source is a press release.
+Seven steps in four tiers. Outcome first, then the cheapest checks, so nobody spends a week testing something with no outcome behind it, or whose only source is a press release.
 
-| Tier | Question | Checks |
-|---|---|---|
-| **Chaos** | Is it real, and is it still true? | Show Me the Receipts · Check the Sell-By Date |
-| **Confusion** | What do we actually know, and does it apply to us? | Label the Lunch Meat · Check the Context Pantry |
-| **Crapola** | Would reality disagree? | Taste Before You Ship |
-| **Considered** | Pursue, pivot, or punt? | The four risks |
-| **Truth** | What has earned the next investment? | A scoped decision with a re-check date |
+| Step | Tier | Question | Skill |
+|---|---|---|---|
+| 1 | **Chaos** | Is there a real, measurable outcome here? | `bdk-outcomes` |
+| 2 | **Chaos** | What evidence supports that outcome's metric and direction? | `bdk-receipts` |
+| 3 | **Confusion** | How much is fact, inference, assumption, or best guess? | `bdk-labels` |
+| 4 | **Confusion** | Is it fresh enough for this decision? | `bdk-sell-by` |
+| 5 | **Confusion** | Does it apply to us: directly, adjacent, or by analog? | `bdk-relevance` |
+| 6 | **Crapola** | What's the tiniest test that returns the most brutal truth? | `bdk-taste-test` |
+| 7 | **Considered** | Pursue, pivot, or punt, and why? | `bdk-pivot-punt-pursue` |
+| | **Truth** | What has earned the next investment? | A scoped decision with a re-check date |
 
-Each tier has four exits: **Pass**, **Sifted out**, **Send back** for missing or stale evidence, or **Pivot** and re-enter at that tier. Missing is not failed. Stale is not false. When evidence expires, the claim returns to the top.
+The outcome statement: **[direction] [metric] [by how much] [by when] for [beneficiary persona] in [problem context].** "Feel 50% more confident" is not an outcome; "increase product adoption 50% by removing obstacles in the month-end close" is.
+
+Each step has four exits: **Pass**, **Sifted out**, **Send back** for missing or stale evidence, or **Pivot** and re-enter at that step. Missing is not failed. Stale is not false. When evidence expires, the claim goes back for a refresh.
+
+**Pursue:** so much proof that we go forward as planned. **Pivot:** adjust based on the data and the discoveries. **Punt:** the orange is not worth the squeeze; say no.
 
 ### The four risks
 
@@ -90,6 +100,11 @@ Each tier has four exits: **Pass**, **Sifted out**, **Send back** for missing or
 |---|---|---|
 | **Should we?** | **Valuable:** "Is this something someone would buy?" | **Viable:** "Is this good business?" (Is there ROI for both sides?) |
 | **Can we?** | **Usable:** "Will users trust and adopt it?" | **Feasible:** "Can we even do this with what we know and have?" |
+
+- **Valuable:** not that they'd like it, but that they'd take money out of their wallets and put it into ours.
+- **Usable:** so usable it ensures and expands adoption, removes obstacles, and turns users into advocates.
+- **Viable:** a good business model for us. SaaS is; add generative or agentic AI and you can go broke adding users.
+- **Feasible:** the people, process, culture, and capital to make it happen.
 
 Test the riskiest open square first. A working demo answers only part of Feasible. *The four risks come from Marty Cagan (SVPG); the questions are ours.*
 

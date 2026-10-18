@@ -25,7 +25,8 @@
 
 ## Why this is weak
 
-- **Nothing was sifted.** Eight pilots and twelve verdicts: the cheap Chaos questions never ran, so a slogan (R01) and a vendor webinar (R06) both earned pilots.
+- **Nobody asked for the outcome.** A slogan (R01), a sidebar (R02), and "sounds cool" (R09) have no outcome to check, and all three got pilots or surveys.
+- **Nothing was sifted.** Eight pilots and twelve verdicts: the cheap Chaos questions never ran, so a vendor webinar (R06) earned a pilot too.
 - **Averaged scores** hide where each item broke and make "2.8" mean nothing.
 - **Stale became false.** R03 and R12 were punted for being old; they needed a refresh, not a funeral.
 - **The wrong square won.** R07 is "accurate" (Feasible) with no owner (Context). R08 users finished faster (Feasible) and didn't trust it (Usable).

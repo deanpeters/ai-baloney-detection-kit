@@ -42,4 +42,8 @@ known_failure_modes:
   - Punts because things changed, without testing.
   - Assumes the Q2 successor behaves like Q1.
 
-decision_rule: Pass only if the output sends the claim back to the top of the funnel explicitly, names all three expired triggers, and recommends re-validation before renewal.
+decision_rule: Pass only if the output sends the claim back explicitly (to the top, or to Receipts and Sell-By to refresh), names all three expired triggers, and recommends re-validation before renewal.
+
+# Added 2026-10-18 for the seven-step loop (step 1, bdk-outcomes), before any run.
+expected_outcome: >
+  Pass at Outcomes: the April decision already carries an outcome (analyst time saved on FAQ research). The run should then send it back at Sell-By.

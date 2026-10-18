@@ -10,7 +10,7 @@ targets: >
   run first. Each exit is named (Pass, Sifted out, Send back, Pivot). Missing is
   kept apart from failed. One work item is routed out before the funnel. This is
   the candidate stage demo.
-exits_at: "12 in. 1 routed to the work family. Chaos sifts 5, Confusion sifts 2, Crapola holds or sifts 3. 1 reaches Truth."
+exits_at: "12 in. 1 routed to the work family. Chaos (Outcomes, Receipts) sifts or sends back 6, Confusion (Sell-By) sends back 2, Crapola pivots or holds 2. 1 reaches Truth. Revised 2026-10-18 for the seven-step loop, before any run."
 
 claim: >
   Fictional Marrowgate Software (invented), a mid-size B2B help-desk SaaS, has a
@@ -36,18 +36,18 @@ expected_exits:
   before_the_funnel:
     R04: "Routed to the work family. It's an internal ceremony: Sort grid, PUNT if nobody reads it, otherwise PASS-OFF (hand-off: workflow-to-skill-converter)."
   chaos:
-    R01: "Sifted out (Punt). No claim to check: a slogan, not a receipt."
-    R03: "Send back (refresh). The receipt is real, but stale: 2023 data on a retired model."
-    R06: "Sifted out (Punt). Four sources collapse to one vendor webinar."
-    R11: "Sifted out (Punt). Single vendor pitch; a consequential workforce claim with no evidence."
-    R12: "Send back (refresh). A real internal receipt on a replaced model and plugin; re-run the trial before deciding."
+    R01: "Sifted out at Outcomes. A slogan: no beneficiary, no metric, nothing to shape."
+    R02: "Sifted out at Outcomes (output only: a sidebar, with no change anyone named). Also acceptable: Sifted out or Send back at Relevance ('a competitor announced it' is not about our customers). Hand-off: mi-build-battle-card."
+    R07: "Send back at Outcomes. A model, not an outcome: nobody has said what changes (retention? saves?) when a flag fires, or who acts on it. Customer success can supply it. Missing, not failed."
+    R09: "Sifted out at Outcomes ('sounds cool' is a feeling, not an outcome; no metric anyone watches). Also acceptable: Sifted out at Crapola on a failed Valuable."
+    R06: "Sifted out at Receipts. Four sources collapse to one vendor webinar."
+    R11: "Sifted out at Receipts. Single vendor pitch behind a consequential workforce claim."
   confusion:
-    R02: "Sifted out (Punt), or Send back for customer evidence. 'A competitor announced it' is a FACT; 'our customers want it' is an ASSUMPTION with no support. Hand-off: mi-build-battle-card."
-    R07: "Send back. Nobody owns the outcome; no defined action on a flag. Context missing, not failed."
+    R03: "Send back at Sell-By (refresh). The receipt is real, but stale: 2023 data on a retired model."
+    R12: "Send back at Sell-By (refresh). A real internal receipt on a replaced model and plugin; re-run the trial before deciding."
   crapola:
-    R08: "Pivot. Valuable is earned (8 of 10 struggle); Usable fails on trust (3 of 5 won't accept auto-configured permissions). Pivot to show proposed changes before applying them, then back into Crapola."
-    R09: "Sifted out (Punt). Valuable fails: 'sounds cool' with zero demand signals. No test is worth its cost."
-    R10: "Held at Crapola for a test. Valuable has a weak signal (3 requests). Viable is missing (cost $0.60 a document, no price). Test willingness to pay with the 3 requesters before building."
+    R08: "Pivot. Valuable is earned (8 of 10 struggle); Usable fails on trust (3 of 5 won't accept auto-configured permissions). Pivot to show proposed changes before applying them, then back into the Taste Test."
+    R10: "Held for a test (or Pivot to the test first). Valuable has a weak signal (3 requests). Viable is missing (cost $0.60 a document, no price). Test willingness to pay with the 3 requesters before building."
   considered:
     R05: "Pursue → Truth, scoped: expand smart search from 10% to 50% of traffic, with the same thresholds and a re-check date on the model price."
 
@@ -55,14 +55,15 @@ expected_counts:
   entered: 12
   routed_to_work_family: 1
   entered_funnel: 11
-  left_at_chaos: 5        # 3 sifted out, 2 sent back
-  left_at_confusion: 2    # either sifted out or sent back (R02 may go either way)
-  left_at_crapola: 3      # 1 pivot, 1 sifted out, 1 held for a test
+  left_at_chaos: 6        # 4 at Outcomes (3 sifted, 1 sent back), 2 sifted at Receipts
+  left_at_confusion: 2    # both sent back at Sell-By
+  left_at_crapola: 2      # 1 pivot, 1 held for a test
   reached_truth: 1
 
 good_result_rules:
+  - Shapes or rejects an outcome for every item before looking at its evidence.
   - Runs the cheap Chaos questions before designing any test.
-  - Names the exit type and the tier for every item.
+  - Names the exit type and the step for every item.
   - Keeps stale (R03, R12) apart from sifted out. They're sent back for a refresh, not killed.
   - Collapses R06's four sources to one origin.
   - Routes R04 out as work instead of running it through the funnel.
@@ -79,7 +80,8 @@ known_failure_modes:
   - Says R11 is "probably true eventually." Best guesses don't pass Chaos.
 
 decision_rule: >
-  Pass if every item's exit tier and exit type match expected_exits. R02 may be
-  Sifted out or Send back. Any other item may be off by one tier only if the
-  reasoning cites the right check and the right exit type. The counts must add up
-  to 12, and R05 must be the only Pursue.
+  Pass if every item's exit step and exit type match expected_exits, allowing the
+  alternatives named there (R02 at Outcomes or Relevance; R09 at Outcomes or
+  Crapola; R07 sent back at Outcomes or Confusion). Any other item may be off by
+  one step only if the reasoning cites the right check and the right exit type.
+  The counts must add up to 12, and R05 must be the only Pursue.

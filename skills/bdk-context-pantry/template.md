@@ -1,6 +1,6 @@
 # Context Inventory
 
-**Tier:** 2 Confusion · *What do we actually know, and does it apply to us?*
+**Deep dive beside step 5** · **Tier:** Confusion · *For whom, which workflow, at what cost to each side?*
 **Decision this informs:** · **Size of the bet:** · **As of:** · **Mode / voice:**
 
 ---

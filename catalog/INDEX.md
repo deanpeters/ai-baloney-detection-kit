@@ -4,28 +4,35 @@ One mission: help product people sift AI claims, ideas, and products down to wha
 
 ## The Baloney Funnel
 
-A process of elimination by tiers. The cheapest sifts run first; most baloney should leave in minutes, and only survivors earn an expensive test. What comes out the bottom is **Truth**, scoped to the bet it earned, with a sell-by date of its own.
+A process of elimination: seven steps in four tiers. The outcome comes first, then the cheapest sifts; most baloney should leave in minutes, and only survivors earn an expensive test. What comes out the bottom is **Truth**, scoped to the bet it earned, with a sell-by date of its own.
 
-| Tier | Question | Skill | Invoke when | Produces | Human gate |
+| Step · Tier | Question | Skill | Invoke when | Produces | Human gate |
 |---|---|---|---|---|---|
-| — | *Whole funnel* | [`bdk-detector`](../skills/bdk-detector/SKILL.md) | One claim end to end, or a pile: a roadmap, a stack of pitches | Stage card by default (≤ 200 words, projector-readable); full funnel report on request | Which claims to act on, and who owns each |
-| **1 Chaos** | Is it real, and is it still true? | [`bdk-receipts`](../skills/bdk-receipts/SKILL.md) | Citations, provenance, or "studies show" need checking | Stage card (default) or Receipts Ledger | Which claims go forward |
-| **1 Chaos** | | [`bdk-sell-by`](../skills/bdk-sell-by/SKILL.md) | Models, prices, policies, or an earlier decision may have changed | Freshness Ledger with re-check triggers | Refresh, or go forward |
-| **2 Confusion** | What do we actually know, and does it apply to us? | [`bdk-labels`](../skills/bdk-labels/SKILL.md) | Polished wording hides what's fact and what's hope | Labeled Claims | Which claims the decision rests on |
-| **2 Confusion** | | [`bdk-context-pantry`](../skills/bdk-context-pantry/SKILL.md) | For whom, compared with what, at what cost to each side, is unclear | Context Inventory | Fill the gap, or stop |
-| **3 Crapola** | Would reality disagree? | [`bdk-taste-test`](../skills/bdk-taste-test/SKILL.md) | A bet is about to advance on a demo or a promise | Taste Test: cheapest tests, thresholds first | Approve the test and its owner |
-| **4 Considered** | Pursue, pivot, or punt? | [`bdk-four-risks`](../skills/bdk-four-risks/SKILL.md) | It's time to decide what the evidence has earned | Four-Risk Grid and decision record | Pursue, pivot, or punt, for a named scope |
+| — | *Whole funnel* | [`bdk-detector`](../skills/bdk-detector/SKILL.md) | One idea end to end, or a pile: a roadmap, a stack of pitches | Stage card by default (≤ 200 words, projector-readable); full funnel report on request | Which claims to act on, and who owns each |
+| **1 · Chaos** | Is there a real, measurable outcome here? | [`bdk-outcomes`](../skills/bdk-outcomes/SKILL.md) | A pitch describes what we'd ship, or a feeling, not what would change | Outcome statement: [direction] [metric] [by how much] [by when] for [beneficiary] in [context] | The sponsor confirms the outcome |
+| **2 · Chaos** | What evidence supports that outcome's metric and direction? | [`bdk-receipts`](../skills/bdk-receipts/SKILL.md) | Citations, provenance, or "studies show" need checking | Stage card (default) or Receipts Ledger | Which claims go forward |
+| **3 · Confusion** | How much is fact, inference, assumption, or best guess? | [`bdk-labels`](../skills/bdk-labels/SKILL.md) | Polished wording hides what's fact and what's hope | Labeled Claims and the label mix | Which claims the decision rests on |
+| **4 · Confusion** | Is it fresh enough for this decision? | [`bdk-sell-by`](../skills/bdk-sell-by/SKILL.md) | Models, prices, policies, or an earlier decision may have changed | Freshness Ledger with re-check triggers | Refresh, or go forward |
+| **5 · Confusion** | Does it apply to us: directly, adjacent, or by analog? | [`bdk-relevance`](../skills/bdk-relevance/SKILL.md) | Outside evidence (a competitor, an analyst, another segment) is offered as proof | Relevance Map and pantry pull | Fill the pantry gap, narrow, or stop |
+| **6 · Crapola** | What's the tiniest test that returns the most brutal truth? | [`bdk-taste-test`](../skills/bdk-taste-test/SKILL.md) | A bet is about to advance on a demo or a promise | Taste Test: tiny tests, thresholds first | Approve the test and its owner |
+| **7 · Considered** | Pursue, pivot, or punt, and why? | [`bdk-pivot-punt-pursue`](../skills/bdk-pivot-punt-pursue/SKILL.md) | It's time to decide what the evidence has earned | Recommendation with its why, and a decision record | Pursue, pivot, or punt, for a named scope |
+| Deep dive · Confusion | For whom, which workflow, at what cost to each side? | [`bdk-context-pantry`](../skills/bdk-context-pantry/SKILL.md) | Workflow, ownership, or two-sided economics need a closer look | Context Inventory | Fill the gap, or stop |
+| Deep dive · Considered | Which square decides? | [`bdk-four-risks`](../skills/bdk-four-risks/SKILL.md) | The four-risk grid on its own | Four-Risk Grid | Which square to test next |
 
-Every claim leaves a tier one of four ways: **Pass** · **Sifted out** (punt) · **Send back** (missing or stale, so back to the top) · **Pivot** (change one thing, re-enter at that tier). Missing is not failed; stale is not false.
+Every claim leaves a step one of four ways: **Pass** · **Sifted out** (punt) · **Send back** (missing or stale, back to the step that can fetch it) · **Pivot** (change one thing, re-enter at that step). Missing is not failed; stale is not false.
 
-Use the tier skills on their own when you only need one check. Use `bdk-detector` for the whole funnel. No skill requires an upstream artifact.
+**Pursue:** so much proof that we go forward as planned. **Pivot:** adjust based on the data and the discoveries. **Punt:** the orange is not worth the squeeze; say no.
 
-### The four risks (Considered)
+Use the step skills on their own when you only need one check. Use `bdk-detector` for the whole funnel. No skill requires an upstream artifact.
+
+### The four risks (Crapola tests them; Considered decides on them)
 
 | | **For them** | **For us** |
 |---|---|---|
 | **Should we?** | **Valuable:** "Is this something someone would buy?" | **Viable:** "Is this good business?" (Is there ROI for both sides?) |
 | **Can we?** | **Usable:** "Will users trust and adopt it?" | **Feasible:** "Can we even do this with what we know and have?" |
+
+**Valuable:** they'd take money out of their wallets and put it into ours, not just like it. **Usable:** it ensures and expands adoption, removes obstacles, and turns users into advocates. **Viable:** a good business model for us; with generative or agentic AI, every added user carries a usage cost. **Feasible:** the people, process, culture, and capital to make it happen.
 
 ## Supporting utilities
 

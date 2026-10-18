@@ -1,6 +1,6 @@
 ---
 name: bdk-labels
-description: Separate fact, inference, assumption, and best guess in AI claims or product documents. Use when polished wording or repeated claims hide uncertainty; the first sift in the Confusion tier.
+description: Separate fact, inference, assumption, and best guess in the evidence behind an AI outcome, claim, or product document, and show how much of it is which. Use when polished wording or repeated claims hide uncertainty; step 3 of the Baloney Funnel, in the Confusion tier.
 license: CC-BY-NC-SA-4.0
 argument-hint: "[a document, generated analysis, notes, or claim IDs]"
 intent: >-
@@ -42,15 +42,15 @@ interface:
 
 Make the difference between what is recorded, what is reasoned, and what is merely being treated as true visible enough to change a decision.
 
-This is the first sift in the **Confusion** tier: *What do we actually know, and does it apply to us?* Claims that survived the Chaos tier are real and current; this tier asks what they actually establish.
+This is step 3 of the Baloney Funnel, the first sift in the **Confusion** tier: *What do we actually know, is it still fresh, and does it apply to us?* Claims that survived the Chaos tier have an outcome and receipts; this step asks how much of that evidence is fact, how much is inferred, how much is assumed, and how much is speculation (best guess).
 
 ## When to use it
 
-Use on generated analysis, strategy, market research, product claims, or a mixed evidence ledger. This is classification with reasons, not independent source verification unless access and scope allow it. Pair it with `bdk-context-pantry` to finish the Confusion tier.
+Use on generated analysis, strategy, market research, product claims, or a mixed evidence ledger. This is classification with reasons, not independent source verification unless access and scope allow it. It follows `bdk-receipts` and hands its labeled ledger to `bdk-sell-by` and `bdk-relevance`.
 
 ## Inputs
 
-Accept text, notes, attachments, or claim IDs from another check. Preserve supplied qualifiers and source locations.
+Accept a Receipts Ledger, an outcome statement, text, notes, attachments, or claim IDs from another check. Label the outcome statement's inserted parts too. Preserve supplied qualifiers and source locations.
 
 ## Key concepts
 
@@ -72,7 +72,7 @@ Accept text, notes, attachments, or claim IDs from another check. Preserve suppl
 
 ## Outputs
 
-A claim ledger with one primary evidence label per atomic claim, a basis for each label, missing support, corrected wording, the four-risk square each claim bears on, a Labels rating, and an exit for each claim. Use [the template](template.md).
+A label mix for the load-bearing claims (how many FACT, INFERENCE, ASSUMPTION, BEST GUESS, and unsupported: a composition, not a score), a claim ledger with one primary evidence label per atomic claim, a basis for each label, missing support, corrected wording, the four-risk square each claim bears on, a Labels rating, and an exit for each claim. Use [the template](template.md).
 
 ## Method
 
@@ -82,8 +82,9 @@ A claim ledger with one primary evidence label per atomic claim, a basis for eac
 4. State the basis and uncertainty. For unsupported supplied claims, propose qualified wording or mark missing support; do not manufacture a basis. Missing evidence remains a status.
 5. Track reuse. A copied inference retains its label. Repeated generated statements do not become independent evidence. If an assumption changes, identify dependent conclusions that need revisiting.
 6. Tag each claim with the four-risk square it bears on (Valuable, Usable, Viable, Feasible). A square held up only by ASSUMPTION or BEST GUESS is **weak** or **missing**, not earned.
-7. Rate Label the Lunch Meat on the artifact's labeling discipline, not on whether every claim has become FACT. A transparent early hypothesis can have good Labels and weak Taste.
-8. Return the few corrections that most reduce false confidence, with evidence needed to strengthen the claims.
+7. Count the label mix for the load-bearing claims, and say which of them the outcome's metric and direction rest on. A decision resting mostly on ASSUMPTION and BEST GUESS is not a failure of labeling; it is a finding for the Taste Test.
+8. Rate Label the Lunch Meat on the artifact's labeling discipline, not on whether every claim has become FACT. A transparent early hypothesis can have good Labels and weak Taste.
+9. Return the few corrections that most reduce false confidence, with evidence needed to strengthen the claims.
 
 ## Human decision gate
 

@@ -1,6 +1,6 @@
 ---
 name: bdk-sell-by
-description: Assess whether evidence is fresh enough for a specific AI decision and set re-check dates. Use for changing prices, models, policies, benchmarks, markets, or experiments; the second sift in the Chaos tier.
+description: Assess whether evidence is fresh enough for a specific AI decision and set re-check dates. Use for changing prices, models, policies, benchmarks, markets, or experiments; step 4 of the Baloney Funnel, in the Confusion tier.
 license: CC-BY-NC-SA-4.0
 argument-hint: "[sources with dates, model versions, prices, or an earlier decision record]"
 intent: >-
@@ -9,8 +9,8 @@ intent: >-
   perishable so that an approved bet (Truth) gets sent back to the top of the
   funnel when its evidence expires instead of being silently reused.
 theme: baloney-detection
-tier: 1-chaos
-sift-question: "Is it real, and is it still true?"
+tier: 2-confusion
+sift-question: "Is the evidence fresh enough for this decision?"
 status: active
 best-for:
   - "Benchmarks and pilots run on an older model version"
@@ -27,8 +27,9 @@ produces:
   - "A Sell-By rating and an exit for each claim"
 depends-on: []
 combine-with:
-  - bdk-receipts
   - bdk-labels
+  - bdk-relevance
+  - bdk-receipts
 interface:
   display_name: "Check the Sell-By Date"
   short_description: "Is this evidence fresh enough for this call?"
@@ -43,7 +44,7 @@ interface:
 
 Check temporal applicability rather than stamping everything older than an arbitrary number of days as rotten. Freshness depends on the claim and the decision.
 
-This is the second sift in the **Chaos** tier: *Is it real, and is it still true?* It is a date check, so it is cheap, and it belongs before anyone designs a test. It also closes the loop: every perishable piece of evidence behind a Pursue leaves with a re-check date, and when one expires, Truth goes back to the top of the funnel.
+This is step 4 of the Baloney Funnel, in the **Confusion** tier: *What do we actually know, is it still fresh, and does it apply to us?* It dates the labeled evidence from `bdk-labels`, and checks it against the outcome statement's timeframe: evidence that will spoil before the outcome's by-when needs a re-check before then. It is a date check, so it is cheap, and it belongs before anyone designs a test. It also closes the loop: every perishable piece of evidence behind a Pursue leaves with a re-check date, and when one expires, Truth goes back to the top of the funnel.
 
 ## When to use it
 
@@ -77,7 +78,7 @@ A Freshness Ledger (claim, dates, version, perishable/durable and why, still app
 
 ## Method
 
-1. Establish the assessment date and target decision period. If the runtime date is unavailable, report as-of unknown rather than assuming today.
+1. Establish the assessment date, the target decision period, and the outcome statement's by-when if there is one. If the runtime date is unavailable, report as-of unknown rather than assuming today.
 2. For each material claim record publication date, observation/experiment period, effective/expiry date, retrieval date, and model/tool/policy version when relevant. Keep absent values missing. A recent retrieval does not make an old observation current.
 3. Explain why the claim is perishable or durable. Use the decision's consequence and rate of change to propose a freshness requirement. A numeric refresh interval is an ASSUMPTION unless justified by a source or supplied policy; there is no universal expiry period.
 4. If an earlier decision record is supplied, check each of its re-check dates and triggers first, and say which fired.

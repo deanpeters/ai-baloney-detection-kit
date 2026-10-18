@@ -15,11 +15,16 @@ ROOT = Path(__file__).resolve().parents[1]
 SKILLS = ROOT / 'skills'
 FUNNEL = {
     'bdk-detector': 'funnel',
+    # The seven steps, in order
+    'bdk-outcomes': '1-chaos',
     'bdk-receipts': '1-chaos',
-    'bdk-sell-by': '1-chaos',
     'bdk-labels': '2-confusion',
-    'bdk-context-pantry': '2-confusion',
+    'bdk-sell-by': '2-confusion',
+    'bdk-relevance': '2-confusion',
     'bdk-taste-test': '3-crapola',
+    'bdk-pivot-punt-pursue': '4-considered',
+    # Deep-dive companions to steps 5 and 7
+    'bdk-context-pantry': '2-confusion',
     'bdk-four-risks': '4-considered',
 }
 TIERS = ('1-chaos', '2-confusion', '3-crapola', '4-considered')
@@ -113,7 +118,8 @@ def check(sync=False):
     contract = (ROOT / 'reference/assessment-contract.md').read_bytes()
     for question in FOUR_QUESTIONS:
         for doc in ('reference/assessment-contract.md', 'skills/bdk-four-risks/SKILL.md',
-                    'skills/bdk-taste-test/SKILL.md', 'catalog/INDEX.md'):
+                    'skills/bdk-pivot-punt-pursue/SKILL.md', 'skills/bdk-taste-test/SKILL.md',
+                    'catalog/INDEX.md'):
             if question not in (ROOT / doc).read_text():
                 errors.append(f'{doc}: four-risk question not verbatim: {question}')
 

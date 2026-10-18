@@ -14,7 +14,7 @@ Every skill lives at `skills/<skill-name>/SKILL.md`.
 
 | Kind | Names | Role | Frontmatter key |
 |---|---|---|---|
-| **Funnel skills** | the five check names, plus `bdk-four-risks` and `bdk-detector` | The Baloney Funnel: one tier each, or the whole funnel (`bdk-detector`) | `tier` |
+| **Funnel skills** | the seven step skills, the two deep dives (`bdk-context-pantry`, `bdk-four-risks`), and `bdk-detector` | The Baloney Funnel: one step each, a deep dive, or the whole funnel (`bdk-detector`) | `tier` |
 | **Utilities** | `bdk-util-*` | Feed an artifact to a named tier or take one from it | `supplements` |
 | **Quick checks** | `bdk-value-or-theater`, `bdk-skill-sorter` | The keynote stage demos, outside the funnel | `family` |
 
@@ -24,11 +24,13 @@ Every skill lives at `skills/<skill-name>/SKILL.md`.
 
 | `tier` | Skills |
 |---|---|
-| `1-chaos` | `bdk-receipts`, `bdk-sell-by` |
-| `2-confusion` | `bdk-labels`, `bdk-context-pantry` |
-| `3-crapola` | `bdk-taste-test` |
-| `4-considered` | `bdk-four-risks` |
-| `funnel` | `bdk-detector` (runs every tier) |
+| `1-chaos` | step 1 `bdk-outcomes`, step 2 `bdk-receipts` |
+| `2-confusion` | step 3 `bdk-labels`, step 4 `bdk-sell-by`, step 5 `bdk-relevance`; deep dive `bdk-context-pantry` |
+| `3-crapola` | step 6 `bdk-taste-test` |
+| `4-considered` | step 7 `bdk-pivot-punt-pursue`; deep dive `bdk-four-risks` |
+| `funnel` | `bdk-detector` (runs all seven steps) |
+
+The step order (outcome, receipts, labels, sell-by, relevance, taste test, pivot-punt-pursue) is set in the assessment contract and `bdk-detector`, not by the `tier` field.
 
 ### Utility rule
 
@@ -125,7 +127,8 @@ Skill files teach in prose and tables. No mermaid diagrams under `skills/`; they
 
 Use the house vocabulary exactly (see [CLAUDE.md](../CLAUDE.md)):
 - **Five checks:** Show Me the Receipts · Label the Lunch Meat · Check the Context Pantry · Check the Sell-By Date · Taste Before You Ship
-- **Funnel:** Chaos → Confusion → Crapola → Considered → Truth
+- **Funnel:** Chaos → Confusion → Crapola → Considered → Truth, in seven steps
+- **Outcome statement:** [direction] [metric] [by how much] [by when] for [beneficiary persona] in [problem context]
 - **Exits:** Pass · Sifted out · Send back · Pivot
 - **Four risks:** Valuable · Usable · Viable · Feasible, with Dean's questions verbatim
 - **Moves for claims:** Pursue · Pivot · Punt

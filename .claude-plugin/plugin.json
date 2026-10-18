@@ -1,7 +1,7 @@
 {
   "name": "bdk",
-  "description": "AI Baloney Detection Kit: sift AI claims, ideas, and products through the Baloney Funnel (Chaos, Confusion, Crapola, Considered) down to what has earned the next investment. Plus the keynote quick checks: Value or Theater and the Skill Sorter.",
-  "version": "0.2.0",
+  "description": "AI Baloney Detection Kit: sift AI claims, ideas, and products through the seven-step Baloney Funnel (outcome, receipts, labels, sell-by, relevance, taste test, pivot-punt-pursue) down to what has earned the next investment. Plus the keynote quick checks: Value or Theater and the Skill Sorter.",
+  "version": "0.3.0",
   "author": {
     "name": "Dean Peters"
   },

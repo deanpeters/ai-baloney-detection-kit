@@ -1,6 +1,12 @@
 # Verification record
 
-Current as of **2026-10-11** (the Baloney Funnel build). This record separates mechanical checks, synthetic model behavior, and real-world use. It describes observed runs, not a guarantee of future behavior. The 2026-10-10 record for the earlier six-skill layout is preserved below as history.
+Current as of **2026-10-18** (the seven-step loop). The 2026-10-11 records below describe the earlier four-tier build. This record separates mechanical checks, synthetic model behavior, and real-world use. It describes observed runs, not a guarantee of future behavior. The 2026-10-10 record for the earlier six-skill layout is preserved below as history.
+
+## 2026-10-18: the seven-step loop
+
+- **Mechanical:** `python3 scripts/check-library.py` passes with 10 funnel skills (detector, seven steps, two deep dives), 1 utility, 2 quick checks, 8 check cases, and 13 funnel cases. `scripts/build-distribution.py` rebuilt the ZIPs.
+- **Behavioral:** 16 isolated runs plus 3 re-runs, through headless Claude (Sonnet) because Codex rejected every model on the account. Expectations were written into the cases before running. **15 pass, 1 partial, 0 fail** (latest result per run). The full 12-item roadmap (case 09) matched every expected exit and step. Grade sheets: [first run](runs/loop7-2026-10-18/GRADES.md), [re-run](runs/loop7-2026-10-18-rerun/GRADES.md).
+- **Limits:** the grader is the authoring assistant, not blind and not human. The runner is a different model, not a different model family. Synthetic cases only; no real customer use.
 
 ## 2026-10-11: mechanical verification
 

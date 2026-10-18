@@ -163,3 +163,26 @@ Dean asked for it, for deck 11's live demo.
 - **Evidence:** [runs and grades](../evals/runs/stage-demo-2026-10-15/GRADES.md), and [VERIFICATION.md](../evals/VERIFICATION.md) has the summary.
 - **Checks:** `check-library.py` PASS; `build-distribution.py` regenerated `dist/`.
 - **Open for Dean:** Leverage or Truth on the Sort 2x2 (unchanged from section 7).
+
+## 9. The seven-step loop (2026-10-18)
+
+Dean redesigned the funnel: **outcome first**, then evidence for that outcome. His words: "MAKE IT WORK FIRST, then we can rename the tier labels," and "DO NOT LET THE SLIDE DECKS determine the efficacy of the library." He updates the decks.
+
+| Step | Skill | Tier | Change |
+|---|---|---|---|
+| 1 | `bdk-outcomes` | Chaos | **New.** Shapes a pitch into [direction] [metric] [by how much] [by when] for [beneficiary] in [context], or sifts out outputs ("an AI interface") and vanity metrics ("feel 50% more confident") |
+| 2 | `bdk-receipts` | Chaos | Now looks for evidence about the outcome's metric and direction. Stage card unchanged (keynote live demo) |
+| 3 | `bdk-labels` | Confusion | Moved up; labels the receipts and reports the label mix |
+| 4 | `bdk-sell-by` | Confusion | Moved from Chaos; also checks evidence against the outcome's by-when |
+| 5 | `bdk-relevance` | Confusion | **New.** Direct, adjacent, or analog relevance to our pantry of product, user, business, and market data (precedent thinking for analogs) |
+| 6 | `bdk-taste-test` | Crapola | The tiniest test that returns the most brutal truth; thresholds from the outcome's target |
+| 7 | `bdk-pivot-punt-pursue` | Considered | **New.** The recommendation and its why |
+
+- **Kept as deep dives:** `bdk-context-pantry` (beside step 5) and `bdk-four-risks` (beside step 7). Nothing was deleted.
+- **Dean's definitions, in the contract:** the four risks keep their verbatim questions and gain his meanings (Valuable: money out of their wallets into ours; Usable: expands adoption, removes obstacles, makes advocates; Viable: a good business model for us, where AI usage cost can make each added user lose money; Feasible: people, process, culture, capital). **Pursue** = so much proof we go forward as planned; **Pivot** = adjust based on the data and discoveries; **Punt** = the orange is not worth the squeeze.
+- **One rule changed meaning:** "Pursue the cheapest test" (missing squares) is now **Pivot to the tiny test first**, because Pursue now means going forward as planned.
+- **Tier labels:** Dean liked Chaos (1–2) · Confusion (3–5) · Crapola (6) · Considered (7) and may rename them later.
+- **Plugin version:** 0.2.0 → 0.3.0.
+- **Evals:** new cases 12 (vanity outcome) and 13 (output to outcome); case 09's expected exits revised for the new order; an `expected_outcome` added to cases 01–08. All written before any run. Results: [first run](../evals/runs/loop7-2026-10-18/GRADES.md), [re-run after the step-1 fix](../evals/runs/loop7-2026-10-18-rerun/GRADES.md).
+- **Harness:** Codex rejected every model on the ChatGPT account, so [`run-claude.sh`](../evals/harness/run-claude.sh) runs the same workspaces through headless Claude (Sonnet). The eval prompt now takes each case's own assessment date.
+- **Keynote impact (for Dean):** deck 11's funnel slides show the old six commands and the old tier pairs. `/bdk-receipts` (the live demo) still works and prints the same stage card.

@@ -1,0 +1,58 @@
+# Funnel case 12: 50% more confident
+# Synthetic case. All organizations, people, dates, and results are invented for teaching.
+# Written 2026-10-18 for the seven-step loop, before any run.
+
+id: loop-12-vanity-outcome
+title: '"An AI interface that makes accountants feel 50% more confident"'
+synthetic: true
+assessment_date: 2026-10-18
+targets: >
+  Step 1, the outcome gate. A pitch that is an output wearing a feeling, with a
+  percentage attached and some tempting evidence, should leave at Outcomes
+  before anyone gathers receipts, with a door left open for a real outcome.
+exits_at: "Sifted out at Outcomes (step 1, Chaos): output plus vanity metric. No receipts, tests, or build."
+
+claim: >
+  The head of design at fictional Cindervale Books (invented), an accounting
+  software company, pitches "an AI interface that makes life easier for
+  accountants, so they feel 50% more confident." She asks for one squad for
+  two quarters, starting in January.
+
+supplied_evidence:
+  S1: "Design team demo, 2026-10-02: 5 of 6 internal accountants who watched a clickable mockup said it 'felt more confident' to use. No task was performed."
+  S2: "An industry blog post, 2026-08-14: 'AI interfaces boost user confidence by up to 50%,' citing an unnamed vendor survey."
+  S3: "Cindervale has no confidence measure in its product analytics, NPS survey, or support data."
+  S4: "The pitch slide lists no user segment, no workflow, and no current-state metric."
+
+expected_path:
+  chaos-outcomes: >
+    Sifted out. 'Feel 50% more confident' has no way to be observed (S3) and could
+    rise while nothing that matters changes; 'an AI interface' is the output, not
+    the outcome; 'accountants' and 'life' are not a persona and a context. The
+    exit names what would reopen it: an observable change (fewer close errors, a
+    shorter close, fewer support tickets, adoption of a named workflow) for a
+    named accounting role.
+  later_steps: Not run. S1 and S2 are not gathered as receipts for a pitch with no outcome.
+
+good_result_rules:
+  - Sifts the pitch out at step 1, before receipts.
+  - Names both failures, output and vanity, with the reason each fails.
+  - Explains why 50% does not rescue an unobservable feeling.
+  - Leaves a door open with an example of an observable outcome.
+  - Treats the designer with respect; the pitch is the problem.
+
+known_failure_modes:
+  - Passes the pitch because every part of the template has something in it.
+  - Treats S1 as validation of the outcome, or S2 as a receipt for 50%.
+  - Designs a test of "confidence" instead of asking for an outcome.
+  - Reshapes it into an outcome the material gives no basis for and passes it without labels.
+
+decision_rule: >
+  Pass only if the pitch leaves at Outcomes as Sifted out (Send back is
+  acceptable only if it names the missing observable metric and beneficiary as
+  the question), no later step is run, and the reason names both the output and
+  the vanity metric.
+
+expected_outcome: >
+  Sifted out at Outcomes: output (AI interface) plus vanity metric (an
+  unobservable feeling).

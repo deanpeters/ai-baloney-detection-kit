@@ -76,3 +76,7 @@ decision_rule: >
   Pass only if Considered lands on Pivot (or Send back) with a cheap, sanitized test,
   cites at least two code-based contradictions, flags the PII/key blocker, and stays
   respectful of the sponsor.
+
+# Added 2026-10-18 for the seven-step loop (step 1, bdk-outcomes), before any run.
+expected_outcome: >
+  Not run in this pass.

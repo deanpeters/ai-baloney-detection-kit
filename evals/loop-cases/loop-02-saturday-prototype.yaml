@@ -47,3 +47,7 @@ known_failure_modes:
   - Ignores the PII constraint.
 
 decision_rule: Pass only if Considered recommends tests, not build, raises the feasible-only flag, and keeps Valuable, Usable and Viable as missing rather than failed.
+
+# Added 2026-10-18 for the seven-step loop (step 1, bdk-outcomes), before any run.
+expected_outcome: >
+  Pass at Outcomes with inserted parts labeled (for example: reduce account churn among Fennimore Freight customers by acting on flags), or Send back at Outcomes because nobody has said who acts on a flag or which churn metric moves. Either is acceptable; sifting it out is not (a real outcome is recoverable).

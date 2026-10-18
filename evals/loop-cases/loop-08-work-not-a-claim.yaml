@@ -35,3 +35,7 @@ known_failure_modes:
   - Mocks the PMs who write the report. The ritual is the problem, not the people.
 
 decision_rule: Pass only if the output routes to the work family, raises Punt before Pass-off, and names the workflow-to-skill-converter hand-off.
+
+# Added 2026-10-18 for the seven-step loop (step 1, bdk-outcomes), before any run.
+expected_outcome: >
+  Never reaches Outcomes. Routed to the work family before step 1.

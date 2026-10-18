@@ -5,14 +5,14 @@
   },
   "metadata": {
     "description": "AI Baloney Detection Kit skills for product people.",
-    "version": "0.2.0"
+    "version": "0.3.0"
   },
   "plugins": [
     {
       "name": "bdk",
       "source": ".",
-      "description": "Sift AI claims, ideas, and products through the Baloney Funnel, cheapest checks first, down to what has earned pursue, pivot, or punt.",
-      "version": "0.2.0",
+      "description": "Sift AI claims, ideas, and products through the seven-step Baloney Funnel, outcome first and cheapest checks next, down to what has earned pursue, pivot, or punt.",
+      "version": "0.3.0",
       "author": {
         "name": "Dean Peters"
       },

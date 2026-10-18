@@ -1,6 +1,6 @@
 ---
 name: bdk-context-pantry
-description: Find decision-critical context, contradictions, and gaps in an AI idea. Use when the customer, outcome, workflow, economics, or constraints are unclear; the second sift in the Confusion tier.
+description: Find decision-critical context, contradictions, and gaps in an AI idea - workflow, ownership, and both sides' economics. Use when the customer, outcome, workflow, economics, or constraints are unclear; a deep-dive companion to bdk-relevance in the Confusion tier.
 license: CC-BY-NC-SA-4.0
 argument-hint: "[an idea, brief, transcripts, research, or constraints]"
 intent: >-
@@ -44,7 +44,7 @@ interface:
 
 Determine whether the available context is sufficient for this decision and expose the gaps that materially change the bet. More documents do not automatically mean better context. Thin context produces thick crapola.
 
-This is the second sift in the **Confusion** tier: *What do we actually know, and does it apply to us?* A real, current, honestly labeled claim can still fail here because it is about somebody else's people, workflow, or economics.
+This is a deep dive in the **Confusion** tier, beside step 5 (`bdk-relevance`): *What do we actually know, is it still fresh, and does it apply to us?* Relevance asks whether the evidence is about us; this skill goes deeper on the workflow, who owns it when it's wrong, and both sides' economics. A real, current, honestly labeled claim can still fail here because it is about somebody else's people, workflow, or economics.
 
 ## When to use it
 

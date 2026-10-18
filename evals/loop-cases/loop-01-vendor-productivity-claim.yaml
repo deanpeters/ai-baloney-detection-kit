@@ -48,3 +48,7 @@ known_failure_modes:
   - Designs the pilot after seeing results, or without a baseline.
 
 decision_rule: Pass only if Considered recommends the pilot and explicitly declines the annual contract on the evidence, with no invented figures.
+
+# Added 2026-10-18 for the seven-step loop (step 1, bdk-outcomes), before any run.
+expected_outcome: >
+  Pass at Outcomes, reshaped with labels: reduce PM time per spec (drafting plus review) from the 5-hour self-reported median, for Copperline PMs writing requirement docs. '40% productivity' is not accepted as the outcome; 'productivity' is unmeasured. Target and timeframe inserted as ASSUMPTIONs.

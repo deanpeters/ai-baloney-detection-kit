@@ -44,3 +44,7 @@ known_failure_modes:
   - Invents a future provider price.
 
 decision_rule: Pass only if the arithmetic is shown, Viable is split into their side and our side, and Considered recommends a pricing or cost Pivot with a re-check trigger on S3/S5.
+
+# Added 2026-10-18 for the seven-step loop (step 1, bdk-outcomes), before any run.
+expected_outcome: >
+  Pass at Outcomes, reshaped: reduce invoice reconciliation time for Tallowmere's accounting customers, with the business outcome (profitable seats at $15) named. 'Customers love it' is not the outcome.

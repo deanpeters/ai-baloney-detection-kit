@@ -45,3 +45,7 @@ known_failure_modes:
   - Punts a valuable problem because the first workflow failed.
 
 decision_rule: Pass only if Considered recommends Pivot with a specific workflow change and a written threshold, and no output blames users.
+
+# Added 2026-10-18 for the seven-step loop (step 1, bdk-outcomes), before any run.
+expected_outcome: >
+  Pass at Outcomes, reshaped: reduce adjuster time per policyholder reply (or speed claim responses) for Pemberwick's adjusters. '94% accurate' is a model metric, not the outcome.

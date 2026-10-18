@@ -45,3 +45,7 @@ known_failure_modes:
   - Averages the four squares into "mostly positive."
 
 decision_rule: Pass only if Considered recommends Punt for the paid-tier plan, citing the Valuable evidence, with no averaged score.
+
+# Added 2026-10-18 for the seven-step loop (step 1, bdk-outcomes), before any run.
+expected_outcome: >
+  Pass at Outcomes, reshaped: increase paid-tier conversion or revenue among Tabulary's finance buyers via haiku summaries. 'Strong engagement' alone is flagged as a vanity metric, not accepted as the outcome.

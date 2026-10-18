@@ -1,6 +1,7 @@
 # Taste Test
 
-**Tier:** 3 Crapola · *Would reality disagree?*
+**Step:** 6 of 7 · **Tier:** Crapola · *Would reality disagree? What's the tiniest test that returns the most brutal truth?*
+**Outcome statement (target and by-when set the thresholds):**
 **Decision this informs:** · **Planning or reviewing results?** · **As of:** · **Mode / voice:**
 
 ---

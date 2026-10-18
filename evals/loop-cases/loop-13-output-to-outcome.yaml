@@ -1,0 +1,80 @@
+# Funnel case 13: The accountant copilot
+# Synthetic case. All organizations, people, dates, and results are invented for teaching.
+# Written 2026-10-18 for the seven-step loop, before any run.
+
+id: loop-13-output-to-outcome
+title: '"Build an AI copilot for the close"'
+synthetic: true
+assessment_date: 2026-10-18
+targets: >
+  Step 1 reshapes rather than rejects: the pitch is all output and feeling, but
+  the material holds a real outcome. Then the rest of the loop checks evidence
+  for that outcome: a vendor number sifted at Receipts, our own telemetry and
+  interviews as direct relevance, and a tiny test instead of a two-squad build.
+exits_at: "Passes Outcomes reshaped. The vendor's 30% is sifted out at Receipts. The bet pivots at Considered to a tiny test on reconciliation matching instead of the two-squad build."
+
+claim: >
+  The VP of Product at fictional Ledgerline (invented), a mid-market accounting
+  platform, pitches: "Build an AI copilot for the close so our accounting
+  customers stop dreading month-end." The ask is two squads for two quarters,
+  starting in January.
+
+supplied_evidence:
+  S1: "Ledgerline Q3 dashboard, 2026-10-01: median days-to-close is 6 for mid-market customers, measured from close-period start to controller sign-off timestamps."
+  S2: "Ledgerline customer interviews, 2026-09 (8 corporate-accounting controllers at mid-market customers): 6 of 8 name bank and intercompany reconciliation matching as the slowest part of the close."
+  S3: "Ledgerline support export, Q3 2026: 41% of close-module tickets are about reconciliation matching."
+  S4: "A copilot vendor's blog, 2026-07-20: 'AI copilots cut close time 30%,' no customers named, no method, no sample."
+  S5: "Engineering estimate, 2026-10-10: model usage about $0.30 per entity per close for matching suggestions; current close-module price is $40 per entity per month."
+  S6: "No prototype, no pilot, and no willingness-to-pay conversation exists yet."
+
+expected_path:
+  chaos-outcomes: >
+    Pass, reshaped with labels. For example: reduce median days-to-close from 6
+    to a proposed target by a proposed date for corporate-accounting controllers
+    at mid-market customers in the Ledgerline month-end close. Inserted parts
+    (direction read from 'stop dreading', the target, the timeframe) are labeled
+    ASSUMPTION. 'Copilot' is set aside as output.
+  chaos-receipts: >
+    S1 is a FACT baseline for the metric. S4 is sifted out as proof: one origin,
+    an interested party, no method. S2 and S3 support where the time goes.
+  confusion-labels: >
+    S1, S2, S3 are FACTs about our own records; 'a copilot will shorten the
+    close' is an INFERENCE at best; the target is an ASSUMPTION.
+  confusion-sell-by: All dated within the last quarter; fresh enough. S5 is a perishable estimate needing a re-check before any pricing decision.
+  confusion-relevance: >
+    S1-S3 are direct (our product, our controllers). S4 is at best an analog
+    with no mechanism named. Our own data narrows the bet to reconciliation
+    matching.
+  crapola-taste-test: >
+    Feasible-only flag does not apply (no demo exists). Valuable, Usable, and
+    Feasible are missing for matching; Viable looks fine at $0.30 against $40
+    (both sides shown). Tiniest test: matching suggestions (concierge or
+    prototype) for 3 to 5 customers through one close, with thresholds written
+    first from the outcome's target.
+  considered: >
+    Pivot: not the two-squad, two-quarter copilot build. Run the tiny test on
+    reconciliation matching first, then re-enter at the Taste Test with results.
+
+good_result_rules:
+  - Reshapes the pitch into an outcome instead of sifting it out, and labels the inserted parts.
+  - Uses S1 as the baseline and the outcome's target for the test threshold.
+  - Sifts out S4 as proof without letting it set a target.
+  - Narrows the bet using our own data (S2, S3), not the vendor's.
+  - Shows Viable's two sides with arithmetic from S5.
+  - Recommends Pivot to a tiny test, not Pursue of the build and not Punt.
+
+known_failure_modes:
+  - Sifts out the pitch at Outcomes because it said 'copilot' and 'dread'.
+  - Adopts 30% from S4 as the target or as evidence.
+  - Pursues the two-squad build because the pain is real.
+  - Punts because Valuable is missing (missing is not failed).
+
+decision_rule: >
+  Pass only if the outcome is reshaped (not sifted out) with labeled inserted
+  parts, S4 is rejected as proof, and Considered recommends Pivot to a scoped
+  tiny test on reconciliation matching rather than the two-squad build.
+
+expected_outcome: >
+  Pass at Outcomes, reshaped: reduce median days-to-close (baseline 6) for
+  mid-market corporate-accounting controllers in the Ledgerline close, with the
+  target and date labeled as assumptions.

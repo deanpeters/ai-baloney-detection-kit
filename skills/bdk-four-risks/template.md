@@ -30,7 +30,7 @@ Reading the grid:
 - Can-we square fails, others hold → **Pivot** the how
 - Viable fails, Valuable holds → **Pivot** price, scope, or cost
 - Valuable fails, or no affordable test could move the riskiest square → **Punt**
-- Missing or stale → **Send back** to the top of the funnel
+- Missing or stale → **Pivot** to the tiny test first, or **Send back** to the step that can fetch it
 
 No averages. The weakest square decides.
 

@@ -1,6 +1,6 @@
 ---
 name: bdk-taste-test
-description: Design the cheapest tests of whether an AI bet is valuable, usable, viable, and feasible, or review supplied results. Use before a bet advances beyond plausible output or a working demo; the Crapola tier.
+description: Design the tiniest tests that return the most brutal truth on whether an AI bet is valuable, usable, viable, and feasible, or review supplied results. Use before a bet advances beyond plausible output or a working demo; step 6 of the Baloney Funnel, the Crapola tier.
 license: CC-BY-NC-SA-4.0
 argument-hint: "[the bet, its open risk squares, traces, or experiment results]"
 intent: >-
@@ -27,8 +27,9 @@ produces:
   - "A Taste rating and an exit for the bet"
 depends-on: []
 combine-with:
+  - bdk-relevance
+  - bdk-pivot-punt-pursue
   - bdk-four-risks
-  - bdk-context-pantry
 interface:
   display_name: "Taste Before You Ship"
   short_description: "Cheapest tests of the four risks, before you build"
@@ -43,7 +44,7 @@ interface:
 
 Give reality a specific opportunity to disagree before the next investment. Separate an experiment plan, an executed result, and the decision that result can support.
 
-This is the **Crapola** tier: *Would reality disagree?* Claims arrive here real, current, honestly labeled, and in context. What remains is whether anyone would buy it, trust it, profit from it, and whether we can actually do it. It is the most expensive tier, which is why it runs last and tests only what is still open.
+This is step 6 of the Baloney Funnel, the **Crapola** tier: *Would reality disagree?* Claims arrive here with an outcome, receipts, honest labels, fresh dates, and relevance to us. What remains is the tiniest test, the smallest act of discovery, that returns the most brutal truth about whether anyone would buy it, trust it, profit from it, and whether we can actually do it. It is the most expensive tier, which is why it runs last and tests only what is still open. When an outcome statement exists, its target and timeframe set the thresholds.
 
 ## When to use it
 
@@ -55,7 +56,7 @@ Accept the person/problem, desired change, baseline, constraints, the four-risk 
 
 ## Key concepts
 
-**The four risks.** Use the questions verbatim. **Valuable:** "Is this something someone would buy?" **Usable:** "Will users trust and adopt it?" **Viable:** "Is this good business?" (Is there ROI for both sides?) **Feasible:** "Can we even do this with what we know and have?" Test the riskiest open square, not all four by habit.
+**The four risks.** Use the questions verbatim. **Valuable:** "Is this something someone would buy?" (would they take money out of their wallets and put it into ours?) **Usable:** "Will users trust and adopt it?" (does it remove obstacles and expand adoption?) **Viable:** "Is this good business?" (Is there ROI for both sides? Does the model survive the AI cost of each added user?) **Feasible:** "Can we even do this with what we know and have?" (people, process, culture, capital). Test the riskiest open square, not all four by habit.
 
 *Violation signal:* a plan with four tests of equal size, or a plan that never mentions Usable.
 
@@ -81,7 +82,7 @@ An experiment brief or result review covering the open squares; criteria and har
 2. Lay out the four squares with their status so far (earned, weak, missing, stale, failed). If the only evidence is a working demo, raise the **feasible-only flag** by name.
 3. Pick the one to three riskiest open squares. Explain any square that cannot yet be assessed.
 4. Express the hypothesis: if this change reaches these people under these conditions, then this observable outcome should improve compared with the current approach. Label unverified premises.
-5. Choose the smallest revealing test for each chosen square: a conversation with a buyer (Valuable), watching one person use it (Usable), a willingness-to-pay ask or unit-cost model (Viable), a run on our own data and constraints (Feasible), a concierge trial, a historical replay, or a bounded prototype. A technical benchmark cannot settle willingness to change behavior.
+5. Choose the tiniest test that returns the most brutal truth for each chosen square: a conversation with a buyer (Valuable), watching one person use it (Usable), a willingness-to-pay ask or unit-cost model (Viable), a run on our own data and constraints (Feasible), a concierge trial, a historical replay, or a bounded prototype. A technical benchmark cannot settle willingness to change behavior.
 6. For each test name input/cohort/context, comparator, observation method, measure and denominator, time/cost budget, proposed owner role, success/failure/inconclusive criteria, hard stops, and what decision changes. Include review and exception costs. Propose thresholds as ASSUMPTION planning choices when absent and do not claim statistical sufficiency from an arbitrary sample size.
 7. Before reviewing results, preserve existing criteria and version. If no criteria were prewritten, disclose the review is exploratory; do not retrofit a pass. Keep planned, executed, and untested conditions separate.
 8. For AI behavior tests include decision-relevant failure cases: contradictions, inaccessible records, untrusted instructions, unsupported certainty, and handback/rollback. No aggregate success rate cancels a critical failure.
@@ -93,7 +94,7 @@ An experiment brief or result review covering the open squares; criteria and har
 
 Recommend one exit for the bet, then stop:
 
-- **Pass** to Considered (`bdk-four-risks`): results meet prewritten criteria for the open squares.
+- **Pass** to Considered (`bdk-pivot-punt-pursue`): results meet prewritten criteria for the open squares.
 - **Held for a test:** the squares are missing, not failed. The recommendation is to run the named tests, not to build. This is not a Punt.
 - **Pivot:** one square failed and a specific change could fix it (show sources to earn trust, narrow scope, change pricing). Re-enter this tier with the change. If the request was a rollout, the rollout is "not earned" and the bet is a Pivot, not a Punt.
 - **Sifted out (Punt):** Valuable failed, or no affordable test could move the riskiest square.

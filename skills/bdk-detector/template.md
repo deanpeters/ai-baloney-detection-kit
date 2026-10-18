@@ -10,8 +10,8 @@
 |---|---|---|
 | Entered | | |
 | Routed to the work family (not a claim) | | |
-| **Chaos**: left (sifted out · sent back) | | |
-| **Confusion**: left (sifted out · sent back · pivot) | | |
+| **Chaos**: left at Outcomes or Receipts (sifted out · sent back) | | |
+| **Confusion**: left at Labels, Sell-By, or Relevance (sifted out · sent back · pivot) | | |
 | **Crapola**: left (sifted out · pivot · held for a test) | | |
 | **Considered**: reached **Truth** (Pursue) | | |
 
@@ -19,24 +19,24 @@ The counts must add up to "Entered."
 
 ## 2. One line per claim
 
-| ID | Claim | Tier where it left | Exit (Pass · Sifted out · Send back · Pivot · Held) | Reason (check and evidence) | What would reopen or change it |
+| ID | Claim | Step where it left | Exit (Pass · Sifted out · Send back · Pivot · Held) | Reason (check and evidence) | What would reopen or change it |
 |---|---|---|---|---|---|
 | | | | | | |
 
-## 3. Tier findings
+## 3. Step findings
 
-**Chaos: Is it real, and is it still true?**
-Origins collapsed: · Stale items and refresh: · Receipts rating: · Sell-By rating:
+**Chaos: Is it a real outcome, with real receipts?**
+Outcome statements (before → after, inserted parts labeled): · Sifted out as output or vanity: · Origins collapsed: · Receipts rating:
 
-**Confusion: What do we actually know, and does it apply to us?**
-Load-bearing assumptions: · Decisive context gaps: · Labels rating: · Context rating:
+**Confusion: What do we actually know, is it still fresh, and does it apply to us?**
+Label mix (FACT · INFERENCE · ASSUMPTION · BEST GUESS): · Stale items and refresh: · Relevance (direct · adjacent · analog · not relevant) and pantry gaps: · Labels rating: · Sell-By rating: · Context Pantry rating:
 
 **Crapola: Would reality disagree?**
-Squares tested or to test: · Feasible-only flags: · Taste rating:
+Tiniest tests and thresholds (from the outcome's target): · Feasible-only flags: · Taste rating:
 
-## 4. Survivors: four-risk grid and decision record
+## 4. Considered: Pursue, pivot, or punt, and why
 
-For each claim that reached Considered, attach a [Four-Risk Grid](../bdk-four-risks/template.md).
+For each claim that reached Considered, attach a [recommendation and decision record](../bdk-pivot-punt-pursue/template.md): the move per scope, the why, and the four-risk grid.
 
 ## 5. Damage if ignored
 

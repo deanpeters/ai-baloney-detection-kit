@@ -12,19 +12,22 @@ The goal is composability, not a zoo of overlapping prompts.
 
 # Funnel Skills
 
-The [Baloney Funnel](README.md#the-baloney-funnel) is a process of elimination by tiers, cheapest sift first. Each funnel skill owns one tier's question; `bdk-detector` runs them all.
+The [Baloney Funnel](README.md#the-baloney-funnel) is a process of elimination: seven steps in four tiers, outcome first, cheapest sift next. Each step skill owns one step's question; `bdk-detector` runs them all.
 
-| Tier | Question | Skill | Job |
+| Step · Tier | Question | Skill | Job |
 |---|---|---|---|
-| — | Whole funnel | [bdk-detector](skills/bdk-detector/SKILL.md) | One claim or a pile (a roadmap, vendor pitches) through every tier; a funnel report |
-| 1 Chaos | Is it real, and is it still true? | [bdk-receipts](skills/bdk-receipts/SKILL.md) | Source support, provenance, independence |
-| 1 Chaos | | [bdk-sell-by](skills/bdk-sell-by/SKILL.md) | Freshness, and re-check triggers so Truth gets sent back when it spoils |
-| 2 Confusion | What do we actually know, and does it apply to us? | [bdk-labels](skills/bdk-labels/SKILL.md) | Fact, inference, assumption, best guess |
-| 2 Confusion | | [bdk-context-pantry](skills/bdk-context-pantry/SKILL.md) | For whom, compared with what, which workflow, both sides' economics |
-| 3 Crapola | Would reality disagree? | [bdk-taste-test](skills/bdk-taste-test/SKILL.md) | Cheapest tests of the riskiest open squares, thresholds first |
-| 4 Considered | Pursue, pivot, or punt? | [bdk-four-risks](skills/bdk-four-risks/SKILL.md) | The four-risk grid and a scoped decision record |
+| — | Whole funnel | [bdk-detector](skills/bdk-detector/SKILL.md) | One idea or a pile (a roadmap, vendor pitches) through all seven steps; a funnel report |
+| 1 · Chaos | Is there a real, measurable outcome here? | [bdk-outcomes](skills/bdk-outcomes/SKILL.md) | Shape the pitch into an outcome statement, or sift out outputs and vanity metrics |
+| 2 · Chaos | What evidence supports that outcome's metric and direction? | [bdk-receipts](skills/bdk-receipts/SKILL.md) | Source support, provenance, independence |
+| 3 · Confusion | How much is fact, inference, assumption, or best guess? | [bdk-labels](skills/bdk-labels/SKILL.md) | Labels and the label mix |
+| 4 · Confusion | Is it fresh enough for this decision? | [bdk-sell-by](skills/bdk-sell-by/SKILL.md) | Freshness, and re-check triggers so Truth gets sent back when it spoils |
+| 5 · Confusion | Does it apply to us: directly, adjacent, or by analog? | [bdk-relevance](skills/bdk-relevance/SKILL.md) | Relevance to our pantry of product, user, business, and market data |
+| 6 · Crapola | What's the tiniest test that returns the most brutal truth? | [bdk-taste-test](skills/bdk-taste-test/SKILL.md) | Tiny tests of the riskiest open squares, thresholds first |
+| 7 · Considered | Pursue, pivot, or punt, and why? | [bdk-pivot-punt-pursue](skills/bdk-pivot-punt-pursue/SKILL.md) | The recommendation, its why, and a scoped decision record |
+| Deep dive · Confusion | For whom, which workflow, at what cost to each side? | [bdk-context-pantry](skills/bdk-context-pantry/SKILL.md) | Workflow, ownership, and both sides' economics |
+| Deep dive · Considered | Which square decides? | [bdk-four-risks](skills/bdk-four-risks/SKILL.md) | The four-risk grid on its own |
 
-Every claim leaves a tier one of four ways: **Pass**, **Sifted out**, **Send back** (missing or stale, back to the top), or **Pivot** (change one thing, re-enter that tier).
+Every claim leaves a step one of four ways: **Pass**, **Sifted out**, **Send back** (missing or stale, back to the step that can fetch it), or **Pivot** (change one thing, re-enter that step).
 
 The four risks, Dean's questions verbatim:
 

@@ -35,3 +35,7 @@ known_failure_modes:
   - Approves the public launch on the strength of internal evidence.
 
 decision_rule: Pass only if Considered recommends Pursue for the internal extension and separately declines the public and automatic scopes.
+
+# Added 2026-10-18 for the seven-step loop (step 1, bdk-outcomes), before any run.
+expected_outcome: >
+  Pass at Outcomes for the internal extension (analyst time per FAQ question). The public launch has no outside beneficiary or metric: it may leave at Outcomes, Relevance, or Considered (Punt), as long as it is declined separately.
