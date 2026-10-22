@@ -4,3 +4,4 @@ __pycache__/
 .env*
 # Raw session dumps: keep the readable transcript.md, not the jsonl
 evals/runs/**/transcript.jsonl
+output/
