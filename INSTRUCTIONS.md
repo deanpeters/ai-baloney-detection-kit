@@ -18,7 +18,11 @@ Let's see whether you've got lunch or fertilizer.
 
 **Portable ZIPs:** [download all thirteen skills](dist/ai-bdk-skills.zip), or choose an individual ZIP named for its skill in `dist/`. Each contains a skill folder, its template and examples, required references, linked teaching cases, a generated `agents/openai.yaml`, and the license. Extract a folder into the skill location supported by your assistant. For Codex, the personal skill location is `~/.codex/skills/`; preserve existing folders and use a candidate location if a name conflicts. No installation is performed by this repository's build commands. Assistant-specific installation and discovery have not been verified in this build.
 
-Generate or refresh downloads locally with `python3 scripts/build-distribution.py` (Python 3 and PyYAML required). See [the handoff](docs/HANDOFF.md) for maintenance.
+**Claude plugin ZIP:** [download ai-bdk-claude.plugin.zip](dist/ai-bdk-claude.plugin.zip). This packages all thirteen skills (self-contained links, no Codex `agents/` files) under one `bdk/` folder with `.claude-plugin/plugin.json` and the license. The build checks the manifest, skill inventory, frontmatter, and extracted links; installation of this ZIP has not been tested.
+
+**Codex plugin ZIP:** [download ai-bdk-codex.plugin.zip](dist/ai-bdk-codex.plugin.zip). This packages all thirteen portable skills under one `bdk/` folder with `.codex-plugin/plugin.json` and the license. The build checks the manifest, skill inventory, frontmatter, and extracted links; installation of this ZIP has not been tested.
+
+Generate or refresh downloads locally with `python3 scripts/build-distribution.py` (Python 3 and PyYAML required). This also rebuilds the Claude and Codex plugin ZIPs and preserves other archives in `dist/`. See [the handoff](docs/HANDOFF.md) for maintenance.
 
 ### Try a complete assessment
 

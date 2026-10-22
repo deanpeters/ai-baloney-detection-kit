@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build deterministic, self-contained skill ZIPs from skills/ without changing canonical skills or installing them.
+"""Build deterministic skill ZIPs and a Codex plugin without changing canonical skills or installing them.
 
 Canonical SKILL.md files keep rich frontmatter (see docs/SKILL-SPEC.md). The portable copy keeps only
 name, description, and license at the top level, moves every other key into a string-to-string
@@ -23,6 +23,8 @@ checker = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(checker)
 PORTABLE_KEYS = {'name', 'description', 'license', 'allowed-tools', 'metadata'}
 FIXED_TIME = (2026, 10, 11, 0, 0, 0)
+CODEX_ZIP = 'ai-bdk-codex.plugin.zip'
+CLAUDE_ZIP = 'ai-bdk-claude.plugin.zip'
 
 
 def flatten(value):
@@ -170,6 +172,48 @@ def validate_zip(path):
                     raise ValueError(f'{path.name}: broken extracted link {target} in {doc.relative_to(directory)}')
 
 
+def build_codex_plugin(output, bundle, names):
+    """Wrap the portable skills in one plugin folder with the Codex manifest."""
+    manifest = (ROOT / '.codex-plugin/plugin.json').read_bytes()
+    files = {f'bdk/skills/{key}': value for key, value in bundle.items()}
+    files['bdk/.codex-plugin/plugin.json'] = manifest
+    files['bdk/LICENSE'] = (ROOT / 'LICENSE').read_bytes()
+    path = output / CODEX_ZIP
+    write_zip(path, files)
+    validate_zip(path)
+    with zipfile.ZipFile(path) as archive:
+        if archive.testzip() is not None:
+            raise ValueError(f'{path.name}: corrupt ZIP entry')
+        data = json.loads(archive.read('bdk/.codex-plugin/plugin.json'))
+        if data['name'] != 'bdk' or data['skills'] != './skills/':
+            raise ValueError(f'{path.name}: unexpected plugin name or skills path')
+        expected = {f'bdk/skills/{name}/SKILL.md' for name in names}
+        actual = {key for key in archive.namelist() if key.endswith('/SKILL.md')}
+        if actual != expected:
+            raise ValueError(f'{path.name}: plugin skill inventory differs from source')
+
+
+def build_claude_plugin(output, bundle, names):
+    """Wrap the self-contained skills in one plugin folder with the Claude manifest (no Codex agents/ files)."""
+    manifest = (ROOT / '.claude-plugin/plugin.json').read_bytes()
+    files = {f'bdk/skills/{key}': value for key, value in bundle.items() if '/agents/' not in key}
+    files['bdk/.claude-plugin/plugin.json'] = manifest
+    files['bdk/LICENSE'] = (ROOT / 'LICENSE').read_bytes()
+    path = output / CLAUDE_ZIP
+    write_zip(path, files)
+    validate_zip(path)
+    with zipfile.ZipFile(path) as archive:
+        if archive.testzip() is not None:
+            raise ValueError(f'{path.name}: corrupt ZIP entry')
+        data = json.loads(archive.read('bdk/.claude-plugin/plugin.json'))
+        if data['name'] != 'bdk' or data['skills'] != './skills/':
+            raise ValueError(f'{path.name}: unexpected plugin name or skills path')
+        expected = {f'bdk/skills/{name}/SKILL.md' for name in names}
+        actual = {key for key in archive.namelist() if key.endswith('/SKILL.md')}
+        if actual != expected:
+            raise ValueError(f'{path.name}: plugin skill inventory differs from source')
+
+
 def main():
     errors, _, _ = checker.check()
     if errors:
@@ -179,9 +223,6 @@ def main():
     output.mkdir(exist_ok=True)
     names = checker.all_skills()
     bundle = {}
-    for stale in output.glob('*.zip'):
-        if stale.stem not in names and stale.stem != 'ai-bdk-skills':
-            stale.unlink()
     for name in names:
         files = package_files(name)
         individual = {f'{name}/{key}': value for key, value in files.items()}
@@ -190,8 +231,11 @@ def main():
         bundle.update(individual)
     write_zip(output / 'ai-bdk-skills.zip', bundle)
     validate_zip(output / 'ai-bdk-skills.zip')
-    print(f'PASS: {len(names)} individual ZIPs and one bundle; portable frontmatter, generated agents/openai.yaml, '
-          'clean extraction, licenses, and self-contained links checked.')
+    build_codex_plugin(output, bundle, names)
+    build_claude_plugin(output, bundle, names)
+    print(f'PASS: {len(names)} individual ZIPs, one bundle, {CODEX_ZIP}, and {CLAUDE_ZIP}; portable frontmatter, '
+          'generated agents/openai.yaml, clean extraction, licenses, self-contained links, '
+          'and Codex and Claude plugin manifests/inventories checked.')
     return 0
 
 

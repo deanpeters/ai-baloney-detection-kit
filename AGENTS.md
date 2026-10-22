@@ -266,6 +266,15 @@ Do not duplicate the same logic across multiple skills if a shared utility can d
 
 See `SKILLS.md`.
 
+## Distribution requirements
+
+Whenever skills, bundled references, plugin manifests, or packaging code change, rebuild the distributions with `python3 scripts/build-distribution.py`, then run `python3 scripts/check-library.py`.
+
+- Always include the Claude-friendly plugin ZIP at `dist/ai-bdk-claude.plugin.zip` (one `bdk/` folder with `.claude-plugin/plugin.json`, all skills, the license) and the Codex-friendly plugin ZIP at `dist/ai-bdk-codex.plugin.zip` alongside the portable skill ZIPs and any Claude packages. A Claude package or the all-skills ZIP alone does not satisfy this requirement.
+- The Codex ZIP must contain one `bdk/` folder with `.codex-plugin/plugin.json`, all current skills under `skills/`, and the license. Use the builder's portable frontmatter conversion and generated `agents/openai.yaml`; do not hand-edit generated archives or canonical skills to fix packaging.
+- Confirm the build passes its manifest, skill inventory, frontmatter, clean extraction, and local-link checks. Keep the download links in `README.md` and `INSTRUCTIONS.md` current, and preserve unrelated archives in `dist/`.
+- Report package verification separately from installation and skill behavior. Do not claim the ZIP installs or the skills work in Codex unless those checks were actually performed.
+
 ---
 
 # 13. Diagnostic Output
